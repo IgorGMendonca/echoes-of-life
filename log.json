@@ -89,5 +89,24 @@
   "music_seed": 52,
   "voice": null,
   "credits": 0
+ },
+ {
+  "slug": "v005",
+  "post_date": "2026-11-24",
+  "slot": "extra",
+  "format": "ambient",
+  "theme": "Tokyo at night",
+  "hook": null,
+  "caption": "Would you live in Tokyo for a year? 🗼",
+  "duration": 8.5,
+  "upload_file": "echoes_v005_tokyo_night.mp4",
+  "pixabay_ids": [
+   243075,
+   240973,
+   211067
+  ],
+  "music_seed": 65,
+  "voice": null,
+  "credits": 0
  }
 ]
