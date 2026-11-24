@@ -19,9 +19,10 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
 
 ## Daily production
 
-1. **Pick the date.** Get today's date in America/Sao_Paulo. Of tomorrow and the day after, take
-   the first date that has no video in `log.json`. If both are covered, send Igor one short line
-   and stop. Produce two videos for that date: the next `todo` idea with `"format": "short"`
+1. **Pick the date.** Get the current date and time in America/Sao_Paulo. Candidates, in order:
+   today (only if it is before 11:00, so the 14:00 slot is still reachable), tomorrow, the day
+   after. Take the first candidate that has no video in `log.json`. If all are covered, send Igor
+   one short line and stop. Produce two videos for that date: the next `todo` idea with `"format": "short"`
    (posting slot 14:00) and the next `todo` with `"format": "long"` (slot 21:00), in list order.
 2. **Number them.** Slugs continue from the highest in `log.json`: `v002`, `v003`, ...
    Upload name: `echoes_<slug>_<3-5 word kebab of the hook>`.
