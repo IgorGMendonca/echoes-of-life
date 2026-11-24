@@ -6,7 +6,8 @@ Reads footage/scenes.json with two entries:
   {"role": "ground", "pixabay_id", "file", "src_start", "fx"}       the first ~1 s, looking down
   {"role": "view",   "pixabay_id", "file", "src_start", "fx", "dur", "shake"}   the scene
 and script.json "reveal": {"at": seconds, "dur": seconds} (the lift). Also needs captions.ass
-and audio/music.wav (run ambient.py and music.py first). Writes render/<slug>.mp4 for finish.py.
+and audio/music.wav (run ambient.py and music.py first; with "music_free": true in script.json the
+export gets a silent track instead, for a sound added on TikTok). Writes render/<slug>.mp4 for finish.py.
 """
 import json, os, subprocess, sys
 
@@ -56,7 +57,9 @@ fc = ";".join([
     "[v][g]vstack=inputs=2[tall]",
     f"[tall]crop=w={W}:h={H}:x='{x_expr}':y='{y_expr}',{blur},{SHARPEN},{GRADE},"
     f"subtitles=filename='{ass}':fontsdir='{FONTS}',format=yuv420p[vout]",
-    f"[2:a]loudnorm=I=-14:TP=-1.5:LRA=9,aresample=48000,atrim=0:{T}[aout]",
+    # music-free export (Igor adds a TikTok sound): a silent track; otherwise the generated bed
+    (f"anullsrc=r=48000:cl=stereo,atrim=0:{T}[aout]" if script.get("music_free")
+     else f"[2:a]loudnorm=I=-14:TP=-1.5:LRA=9,aresample=48000,atrim=0:{T}[aout]"),
 ])
 out = os.path.join(proj, "render", f"{os.path.basename(os.path.abspath(proj))}.mp4")
 os.makedirs(os.path.dirname(out), exist_ok=True)

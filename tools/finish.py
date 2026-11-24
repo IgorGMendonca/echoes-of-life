@@ -34,8 +34,10 @@ dur = float(probe["format"]["duration"])
 log = subprocess.run(["ffmpeg", "-hide_banner", "-nostats", "-i", out, "-af", "ebur128=peak=true", "-f", "null", "-"],
                      capture_output=True, text=True).stderr
 summ = log[log.rfind("Summary"):]
-lufs = float(re.search(r"I:\s+(-?[\d.]+) LUFS", summ).group(1))
-peak = float(re.search(r"Peak:\s+(-?[\d.]+) dBFS", summ).group(1))
+m_l = re.search(r"I:\s+(-?[\d.]+|-inf) LUFS", summ)
+m_p = re.search(r"Peak:\s+(-?[\d.]+|-inf) dBFS", summ)
+lufs = float(m_l.group(1)) if m_l else -99.0
+peak = float(m_p.group(1)) if m_p else -99.0
 
 
 def rms_db(path, s, e):
@@ -46,15 +48,22 @@ def rms_db(path, s, e):
 
 
 fmt = script.get("format", "short")
+music_free = bool(script.get("music_free"))
 checks = {
     "size 1080x1920": (v["width"], v["height"]) == (1080, 1920),
     "30 fps": v["r_frame_rate"] == "30/1",
     "audio 48 kHz": a["sample_rate"] == "48000",
-    "loudness -15..-13 LUFS": -15 <= lufs <= -13,
-    "true peak <= -0.9 dBFS": peak <= -0.9,
+}
+if music_free:
+    # the sound is added on TikTok: the file must carry silence, not a forgotten bed
+    checks["audio is silent (music-free export)"] = lufs <= -70
+else:
+    checks["loudness -15..-13 LUFS"] = -15 <= lufs <= -13
+    checks["true peak <= -0.9 dBFS"] = peak <= -0.9
+checks.update({
     "duration fits format": {"long": 61.5 <= dur <= 80, "short": 30 <= dur <= 50,
                              "ambient": 6 <= dur <= 15}[fmt],
-}
+})
 report = {"file": out, "duration": round(dur, 2), "lufs": lufs, "peak": peak,
           "size_mb": round(int(probe["format"]["size"]) / 1e6, 1), "checks": checks}
 print(json.dumps(report, indent=1))

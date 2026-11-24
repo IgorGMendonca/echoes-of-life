@@ -97,16 +97,17 @@
   "format": "ambient",
   "theme": "Tokyo Station at blue hour, phone lifted from the wet pavement to the station",
   "hook": null,
-  "caption": "Blue hour in Tokyo. Where would you be going tonight? 🌃",
+  "caption": "Everyone's on their own schedule. Where are you headed? 🌃",
   "duration": 7.3,
-  "upload_file": "echoes_v005_tokyo_station_reveal.mp4",
+  "upload_file": "echoes_v005_tokyo_station_text.mp4 (alt: _notext)",
   "pixabay_ids": [
    337138,
    246618
   ],
   "music_seed": 65,
   "voice": null,
-  "credits": 0
+  "credits": 0,
+  "music": "music-free; TikTok sound added by Igor"
  },
  {
   "slug": "v006",

@@ -2,7 +2,6 @@
   "slug": "v005",
   "format": "ambient",
   "theme": "Tokyo Station at blue hour, phone lifted from the wet pavement to the station",
-  "text": null,
   "lines": [
     {
       "text": "",
@@ -16,12 +15,12 @@
     }
   ],
   "post": {
-    "caption": "Blue hour in Tokyo. Where would you be going tonight? 🌃",
+    "caption": "Everyone's on their own schedule. Where are you headed? 🌃",
     "hashtags": [
       "#tokyo",
-      "#japan",
       "#bluehour",
-      "#citylights",
+      "#feelingbehind",
+      "#growingup",
       "#echoesoflife"
     ],
     "pinned_comment": "What song would you play here? 🎧",
@@ -30,5 +29,18 @@
   "reveal": {
     "at": 0.55,
     "dur": 0.7
-  }
+  },
+  "music_free": true,
+  "hooks_considered": [
+    "everyone here is going somewhere. so are you.",
+    "you're not late. the city just moves fast.",
+    "some evenings feel like the start of something."
+  ],
+  "text_variant": {
+    "line": "everyone here is\ngoing somewhere.\nso are you.",
+    "from": 1.7,
+    "to": 7.0,
+    "y": 0.22
+  },
+  "text": null
 }

@@ -47,9 +47,9 @@ A third daily video, posted at 18:00 Brasília, made to be watched to the end an
   turns it into blur), light sharpening and a high-bitrate upload copy. The tools do this by default.
 - About half carry one short lowercase line in Playfair italic (8 words or fewer) that echoes the
   two pillars ("rest is not falling behind"); the other half have no text. The analysis compares them.
-- Sound: the video ships with a soft generated piano bed. Igor swaps it in the app for a soft sung
-  song from the TikTok library and sets the original sound to 0%; that song is a big part of the
-  format, so pick something calm that is trending.
+- Sound: the export is music-free (silent track). Igor adds a soft, sung, currently trending song
+  from the TikTok library in the app; each delivery names 2–3 picks with a start point that puts a
+  sung line or a beat on the camera lift.
 - Caption: a short question tied to the place ("Which city would you watch this from?"). Pinned
   comment: a light prompt such as "What song would you play here? 🎧".
 - AI label only when the footage itself looks AI-generated (no synthetic voice in this format).

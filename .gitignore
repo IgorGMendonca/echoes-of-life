@@ -17,3 +17,5 @@ videos/*/captions.ass
 *.env
 .secrets/
 __pycache__/
+# Remotion skills are fetched by setup.sh, not committed
+.claude/skills/remotion-*/

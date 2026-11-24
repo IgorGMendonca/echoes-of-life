@@ -7,6 +7,26 @@ captions and hashtags is in English.
 Read `PLAYBOOK.md` before writing anything: it holds the channel identity and the rules learned
 from the metrics. `pauta.json` is the idea backlog, `log.json` records every video produced.
 
+## Skills (in `.claude/skills/`)
+
+The pipeline stays Python + ffmpeg (`tools/`); the skills sharpen the writing, the direction and
+the review. Read a skill's SKILL.md when its step comes up:
+
+- Writing any script or on-screen line: `emotional-storytelling`, `gen-z-emotional-insights` and
+  `scriptwriting` (hooks, structures, writing for the ear, AI-sounding tells). Write three honest
+  hooks, pick the best, and keep the other two in `script.json` as `"hooks_considered"`.
+- Hooks, pacing and the weekly analysis: `short-form-retention`.
+- Ambient videos and footage choices: `cinematic-video-direction`.
+- ElevenLabs settings, casting and checking the narration: `voice-direction`.
+- Before delivering: `video-quality-review` as the final gate. Score its rubric for each video,
+  revise anything under 7 and say what you changed.
+- `video-director`, `sound-design`, `image-generation` and the Remotion skills (fetched by
+  `setup.sh`) are for work built in Remotion or with generated images; use their craft rules, not
+  their pipelines, unless Igor asks. Their scripts that need OpenRouter, OpenAI, Gemini or other keys
+  are not configured here; do not run them.
+- `docs/skill-kit-prompt.md` is Igor's reference brief behind the kit (written for the working name
+  "The Unspoken"; the channel is Echoes of Life). Its four-video batch is not the routine; this file is.
+
 ## Setup (every run starts on a fresh machine)
 
 1. Clone this repo into `/home/claude/echoes-of-life` if it is not there (attach
@@ -60,6 +80,8 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
    8. `python3 tools/render.py videos/<slug> full` (one full render per video).
    9. `python3 tools/finish.py videos/<slug> <upload name>` must exit 0; it makes the upload
       copy and `post.txt` and checks size, fps, −14 LUFS, true peak and duration.
+   10. Run the `video-quality-review` rubric on the finished file (frames at start, middle, end
+      and every cut) and fix anything under 7 before delivering.
    **Ambient video** (no narration, no ElevenLabs credits):
    1. Write `videos/<slug>/script.json` in the shape of `videos/v003/script.json`: the idea's
       `setting` becomes `theme`; its `text` (if any) becomes `"text": {"line", "from", "to", "y"}`;
@@ -73,9 +95,12 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
       frame at two times from the view to rule out timelapses.
    3. Write `footage/scenes.json` in the shape of `videos/v005/footage/scenes.json` (a `"ground"`
       entry and a `"view"` entry with `"fx"` framing the subject, `"dur"` 7–8 s, `"shake"` about 8)
-      and add `"reveal": {"at": 0.55, "dur": 0.7}` to script.json. Then
+      and add `"reveal": {"at": 0.55, "dur": 0.7}` and `"music_free": true` to script.json (Igor adds
+      a song on TikTok, so the export carries silence). Then
       `python3 tools/fetch_clips.py videos/<slug>` and `python3 tools/ambient.py videos/<slug>`.
-   4. `python3 tools/music.py videos/<slug>/audio/music.wav <total> <seed>`.
+   4. Sound: search the web for this week's trending TikTok sounds (several chart sources) and pick
+      2–3 soft, sung songs that fit the scene; for each give title, artist and where to start it
+      (the first sung line or a beat on the camera lift, about 0.6–1.2 s). Never put them in the file.
    5. `python3 tools/reveal.py videos/<slug>` renders it. Pull frames every 0.1 s over the first
       2 s and one at the end, and Read them: the ground, a blurred lift, the subject well framed,
       text (if any) clear of the subject. Adjust `fx`, `eq` or the reveal timing and render
@@ -84,8 +109,8 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
    SendUserMessage in Portuguese with, for each video: the date and time to post, the caption
    and hashtags in a code block ready to paste, the pinned comment in its own code block (post it
    as the first comment and pin it), and the reminder to turn on "Conteúdo gerado por IA" when
-   `ai_label` is true. For the ambient video, remind him to add a calm sung song from the TikTok
-   library in the app and set the original sound to 0%. Keep it short.
+   `ai_label` is true. For the ambient video, give the 2–3 TikTok sound picks with their start
+   point (the export is silent; he adds the song in the app). Keep it short.
 5. **Record.** Set the three ideas in `pauta.json` to `"status": "done", "slug": "<slug>"`, append
    all three to `log.json` (same fields as v001), commit only scripts, scenes and the json files
    (media is git-ignored) with a message like `Add v002, v003 for 2026-11-25`, and push to `main`.
