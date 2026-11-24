@@ -95,16 +95,34 @@
   "post_date": "2026-11-24",
   "slot": "extra",
   "format": "ambient",
-  "theme": "Tokyo at night: light trails into the Skytree",
+  "theme": "Tokyo at blue hour: Tokyo Station into the Skytree",
   "hook": null,
   "caption": "Would you live in Tokyo for a year? 🗼",
   "duration": 8.2,
-  "upload_file": "echoes_v005_tokyo_night.mp4",
+  "upload_file": "echoes_v005_tokyo_blue_hour.mp4",
   "pixabay_ids": [
-   324817,
-   211067
+   246618,
+   240973
   ],
   "music_seed": 65,
+  "voice": null,
+  "credits": 0
+ },
+ {
+  "slug": "v006",
+  "post_date": "2026-11-24",
+  "slot": "option",
+  "format": "ambient",
+  "theme": "Japan at dusk: country rails into a river bridge",
+  "hook": null,
+  "caption": "Where does this train take you? 🌅",
+  "duration": 8.2,
+  "upload_file": "echoes_v006_japan_rails_dusk.mp4",
+  "pixabay_ids": [
+   363546,
+   367164
+  ],
+  "music_seed": 78,
   "voice": null,
   "credits": 0
  }

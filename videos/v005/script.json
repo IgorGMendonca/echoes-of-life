@@ -1,18 +1,18 @@
 {
   "slug": "v005",
   "format": "ambient",
-  "theme": "Tokyo at night: light trails into the Skytree",
+  "theme": "Tokyo at blue hour: Tokyo Station into the Skytree",
   "text": null,
   "lines": [
     {
       "text": "",
-      "query": "tokyo highway night",
-      "alt": "light trails city"
+      "query": "tokyo station night",
+      "alt": "tokyo evening"
     },
     {
       "text": "",
-      "query": "tokyo night",
-      "alt": "tokyo tower"
+      "query": "tokyo skytree night",
+      "alt": "tokyo night"
     }
   ],
   "post": {

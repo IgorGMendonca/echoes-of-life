@@ -1,0 +1,30 @@
+{
+  "slug": "v006",
+  "format": "ambient",
+  "theme": "Japan at dusk: country rails into a river bridge",
+  "text": null,
+  "lines": [
+    {
+      "text": "",
+      "query": "japan train sunset",
+      "alt": "railway sunset"
+    },
+    {
+      "text": "",
+      "query": "river bridge dusk",
+      "alt": "railway bridge evening"
+    }
+  ],
+  "post": {
+    "caption": "Where does this train take you? 🌅",
+    "hashtags": [
+      "#japan",
+      "#sunset",
+      "#aesthetic",
+      "#peaceful",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "What song would you play here? 🎧",
+    "ai_label": true
+  }
+}
