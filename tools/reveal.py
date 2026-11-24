@@ -32,8 +32,11 @@ SHARPEN = "unsharp=5:5:0.45:5:5:0"
 def layer(sc):
     fx = sc.get("fx", 0.5)
     eq = ("," + sc["eq"]) if sc.get("eq") else ""
+    # "fx_to": the hand slowly follows the subject across the frame over the whole shot
+    x = (f"'(iw-ow)*({fx}+({sc['fx_to']}-{fx})*min(t/{T},1))'" if sc.get("fx_to") is not None
+         else f"(iw-ow)*{fx}")
     return (f"trim=duration={T},setpts=PTS-STARTPTS,fps={FPS},"
-            f"crop=w=trunc(ih*9/16/2)*2:h=ih:x=(iw-ow)*{fx}:y=0,"
+            f"crop=w=trunc(ih*9/16/2)*2:h=ih:x={x}:y=0,"
             f"scale={CW}:{CH}:flags=lanczos,setsar=1{eq}")
 
 
@@ -67,7 +70,7 @@ tmp = out.replace(".mp4", ".part.mp4")
 cmd = ["ffmpeg", "-y", "-v", "error", "-nostats",
        "-ss", str(ground["src_start"]), "-t", str(T + 0.3), "-i", ground["file"],
        "-ss", str(view["src_start"]), "-t", str(T + 0.3), "-i", view["file"],
-       "-i", os.path.join(proj, "audio", "music.wav"),
+       *([] if script.get("music_free") else ["-i", os.path.join(proj, "audio", "music.wav")]),
        "-filter_complex", fc, "-map", "[vout]", "-map", "[aout]", "-r", str(FPS),
        "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-pix_fmt", "yuv420p", "-profile:v", "high",
        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", tmp]

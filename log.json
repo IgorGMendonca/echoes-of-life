@@ -112,19 +112,22 @@
  {
   "slug": "v006",
   "post_date": "2026-11-24",
-  "slot": "option",
+  "slot": "extra (posted on delivery)",
   "format": "ambient",
-  "theme": "Japan at dusk: country rails into a river bridge",
+  "mood": "nostalgia",
+  "theme": "Parent and child cycling into an autumn tree tunnel, lifted from fallen leaves",
   "hook": null,
-  "caption": "Where does this train take you? 🌅",
-  "duration": 8.2,
-  "upload_file": "echoes_v006_japan_rails_dusk.mp4",
+  "text": "someone rode next to you\nuntil you didn't\nneed them to.",
+  "caption": "Who taught you to ride? 🍂",
+  "duration": 7.5,
+  "upload_file": "echoes_v006_nostalgia_bike_ride.mp4",
   "pixabay_ids": [
-   363546,
-   367164
+   231257,
+   91853
   ],
-  "music_seed": 78,
+  "music_seed": null,
   "voice": null,
-  "credits": 0
+  "credits": 0,
+  "music": "music-free; TikTok sound added by Igor (picks: Fade Into You, Stolen From Each Other, My Moon My Man)"
  }
 ]
