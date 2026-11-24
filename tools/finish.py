@@ -61,7 +61,7 @@ else:
     checks["loudness -15..-13 LUFS"] = -15 <= lufs <= -13
     checks["true peak <= -0.9 dBFS"] = peak <= -0.9
 checks.update({
-    "duration fits format": {"long": 61.5 <= dur <= 80, "short": 30 <= dur <= 50,
+    "duration fits format": {"long": 64 <= dur <= 91, "short": 30 <= dur <= 50,
                              "ambient": 6 <= dur <= 15}[fmt],
 })
 report = {"file": out, "duration": round(dur, 2), "lufs": lufs, "peak": peak,
