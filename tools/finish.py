@@ -20,7 +20,10 @@ subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", master, "-c:v", "libx264", 
 os.replace(tmp, out)
 
 post = script["post"]
-open(os.path.join(proj, "render", "post.txt"), "w").write(post["caption"] + "\n\n" + " ".join(post["hashtags"]) + "\n")
+text = post["caption"] + "\n\n" + " ".join(post["hashtags"]) + "\n"
+if post.get("pinned_comment"):
+    text += "\nPinned comment:\n" + post["pinned_comment"] + "\n"
+open(os.path.join(proj, "render", "post.txt"), "w").write(text)
 
 probe = json.loads(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries",
                                             "stream=codec_type,width,height,r_frame_rate,sample_rate:format=duration,size",

@@ -33,7 +33,9 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
       Every line gets a footage `query` and `alt`: 2–3 words naming something filmable
       ("empty kitchen morning", "old man window"), never a feeling. Keep the same voice block.
       The post caption is one line that adds to the video plus a question; 4–5 hashtags ending
-      with `#echoesoflife`; `"ai_label": true`.
+      with `#echoesoflife`; `"ai_label": true`. Follow "Engagement" in PLAYBOOK.md: add
+      `"post.pinned_comment"` (a second, playful question for Igor to pin) and `"endcard"` (the
+      end-card line: a save or share invitation when it fits, otherwise "follow for more").
    2. `python3 tools/tts.py videos/<slug>` (exit code 2 = ElevenLabs refused: see Errors).
    3. `python3 tools/footage_candidates.py videos/<slug> 4`, then Read every
       `footage/sheet_XX.jpg`. For each line pick the clip that shows what the line says, looks
@@ -59,8 +61,9 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
       copy and `post.txt` and checks size, fps, −14 LUFS, true peak and duration.
 4. **Deliver.** Send both upload files with SendUserFile (status `proactive`), then one
    SendUserMessage in Portuguese with, for each video: the date and time to post, the caption
-   and hashtags in a code block ready to paste, and the reminder to turn on "Conteúdo gerado por
-   IA". Keep it short.
+   and hashtags in a code block ready to paste, the pinned comment in its own code block (post it
+   as the first comment and pin it), and the reminder to turn on "Conteúdo gerado por IA". Keep
+   it short.
 5. **Record.** Set the two ideas in `pauta.json` to `"status": "done", "slug": "<slug>"`, append
    both to `log.json` (same fields as v001), commit only scripts, scenes and the json files
    (media is git-ignored) with a message like `Add v002, v003 for 2026-11-25`, and push to `main`.

@@ -28,6 +28,28 @@ metrics; the "Starting rules" stay until the numbers say otherwise.
 - Caption: one sentence that adds to the video, plus a question; 4–5 hashtags, always #echoesoflife.
 - Posting: short at 14:00 Brasília (12:00 New York), long at 21:00 Brasília (19:00 New York).
 
+## Engagement: invite, never beg
+
+Each video carries one invitation that grows out of its own content, so answering feels natural.
+Rotate the kind across the week and let the metrics decide which works.
+
+- **Comment:** a question a viewer can answer in a few words, asked in the caption and in the
+  pinned comment, sometimes as the final spoken line. Good shapes: "What's one thing you'd
+  start tonight?", fill in the blank ("The last time I ___ was…"), A or B dilemmas, "What would you
+  tell your 15-year-old self?". Ask about experiences and opinions, never personal details.
+- **Save:** for advice-like videos, an end-card line such as "save this for the day you need it".
+- **Share:** when someone specific comes to mind, "send this to someone who needs it today".
+- **Pinned comment:** Igor posts it as the first comment and pins it. It is a second, more
+  playful question than the caption ("What's the story your parents always tell twice? 👇"),
+  never a fake personal memory written as if it were Igor's.
+- The end card shows the save/share line or "follow for more"; only one call to action per video.
+- Never: "like if you agree", "comment YES", "type 1 for…", follow-for-follow, like-for-like,
+  fake "part 2" promises, false urgency, or asking for age, school, location or other personal
+  information (many viewers are teenagers). TikTok treats fake engagement as ineligible for the
+  For You feed, and forced asks also feel cheap.
+- Keep the mood mostly hopeful: a channel of only sad videos risks being shown less, and the
+  endings should leave people lighter than they arrived.
+
 ## Learned (updated weekly, newest first)
 
 _No data yet. First analysis: Monday 2026-11-30._

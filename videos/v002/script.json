@@ -4,27 +4,99 @@
   "theme": "Aging parents",
   "pauta_id": 1,
   "hook": "Your parents are getting older.",
-  "voice": { "voice_id": "nPczCjzI2devNBz1zQrb", "name": "Brian", "model_id": "eleven_multilingual_v2" },
+  "voice": {
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian",
+    "model_id": "eleven_multilingual_v2"
+  },
   "lines": [
-    { "text": "Your parents are getting older.", "query": "elderly couple sitting", "alt": "old man window" },
-    { "text": "Not all at once, but in small things you only notice when you visit.", "query": "front door opening", "alt": "house porch evening" },
-    { "text": "Your dad takes the stairs a little slower now.", "query": "old man stairs", "alt": "elderly man walking" },
-    { "text": "Your mom tells you the same story twice, and you pretend it's the first time.", "query": "elderly woman kitchen", "alt": "grandmother smiling" },
-    { "text": "Their hands look older than you remember.", "query": "elderly hands", "alt": "old hands holding" },
-    { "text": "They still save the best piece of dinner for you.", "query": "home cooked dinner", "alt": "mother cooking kitchen" },
-    { "text": "They still wait for your call on Sundays, even if they'd never say it.", "query": "old telephone", "alt": "elderly woman phone" },
-    { "text": "And somewhere along the way, the roles quietly switched.", "query": "father son walking", "alt": "old man young man" },
-    { "text": "Now they ask you how their phone works.", "query": "senior smartphone", "alt": "elderly using phone" },
-    { "text": "Now you're the one who worries when they drive at night.", "query": "car driving night", "alt": "night road rain" },
-    { "text": "Nobody warns you about this part of growing up.", "query": "empty bedroom window", "alt": "old house hallway" },
-    { "text": "You spend years trying to leave home, then years wishing for one more ordinary afternoon there.", "query": "sunlight through curtains", "alt": "afternoon window light" },
-    { "text": "They won't be here forever. But they're here today.", "query": "elderly couple sunset", "alt": "old couple walking" },
-    { "text": "So call them. Ask about the old stories. Let them tell you twice.", "query": "woman phone call", "alt": "phone call smiling" },
-    { "text": "Because one day, those stories will be yours to tell.", "query": "family photo album", "alt": "golden hour field" }
+    {
+      "text": "Your parents are getting older.",
+      "query": "elderly couple sitting",
+      "alt": "old man window"
+    },
+    {
+      "text": "Not all at once, but in small things you only notice when you visit.",
+      "query": "front door opening",
+      "alt": "house porch evening"
+    },
+    {
+      "text": "Your dad takes the stairs a little slower now.",
+      "query": "old man stairs",
+      "alt": "elderly man walking"
+    },
+    {
+      "text": "Your mom tells you the same story twice, and you pretend it's the first time.",
+      "query": "elderly woman kitchen",
+      "alt": "grandmother smiling"
+    },
+    {
+      "text": "Their hands look older than you remember.",
+      "query": "elderly hands",
+      "alt": "old hands holding"
+    },
+    {
+      "text": "They still save the best piece of dinner for you.",
+      "query": "home cooked dinner",
+      "alt": "mother cooking kitchen"
+    },
+    {
+      "text": "They still wait for your call on Sundays, even if they'd never say it.",
+      "query": "old telephone",
+      "alt": "elderly woman phone"
+    },
+    {
+      "text": "And somewhere along the way, the roles quietly switched.",
+      "query": "father son walking",
+      "alt": "old man young man"
+    },
+    {
+      "text": "Now they ask you how their phone works.",
+      "query": "senior smartphone",
+      "alt": "elderly using phone"
+    },
+    {
+      "text": "Now you're the one who worries when they drive at night.",
+      "query": "car driving night",
+      "alt": "night road rain"
+    },
+    {
+      "text": "Nobody warns you about this part of growing up.",
+      "query": "empty bedroom window",
+      "alt": "old house hallway"
+    },
+    {
+      "text": "You spend years trying to leave home, then years wishing for one more ordinary afternoon there.",
+      "query": "sunlight through curtains",
+      "alt": "afternoon window light"
+    },
+    {
+      "text": "They won't be here forever. But they're here today.",
+      "query": "elderly couple sunset",
+      "alt": "old couple walking"
+    },
+    {
+      "text": "So call them. Ask about the old stories. Let them tell you twice.",
+      "query": "woman phone call",
+      "alt": "phone call smiling"
+    },
+    {
+      "text": "Because one day, those stories will be yours to tell.",
+      "query": "family photo album",
+      "alt": "golden hour field"
+    }
   ],
   "post": {
     "caption": "The roles switch so quietly you almost miss it. When did you last call them just to talk? 🤍",
-    "hashtags": ["#parents", "#family", "#lifelessons", "#grateful", "#echoesoflife"],
-    "ai_label": true
-  }
+    "hashtags": [
+      "#parents",
+      "#family",
+      "#lifelessons",
+      "#grateful",
+      "#echoesoflife"
+    ],
+    "ai_label": true,
+    "pinned_comment": "What's the story your parents always tell twice? 👇"
+  },
+  "endcard": "follow for more"
 }

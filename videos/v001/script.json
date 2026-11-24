@@ -2,20 +2,64 @@
   "slug": "v001-the-last-time",
   "theme": "Nostalgia",
   "hook": "You didn't know it was the last time.",
-  "voice": { "voice_id": "nPczCjzI2devNBz1zQrb", "name": "Brian", "model_id": "eleven_multilingual_v2" },
+  "voice": {
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian",
+    "model_id": "eleven_multilingual_v2"
+  },
   "lines": [
-    { "text": "You didn't know it was the last time.", "query": "empty swing sunset", "alt": "playground swing" },
-    { "text": "The last time your mom carried you to bed, pretending you were already asleep.", "query": "mother carrying child", "alt": "mother child bedtime" },
-    { "text": "The last time you played outside until the streetlights came on.", "query": "children playing sunset", "alt": "kids running field sunset" },
-    { "text": "The last time everyone sat around the same table, laughing at nothing.", "query": "family dinner table", "alt": "family eating together" },
-    { "text": "Nobody tells you. There's no warning. No goodbye.", "query": "rain window", "alt": "raindrops glass night" },
-    { "text": "One day, it's just a memory.", "query": "old photographs", "alt": "old photo album" },
-    { "text": "So hug them a little longer. Stay a little later. Call back.", "query": "grandmother hug", "alt": "elderly couple hands" },
-    { "text": "Because someday, this ordinary moment is the one you'd give anything to live again.", "query": "golden hour field", "alt": "sunset light nature" }
+    {
+      "text": "You didn't know it was the last time.",
+      "query": "empty swing sunset",
+      "alt": "playground swing"
+    },
+    {
+      "text": "The last time your mom carried you to bed, pretending you were already asleep.",
+      "query": "mother carrying child",
+      "alt": "mother child bedtime"
+    },
+    {
+      "text": "The last time you played outside until the streetlights came on.",
+      "query": "children playing sunset",
+      "alt": "kids running field sunset"
+    },
+    {
+      "text": "The last time everyone sat around the same table, laughing at nothing.",
+      "query": "family dinner table",
+      "alt": "family eating together"
+    },
+    {
+      "text": "Nobody tells you. There's no warning. No goodbye.",
+      "query": "rain window",
+      "alt": "raindrops glass night"
+    },
+    {
+      "text": "One day, it's just a memory.",
+      "query": "old photographs",
+      "alt": "old photo album"
+    },
+    {
+      "text": "So hug them a little longer. Stay a little later. Call back.",
+      "query": "grandmother hug",
+      "alt": "elderly couple hands"
+    },
+    {
+      "text": "Because someday, this ordinary moment is the one you'd give anything to live again.",
+      "query": "golden hour field",
+      "alt": "sunset light nature"
+    }
   ],
   "post": {
     "caption": "You never get a warning before the last time. Who would you call today? 🤍",
-    "hashtags": ["#nostalgia", "#childhoodmemories", "#lifelessons", "#deepthoughts", "#echoesoflife"],
-    "ai_label": true
-  }
+    "hashtags": [
+      "#nostalgia",
+      "#childhoodmemories",
+      "#lifelessons",
+      "#deepthoughts",
+      "#echoesoflife"
+    ],
+    "ai_label": true,
+    "pinned_comment": "What's one \"last time\" you wish you'd known was the last? 🤍"
+  },
+  "endcard": "follow for more"
 }
