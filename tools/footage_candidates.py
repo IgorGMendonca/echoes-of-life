@@ -1,6 +1,6 @@
 """Search Pixabay videos for each script line and build contact sheets to pick from.
 
-Usage: python3 footage_candidates.py <project_dir> [per_query]
+Usage: python3 footage_candidates.py <project_dir> [per_query] [min_width]
 Writes <project_dir>/footage/candidates.json and sheet_XX.jpg (one per line).
 """
 import io, json, os, sys, urllib.parse, urllib.request
@@ -8,6 +8,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 proj = sys.argv[1]
 per = int(sys.argv[2]) if len(sys.argv) > 2 else 6
+min_w = int(sys.argv[3]) if len(sys.argv) > 3 else 0      # e.g. 3800 to see only 4K clips
 key = os.environ["PIXABAY_KEY"]
 script = json.load(open(os.path.join(proj, "script.json")))
 os.makedirs(os.path.join(proj, "footage"), exist_ok=True)
@@ -16,7 +17,7 @@ font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
 def search(q):
     url = "https://pixabay.com/api/videos/?" + urllib.parse.urlencode(
-        {"key": key, "q": q, "per_page": 20, "safesearch": "true", "order": "popular"})
+        {"key": key, "q": q, "per_page": 40, "safesearch": "true", "order": "popular", "min_width": min_w})
     return json.load(get(url))["hits"]
 
 

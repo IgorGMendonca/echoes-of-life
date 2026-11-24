@@ -11,17 +11,17 @@
   "vertical": false
  },
  {
-  "pixabay_id": 240973,
-  "src_start": 3.0,
-  "fx": 0.47,
+  "pixabay_id": 241122,
+  "src_start": 2.0,
+  "fx": 0.82,
   "zoom": 0.03,
   "dur": 4.4,
   "zoom_out": true,
   "transition": "fade",
   "xf": 0.6,
   "file": "videos/v005/footage/clips/scene_1.mp4",
-  "width": 2160,
-  "height": 3840,
-  "vertical": true
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
  }
 ]

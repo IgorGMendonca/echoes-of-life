@@ -48,5 +48,5 @@ os.makedirs(os.path.join(proj, "audio"), exist_ok=True)
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", "anullsrc=r=48000:cl=stereo",
                 "-t", str(total), os.path.join(proj, "audio", "voice.wav")], check=True)
 json.dump({"lines": [], "words": [], "cuts": cuts, "total": total, "speech_end": 0,
-           "endcard": False, "xfade": XF}, open(os.path.join(proj, "timeline.json"), "w"), indent=1)
+           "endcard": False, "xfade": XF, "grain": script.get("grain", 0)}, open(os.path.join(proj, "timeline.json"), "w"), indent=1)
 print("total", total, "cuts", cuts)

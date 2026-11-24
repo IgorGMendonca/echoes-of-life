@@ -41,6 +41,8 @@ A third daily video, posted at 18:00 Brasília, made to be watched to the end an
   Check each candidate clip at two times a few seconds apart: if the sky or light changes fast,
   it is a timelapse; skip it.
 - Avoid shots dominated by billboards or brand logos (e.g. busy crossings full of ads).
+- Image quality matters (Igor, 2026-11-24): 4K sources only, no film grain (TikTok's re-encode
+  turns it into blur), light sharpening and a high-bitrate upload copy. The tools do this by default.
 - About half carry one short lowercase line in Playfair italic (8 words or fewer) that echoes the
   two pillars ("rest is not falling behind"); the other half have no text. The analysis compares them.
 - Sound: the video ships with a soft generated piano bed. Igor swaps it in the app for a soft sung

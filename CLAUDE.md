@@ -65,9 +65,9 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
       `setting` becomes `theme`; its `text` (if any) becomes `"text": {"line", "from", "to", "y"}`;
       one entry in `lines` per shot with an empty `text` and a footage `query`/`alt`; the post
       fields as in PLAYBOOK.md "Ambient videos" (`ai_label` only if the footage looks AI-made).
-   2. `python3 tools/footage_candidates.py videos/<slug> 6`, Read the sheets and pick exactly two
+   2. `python3 tools/footage_candidates.py videos/<slug> 6 3800` (4K only), Read the sheets and pick exactly two
       beautiful shots of one place with real, natural motion (see PLAYBOOK "Ambient videos"):
-      4K or vertical, nothing used in the last 20 videos, no billboards, logos or people facing
+      4K only, nothing used in the last 20 videos, no billboards, logos or people facing
       the camera. Pull a frame at two times from each candidate to rule out timelapses.
    3. Write `footage/scenes.json` in the shape of `videos/v005/footage/scenes.json` (no `speed`;
       the second shot has `"transition": "fade"` and `"xf"` about 0.6), with `"dur"` so the total

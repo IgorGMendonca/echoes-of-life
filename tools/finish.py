@@ -13,8 +13,9 @@ out = os.path.join(proj, "render", f"{name}.mp4")
 script = json.load(open(os.path.join(proj, "script.json")))
 
 tmp = out.replace(".mp4", ".part.mp4")
-subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", master, "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
-                "-maxrate", "10M", "-bufsize", "20M", "-pix_fmt", "yuv420p", "-profile:v", "high", "-c:a", "copy",
+# high bitrate on purpose: TikTok re-encodes everything, and a clean source survives that much better
+subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", master, "-c:v", "libx264", "-preset", "medium", "-crf", "17",
+                "-maxrate", "20M", "-bufsize", "40M", "-pix_fmt", "yuv420p", "-profile:v", "high", "-c:a", "copy",
                 "-movflags", "+faststart", tmp], check=True)
 os.replace(tmp, out)
 

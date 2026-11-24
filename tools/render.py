@@ -23,7 +23,10 @@ ass = os.path.abspath(os.path.join(proj, "captions.ass"))
 
 GRADE = ("eq=contrast=1.06:saturation=0.82:brightness=-0.035:gamma=0.97,"
          "colorbalance=rs=0.04:bs=-0.04:rm=0.02:bm=-0.02,vignette=angle=PI/4.6")
-GRAIN = "noise=alls=5:allf=t"
+# film grain looks nice locally but TikTok's re-encode turns it into mush: keep it light, none for ambient
+GRAIN_AMOUNT = tl.get("grain", 3)
+GRAIN = f"noise=alls={GRAIN_AMOUNT}:allf=t" if GRAIN_AMOUNT else "null"
+SHARPEN = "unsharp=5:5:0.45:5:5:0"
 
 
 def xf(k):
@@ -62,7 +65,7 @@ def scene_chain(i, length, t_out0=None):
     if sc.get("zoom_out"):
         zp = (f"zoompan=z='1+{zoom}*(1-on/{frames})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
               f":d=1:s={W}x{H}:fps={FPS}")
-    return f"fps={FPS},{base},{zp},setsar=1,format=yuv420p"
+    return f"fps={FPS},{base},{zp},{SHARPEN},setsar=1,format=yuv420p"
 
 
 def endcard_chain(length):
@@ -132,7 +135,7 @@ os.makedirs(os.path.dirname(out), exist_ok=True)
 tmp = out.replace(".mp4", ".part.mp4")
 cmd = ["ffmpeg", "-y", "-v", "error", "-nostats", *inputs, "-filter_complex", ";".join(parts),
        "-map", "[vout]", "-map", "[aout]", "-r", str(FPS),
-       "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-profile:v", "high",
+       "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-pix_fmt", "yuv420p", "-profile:v", "high",
        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", tmp]
 subprocess.run(cmd, check=True)
 os.replace(tmp, out)

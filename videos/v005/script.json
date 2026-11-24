@@ -1,7 +1,7 @@
 {
   "slug": "v005",
   "format": "ambient",
-  "theme": "Tokyo at blue hour: Tokyo Station into the Skytree",
+  "theme": "Tokyo: Tokyo Station at blue hour into Tokyo Gate Bridge at sunset",
   "text": null,
   "lines": [
     {
@@ -11,8 +11,8 @@
     },
     {
       "text": "",
-      "query": "tokyo skytree night",
-      "alt": "tokyo night"
+      "query": "tokyo gate bridge",
+      "alt": "tokyo bridge sunset"
     }
   ],
   "post": {

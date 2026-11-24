@@ -95,14 +95,14 @@
   "post_date": "2026-11-24",
   "slot": "extra",
   "format": "ambient",
-  "theme": "Tokyo at blue hour: Tokyo Station into the Skytree",
+  "theme": "Tokyo: Tokyo Station at blue hour into Tokyo Gate Bridge at sunset with Mt. Fuji",
   "hook": null,
   "caption": "Would you live in Tokyo for a year? 🗼",
   "duration": 8.2,
   "upload_file": "echoes_v005_tokyo_blue_hour.mp4",
   "pixabay_ids": [
    246618,
-   240973
+   241122
   ],
   "music_seed": 65,
   "voice": null,
