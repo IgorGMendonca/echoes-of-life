@@ -32,10 +32,10 @@ metrics; the "Starting rules" stay until the numbers say otherwise.
 
 A third daily video, posted at 18:00 Brasília, made to be watched to the end and replayed.
 
-- 7–9 s, no narration, ONE scene filmed "by hand" (Igor's direction, 2026-11-24): the camera
-  holds on one part of a wide, beautiful 4K shot, then turns smoothly to another part of the same
-  scene, like a person turning their phone (bridge, then the mountain behind it; a station, then
-  the street beside it). Light handheld sway the whole time. No cut, no change of place.
+- 7–8 s, no narration, modelled on Igor's reference video (2026-11-24): the phone starts
+  pointed at the ground (asphalt, wet pavement with reflections, leaves) for about half a
+  second, then is lifted quickly (vertical motion blur) to reveal the view, and holds there by
+  hand with a light sway for the rest of the clip. One view, no cuts. `tools/reveal.py` does this.
 - The scene itself must touch the heart: golden hour, blue hour, warm city lights, calm water,
   a landmark with something meaningful beside it. Motion is real and natural, never sped up or
   timelapse (check a frame at two times a few seconds apart; if the sky changes fast, skip it).

@@ -65,19 +65,21 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
       `setting` becomes `theme`; its `text` (if any) becomes `"text": {"line", "from", "to", "y"}`;
       one entry in `lines` per shot with an empty `text` and a footage `query`/`alt`; the post
       fields as in PLAYBOOK.md "Ambient videos" (`ai_label` only if the footage looks AI-made).
-   2. `python3 tools/footage_candidates.py videos/<slug> 6 3800` (4K only). Read the sheets and
-      pick ONE beautiful, wide 4K shot with real, natural motion whose left and right parts are
-      both worth seeing (see PLAYBOOK "Ambient videos"). Nothing used in the last 20 videos, no
-      billboards, logos or people facing the camera. Pull a frame at two times from the clip to
-      rule out timelapses.
-   3. Write `footage/scenes.json` in the shape of `videos/v005/footage/scenes.json`: one scene with
-      `"dur"` 7–9 s and `"pan": {"from", "to", "at", "dur"}` (crop positions 0–1 across the frame;
-      hold about 3 s, turn over 1.1–1.5 s, hold the rest), `"zoom"` 0.08, `"shake"` about 7.
-      Then `python3 tools/fetch_clips.py videos/<slug>` and `python3 tools/ambient.py videos/<slug>`.
+   2. `python3 tools/footage_candidates.py videos/<slug> 6 3800` (4K only) with one query for the
+      view and one for the ground ("asphalt road", "wet street reflections", "leaves on road").
+      Pick ONE beautiful 4K view with real, natural motion and life in it (people walking, cars
+      passing; see PLAYBOOK "Ambient videos") and one ground clip whose light suits the view.
+      Nothing used in the last 20 videos, no billboards, logos or people facing the camera. Pull a
+      frame at two times from the view to rule out timelapses.
+   3. Write `footage/scenes.json` in the shape of `videos/v005/footage/scenes.json` (a `"ground"`
+      entry and a `"view"` entry with `"fx"` framing the subject, `"dur"` 7–8 s, `"shake"` about 8)
+      and add `"reveal": {"at": 0.55, "dur": 0.7}` to script.json. Then
+      `python3 tools/fetch_clips.py videos/<slug>` and `python3 tools/ambient.py videos/<slug>`.
    4. `python3 tools/music.py videos/<slug>/audio/music.wav <total> <seed>`.
-   5. Review stills before, during and after the turn (`render.py ... frames`), keep the text clear of
-      the subject (`text.y`), brighten dark night shots with `eq` if needed; then
-      `render.py ... full` and `finish.py videos/<slug> <upload name>` (must exit 0).
+   5. `python3 tools/reveal.py videos/<slug>` renders it. Pull frames every 0.1 s over the first
+      2 s and one at the end, and Read them: the ground, a blurred lift, the subject well framed,
+      text (if any) clear of the subject. Adjust `fx`, `eq` or the reveal timing and render
+      again; then `finish.py videos/<slug> <upload name>` (must exit 0).
 4. **Deliver.** Send the three upload files with SendUserFile (status `proactive`), then one
    SendUserMessage in Portuguese with, for each video: the date and time to post, the caption
    and hashtags in a code block ready to paste, the pinned comment in its own code block (post it

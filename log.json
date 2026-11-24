@@ -95,12 +95,13 @@
   "post_date": "2026-11-24",
   "slot": "extra",
   "format": "ambient",
-  "theme": "Tokyo Station at blue hour, handheld turn to the main entrance",
+  "theme": "Tokyo Station at blue hour, phone lifted from the wet pavement to the station",
   "hook": null,
   "caption": "Blue hour in Tokyo. Where would you be going tonight? 🌃",
-  "duration": 8.2,
-  "upload_file": "echoes_v005_tokyo_station_blue_hour.mp4",
+  "duration": 7.3,
+  "upload_file": "echoes_v005_tokyo_station_reveal.mp4",
   "pixabay_ids": [
+   337138,
    246618
   ],
   "music_seed": 65,

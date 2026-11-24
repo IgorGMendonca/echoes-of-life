@@ -1,9 +1,14 @@
 {
   "slug": "v005",
   "format": "ambient",
-  "theme": "Tokyo Station at blue hour, handheld turn to the main entrance",
+  "theme": "Tokyo Station at blue hour, phone lifted from the wet pavement to the station",
   "text": null,
   "lines": [
+    {
+      "text": "",
+      "query": "wet street reflections",
+      "alt": "asphalt night"
+    },
     {
       "text": "",
       "query": "tokyo station night",
@@ -21,5 +26,9 @@
     ],
     "pinned_comment": "What song would you play here? 🎧",
     "ai_label": false
+  },
+  "reveal": {
+    "at": 0.55,
+    "dur": 0.7
   }
 }
