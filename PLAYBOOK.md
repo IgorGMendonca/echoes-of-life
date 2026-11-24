@@ -32,9 +32,13 @@ metrics; the "Starting rules" stay until the numbers say otherwise.
 
 A third daily video, posted at 18:00 Brasília, made to be watched to the end and replayed.
 
-- 7–9 s, no narration: two shots of one place at golden hour, blue hour or night (sometimes three),
-  with a change of angle through a short crossfade. City lights, bridges, rain, trains, sea,
-  snow, fog, sunsets. No end card; the small wordmark stays.
+- 7–9 s, no narration, exactly two shots of one place and one cut that hits (Igor's feedback,
+  2026-11-24): open on something moving fast (light-trail timelapse, train, traffic, waves
+  breaking, clouds racing; speed it up with `"speed": 1.3–1.8` if needed), then cut with a quick
+  punchy transition (`"transition": "zoomin"`, `"xf": 0.3–0.4`; alternatives: "smoothup",
+  "hblur", "fadewhite") to a striking hero shot of the same place (a landmark, a skyline, a calm
+  reflection). Golden hour, blue hour or night. No end card; the small wordmark stays.
+- Avoid shots dominated by billboards or brand logos (e.g. busy crossings full of ads).
 - About half carry one short lowercase line in Playfair italic (8 words or fewer) that echoes the
   two pillars ("rest is not falling behind"); the other half have no text. The analysis compares them.
 - Sound: the video ships with a soft generated piano bed. Igor swaps it in the app for a soft sung

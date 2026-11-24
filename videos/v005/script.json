@@ -1,23 +1,18 @@
 {
   "slug": "v005",
   "format": "ambient",
-  "theme": "Tokyo at night",
+  "theme": "Tokyo at night: light trails into the Skytree",
   "text": null,
   "lines": [
     {
       "text": "",
+      "query": "tokyo highway night",
+      "alt": "light trails city"
+    },
+    {
+      "text": "",
       "query": "tokyo night",
-      "alt": "tokyo street"
-    },
-    {
-      "text": "",
-      "query": "tokyo tower",
-      "alt": "shibuya crossing"
-    },
-    {
-      "text": "",
-      "query": "tokyo rain night",
-      "alt": "japan city lights"
+      "alt": "tokyo tower"
     }
   ],
   "post": {

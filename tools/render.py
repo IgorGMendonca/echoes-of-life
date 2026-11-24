@@ -26,11 +26,21 @@ GRADE = ("eq=contrast=1.06:saturation=0.82:brightness=-0.035:gamma=0.97,"
 GRAIN = "noise=alls=5:allf=t"
 
 
+def xf(k):
+    """Length of the transition into segment k (a scene may set its own "xf")."""
+    return scenes[k].get("xf", XF) if k < len(scenes) else XF
+
+
+def transition(k):
+    """xfade transition into segment k: "fade" by default; a scene may ask for e.g. "zoomin"."""
+    return scenes[k].get("transition", "fade") if k < len(scenes) else "fade"
+
+
 def seg_bounds(i):
     """Start/end of segment i in output time, including crossfade overlap."""
     n = len(cuts)          # film scenes are 0..n-2, end card is n-1 (all film when HAS_END is false)
-    start = cuts[i] - (XF / 2 if i > 0 else 0)
-    end = (cuts[i + 1] + XF / 2) if i + 1 < n else total
+    start = cuts[i] - (xf(i) / 2 if i > 0 else 0)
+    end = (cuts[i + 1] + xf(i + 1) / 2) if i + 1 < n else total
     return start, end
 
 
@@ -77,7 +87,8 @@ if mode == "frames":
         else:
             s0, _ = seg_bounds(i)
             sc = scenes[i]
-            inp = ["-ss", str(sc["src_start"] + (t - s0)), "-i", sc["file"]]
+            sp = sc.get("speed", 1.0)
+            inp = ["-ss", str(sc["src_start"] + (t - s0) * sp), "-i", sc["file"]]
             chain = scene_chain(i, 1.0)
         vf = f"{chain},setpts=PTS-STARTPTS+{t}/TB,{GRADE},{GRAIN},{subs()}"
         subprocess.run(["ffmpeg", "-y", "-v", "error", *inp, "-frames:v", "1", "-vf", vf, "-q:v", "2", out],
@@ -96,12 +107,14 @@ for i in range(n):
         parts.append(f"[{i}:v]{endcard_chain(L)}[s{i}]")
     else:
         sc = scenes[i]
-        inputs += ["-ss", str(sc["src_start"]), "-t", str(L + 0.2), "-i", sc["file"]]
-        parts.append(f"[{i}:v]trim=duration={L},setpts=PTS-STARTPTS,{scene_chain(i, L)}[s{i}]")
+        sp = sc.get("speed", 1.0)          # >1 plays the clip faster (more motion, more punch)
+        inputs += ["-ss", str(sc["src_start"]), "-t", str(L * sp + 0.3), "-i", sc["file"]]
+        parts.append(f"[{i}:v]trim=duration={round(L * sp, 3)},setpts=(PTS-STARTPTS)/{sp},"
+                     f"{scene_chain(i, L)}[s{i}]")
 prev = "s0"
 for k in range(1, n):
-    off = round(cuts[k] - XF / 2, 3)
-    parts.append(f"[{prev}][s{k}]xfade=transition=fade:duration={XF}:offset={off}[x{k}]")
+    off = round(cuts[k] - xf(k) / 2, 3)
+    parts.append(f"[{prev}][s{k}]xfade=transition={transition(k)}:duration={xf(k)}:offset={off}[x{k}]")
     prev = f"x{k}"
 # grade the film part only: the end card stays clean black
 parts.append(f"[{prev}]{GRADE},{GRAIN},{subs()},trim=duration={total},format=yuv420p[vout]")
