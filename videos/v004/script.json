@@ -1,0 +1,17 @@
+{
+  "slug": "v004",
+  "format": "ambient",
+  "theme": "Empty beach at sunrise",
+  "pauta_id": 52,
+  "text": null,
+  "lines": [
+    {"text": "", "query": "beach sunrise waves", "alt": "ocean sunrise"},
+    {"text": "", "query": "waves shore golden hour", "alt": "sea foam sand"}
+  ],
+  "post": {
+    "caption": "Where would you watch this sunrise from? 🌅",
+    "hashtags": ["#sunrise", "#oceanvibes", "#aesthetic", "#peaceful", "#echoesoflife"],
+    "pinned_comment": "What song would you play here? 🎧",
+    "ai_label": false
+  }
+}

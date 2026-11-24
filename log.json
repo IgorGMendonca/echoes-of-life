@@ -71,5 +71,23 @@
   "music_seed": 39,
   "voice": null,
   "credits": 0
+ },
+ {
+  "slug": "v004",
+  "post_date": "2026-11-24",
+  "slot": "extra",
+  "format": "ambient",
+  "theme": "Empty beach at sunrise",
+  "hook": null,
+  "caption": "Where would you watch this sunrise from? 🌅",
+  "duration": 8.2,
+  "upload_file": "echoes_v004_beach_sunrise.mp4",
+  "pixabay_ids": [
+   204276,
+   388064
+  ],
+  "music_seed": 52,
+  "voice": null,
+  "credits": 0
  }
 ]

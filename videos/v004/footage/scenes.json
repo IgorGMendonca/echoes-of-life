@@ -1,0 +1,26 @@
+[
+ {
+  "pixabay_id": 204276,
+  "src_start": 2.0,
+  "fx": 0.5,
+  "zoom": 0.04,
+  "dur": 4.0,
+  "file": "videos/v004/footage/clips/scene_0.mp4",
+  "width": 2550,
+  "height": 1440,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 388064,
+  "src_start": 2.0,
+  "fx": 0.5,
+  "zoom": 0.04,
+  "dur": 4.2,
+  "zoom_out": true,
+  "file": "videos/v004/footage/clips/scene_1.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false,
+  "eq": "colorbalance=rs=0.07:gs=0.01:bs=-0.06,eq=saturation=1.1"
+ }
+]
