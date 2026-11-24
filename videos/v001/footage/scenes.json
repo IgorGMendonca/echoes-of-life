@@ -1,0 +1,60 @@
+[
+ {
+  "file": "videos/v001/footage/clips/scene_0.mp4",
+  "pixabay_id": 364922,
+  "src_start": 0.6,
+  "fx": 0.95,
+  "zoom": 0.05
+ },
+ {
+  "file": "videos/v001/footage/clips/scene_1.mp4",
+  "pixabay_id": 304230,
+  "src_start": 2.0,
+  "fx": 0.5,
+  "zoom": 0.04
+ },
+ {
+  "file": "videos/v001/footage/clips/scene_2.mp4",
+  "pixabay_id": 186249,
+  "src_start": 3.0,
+  "fx": 0.57,
+  "zoom": 0.05
+ },
+ {
+  "file": "videos/v001/footage/clips/scene_3.mp4",
+  "pixabay_id": 172667,
+  "src_start": 4.0,
+  "fx": 0.62,
+  "zoom": 0.04,
+  "eq": "eq=brightness=-0.06:saturation=0.72:contrast=1.04"
+ },
+ {
+  "file": "videos/v001/footage/clips/scene_4.mp4",
+  "pixabay_id": 11722,
+  "src_start": 5.0,
+  "fx": 0.5,
+  "zoom": 0.06
+ },
+ {
+  "file": "videos/v001/footage/clips/scene_5.mp4",
+  "pixabay_id": 55903,
+  "src_start": 1.0,
+  "fx": 0.45,
+  "zoom": 0.05
+ },
+ {
+  "file": "videos/v001/footage/clips/scene_6.mp4",
+  "pixabay_id": 349321,
+  "src_start": 0.3,
+  "vertical": true,
+  "zoom": 0.04
+ },
+ {
+  "file": "videos/v001/footage/clips/scene_7.mp4",
+  "pixabay_id": 245681,
+  "src_start": 4.0,
+  "fx": 0.49,
+  "zoom": 0.05,
+  "zoom_out": true
+ }
+]
