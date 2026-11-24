@@ -47,9 +47,32 @@ def seg_bounds(i):
     return start, end
 
 
-def scene_chain(i, length, t_out0=None):
+def pan_chain(sc, t_off=0.0):
+    """One continuous shot "filmed by hand": the 9:16 window turns from one part of a wide 4K
+    frame to another (eased like a person turning the phone) with a light handheld sway.
+    sc["pan"] = {"from": 0..1, "to": 0..1, "at": seconds, "dur": seconds}, optional "shake" px."""
+    p = sc["pan"]
+    a, b, t0, d = p["from"], p["to"], p["at"], p["dur"]
+    sh = sc.get("shake", 7)
+    zoom = 1 + sc.get("zoom", 0.08)
+    u = f"clip((t-{t0})/{d},0,1)"
+    ease = f"({u}*{u}*(3-2*{u}))"
+    sx = f"({sh}*sin(2*PI*0.53*t)+{sh*0.6}*sin(2*PI*1.27*t+1.3))"
+    sy = f"({sh*0.8}*sin(2*PI*0.71*t+0.4)+{sh*0.5}*sin(2*PI*1.61*t+2.1))"
+    ch = f"trunc(ih/{zoom}/2)*2"
+    crop = (f"crop=w=trunc({ch}*9/16/2)*2:h={ch}:"
+            f"x='max(0,min(iw-ow,(iw-ow)*({a}+({b}-{a})*{ease})+{sx}))':"
+            f"y='max(0,min(ih-oh,(ih-oh)/2+{sy}))'")
+    pre = f"setpts=PTS-STARTPTS+{t_off}/TB," if t_off else ""
+    eq = ("," + sc["eq"]) if sc.get("eq") else ""
+    return f"fps={FPS},{pre}{crop},scale={W}:{H}:flags=lanczos,setsar=1{eq},{SHARPEN},format=yuv420p"
+
+
+def scene_chain(i, length, t_off=0.0):
     """Filter chain for film scene i (input already trimmed by -ss/-t)."""
     sc = scenes[i]
+    if sc.get("pan"):
+        return pan_chain(sc, t_off)
     zoom = sc.get("zoom", 0.05)
     frames = max(1, int(round(length * FPS)))
     if sc.get("vertical"):
@@ -92,7 +115,7 @@ if mode == "frames":
             sc = scenes[i]
             sp = sc.get("speed", 1.0)
             inp = ["-ss", str(sc["src_start"] + (t - s0) * sp), "-i", sc["file"]]
-            chain = scene_chain(i, 1.0)
+            chain = scene_chain(i, 1.0, t_off=t - s0)
         vf = f"{chain},setpts=PTS-STARTPTS+{t}/TB,{GRADE},{GRAIN},{subs()}"
         subprocess.run(["ffmpeg", "-y", "-v", "error", *inp, "-frames:v", "1", "-vf", vf, "-q:v", "2", out],
                        check=True)

@@ -65,16 +65,17 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
       `setting` becomes `theme`; its `text` (if any) becomes `"text": {"line", "from", "to", "y"}`;
       one entry in `lines` per shot with an empty `text` and a footage `query`/`alt`; the post
       fields as in PLAYBOOK.md "Ambient videos" (`ai_label` only if the footage looks AI-made).
-   2. `python3 tools/footage_candidates.py videos/<slug> 6 3800` (4K only), Read the sheets and pick exactly two
-      beautiful shots of one place with real, natural motion (see PLAYBOOK "Ambient videos"):
-      4K only, nothing used in the last 20 videos, no billboards, logos or people facing
-      the camera. Pull a frame at two times from each candidate to rule out timelapses.
-   3. Write `footage/scenes.json` in the shape of `videos/v005/footage/scenes.json` (no `speed`;
-      the second shot has `"transition": "fade"` and `"xf"` about 0.6), with `"dur"` so the total
-      is 7–9 s, then `python3 tools/fetch_clips.py videos/<slug>` and
-      `python3 tools/ambient.py videos/<slug>`.
+   2. `python3 tools/footage_candidates.py videos/<slug> 6 3800` (4K only). Read the sheets and
+      pick ONE beautiful, wide 4K shot with real, natural motion whose left and right parts are
+      both worth seeing (see PLAYBOOK "Ambient videos"). Nothing used in the last 20 videos, no
+      billboards, logos or people facing the camera. Pull a frame at two times from the clip to
+      rule out timelapses.
+   3. Write `footage/scenes.json` in the shape of `videos/v005/footage/scenes.json`: one scene with
+      `"dur"` 7–9 s and `"pan": {"from", "to", "at", "dur"}` (crop positions 0–1 across the frame;
+      hold about 3 s, turn over 1.1–1.5 s, hold the rest), `"zoom"` 0.08, `"shake"` about 7.
+      Then `python3 tools/fetch_clips.py videos/<slug>` and `python3 tools/ambient.py videos/<slug>`.
    4. `python3 tools/music.py videos/<slug>/audio/music.wav <total> <seed>`.
-   5. Review stills at 1.0, just after the cut and at the end (`render.py ... frames`), keep the text clear of
+   5. Review stills before, during and after the turn (`render.py ... frames`), keep the text clear of
       the subject (`text.y`), brighten dark night shots with `eq` if needed; then
       `render.py ... full` and `finish.py videos/<slug> <upload name>` (must exit 0).
 4. **Deliver.** Send the three upload files with SendUserFile (status `proactive`), then one

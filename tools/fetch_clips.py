@@ -1,7 +1,7 @@
 """Download the clips chosen in footage/scenes.json (by pixabay_id) and fill in their file paths.
 
 Usage: python3 fetch_clips.py videos/<slug>
-Each scenes.json entry needs "pixabay_id"; "file" is set to videos/<slug>/footage/clips/scene_N.mp4.
+Each scenes.json entry needs "pixabay_id"; "file" is set to videos/<slug>/footage/clips/scene_N_<id>.mp4.
 Prefers the 4K/large rendition, falls back to medium.
 """
 import json, os, subprocess, sys, urllib.request
@@ -18,7 +18,7 @@ def get(url):
 
 
 for i, sc in enumerate(scenes):
-    out = os.path.join(proj, "footage", "clips", f"scene_{i}.mp4")
+    out = os.path.join(proj, "footage", "clips", f"scene_{i}_{sc['pixabay_id']}.mp4")
     sc["file"] = out
     if os.path.exists(out) and os.path.getsize(out) > 100_000:
         continue

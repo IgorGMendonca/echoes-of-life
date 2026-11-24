@@ -32,14 +32,14 @@ metrics; the "Starting rules" stay until the numbers say otherwise.
 
 A third daily video, posted at 18:00 Brasília, made to be watched to the end and replayed.
 
-- 7–9 s, no narration, exactly two shots of one place and one soft cut. Igor's feedback
-  (2026-11-24): never sped up or timelapse-looking; the motion must be real and natural (people
-  walking, a car passing, water, a train, a slow camera glide), and the scene must be beautiful
-  enough to touch the heart: golden hour, blue hour, warm city lights, calm reflections.
-  The cut is a gentle dissolve (`"transition": "fade"`, `"xf"` about 0.6) that changes the angle
-  or the moment (dusk to night), like a quiet breath, not an effect.
-  Check each candidate clip at two times a few seconds apart: if the sky or light changes fast,
-  it is a timelapse; skip it.
+- 7–9 s, no narration, ONE scene filmed "by hand" (Igor's direction, 2026-11-24): the camera
+  holds on one part of a wide, beautiful 4K shot, then turns smoothly to another part of the same
+  scene, like a person turning their phone (bridge, then the mountain behind it; a station, then
+  the street beside it). Light handheld sway the whole time. No cut, no change of place.
+- The scene itself must touch the heart: golden hour, blue hour, warm city lights, calm water,
+  a landmark with something meaningful beside it. Motion is real and natural, never sped up or
+  timelapse (check a frame at two times a few seconds apart; if the sky changes fast, skip it).
+- Pick a source whose two halves are both worth looking at: the turn should reveal something.
 - Avoid shots dominated by billboards or brand logos (e.g. busy crossings full of ads).
 - Image quality matters (Igor, 2026-11-24): 4K sources only, no film grain (TikTok's re-encode
   turns it into blur), light sharpening and a high-bitrate upload copy. The tools do this by default.

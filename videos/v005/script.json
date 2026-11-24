@@ -1,14 +1,9 @@
 {
   "slug": "v005",
   "format": "ambient",
-  "theme": "Tokyo: Tokyo Station at blue hour into Tokyo Gate Bridge at sunset",
+  "theme": "Tokyo Gate Bridge at sunset, handheld turn to Mt. Fuji",
   "text": null,
   "lines": [
-    {
-      "text": "",
-      "query": "tokyo station night",
-      "alt": "tokyo evening"
-    },
     {
       "text": "",
       "query": "tokyo gate bridge",
@@ -16,12 +11,12 @@
     }
   ],
   "post": {
-    "caption": "Would you live in Tokyo for a year? 🗼",
+    "caption": "Tokyo at sunset, and Fuji watching over it 🗻",
     "hashtags": [
       "#tokyo",
       "#japan",
-      "#nightvibes",
-      "#citylights",
+      "#mtfuji",
+      "#sunset",
       "#echoesoflife"
     ],
     "pinned_comment": "Which neighborhood would you walk first? 🌃",
