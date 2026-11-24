@@ -1,32 +1,339 @@
 [
- {"id": 1, "format": "long", "theme": "Aging parents", "hook": "Your parents are getting older.", "angle": "The small signs you only notice when you visit: slower steps, the same stories told twice, the way they wait for your call. Ends with: call them today.", "status": "todo"},
- {"id": 2, "format": "short", "theme": "Nostalgia", "hook": "Your childhood bedroom doesn't exist anymore.", "angle": "The posters, the night light, the view from the window: repainted, sold, given away. But you could still walk it in the dark.", "status": "todo"},
- {"id": 3, "format": "long", "theme": "Psychology", "hook": "Why do we miss people who hurt us?", "angle": "We miss who they were at their best, the version we hoped for, and the familiar. Missing someone is not a reason to go back. Gentle, general, no clinical claims.", "status": "todo"},
- {"id": 4, "format": "short", "theme": "Loneliness", "hook": "Nobody talks about the loneliness of adulthood.", "angle": "Friends become calendars, weekends get quiet, nobody knocks to ask if you can come out. Hopeful turn: someone is waiting for your message too.", "status": "todo"},
- {"id": 5, "format": "long", "theme": "Story", "hook": "He wrote her a letter every year. He never sent one.", "angle": "A short fictional story told as a story ('This is a story about...'): an old man, a box of letters, one he finally sends. No real names, no claim it happened.", "status": "todo"},
- {"id": 6, "format": "short", "theme": "Existential", "hook": "What if today was your last ordinary day?", "angle": "Ordinary days are the ones we can't remember and would give anything for later. Notice this one.", "status": "todo"},
- {"id": 7, "format": "long", "theme": "Relationships", "hook": "Sometimes love is not enough.", "angle": "Two good people, wrong timing, different directions. Letting go can be the last loving thing you do. Warm, not bitter.", "status": "todo"},
- {"id": 8, "format": "short", "theme": "Animals", "hook": "Your dog has an entire world, and it's you.", "angle": "You are a part of their day; you are all of theirs. The waiting by the door, the joy every single time.", "status": "todo"},
- {"id": 9, "format": "long", "theme": "Nostalgia", "hook": "The friends you lost without a fight.", "angle": "No argument, no goodbye, just fewer messages until there were none. Some friendships were meant for one season, and that is still beautiful.", "status": "todo"},
- {"id": 10, "format": "short", "theme": "Growth", "hook": "Imagine meeting the person you could have become.", "angle": "Would they be proud or would they ask you to try? It is not too late to walk toward them.", "status": "todo"},
- {"id": 11, "format": "long", "theme": "Aging", "hook": "One day, you'll be the old one in the photo.", "angle": "Family photos across the years: the kids grow, the elders fade from the frame, and one day the center of the photo is you. Make memories worth being in.", "status": "todo"},
- {"id": 12, "format": "short", "theme": "Moral dilemma", "hook": "Would you trade your memories for ten million dollars?", "angle": "All of them: first love, your mother's laugh, the bad days that made you. Ask the viewer to answer in the comments.", "status": "todo"},
- {"id": 13, "format": "long", "theme": "Loneliness", "hook": "Being surrounded by people and still feeling alone.", "angle": "Laughing at the table and feeling far away. It is more common than anyone admits. Turn: the one person you can be honest with; reach out. Gentle, hopeful, no clinical claims.", "status": "todo"},
- {"id": 14, "format": "short", "theme": "Psychology", "hook": "Why the past always looks better than it was.", "angle": "Memory keeps the warm parts and quietly drops the rest. Maybe today will look golden too, someday.", "status": "todo"},
- {"id": 15, "format": "long", "theme": "Growth", "hook": "The version of you that almost gave up.", "angle": "Speak to the past self on the worst night: you made it, the morning came. Speak to whoever is there now.", "status": "todo"},
- {"id": 16, "format": "short", "theme": "Existential", "hook": "You've already lived some of your best days.", "angle": "You just didn't know it then. That means the next ones could be happening right now.", "status": "todo"},
- {"id": 17, "format": "long", "theme": "Animals", "hook": "What your old dog would tell you if he could.", "angle": "Told from the dog's point of view: the walks, the waiting, why the grey muzzle doesn't matter, thank you for choosing me.", "status": "todo"},
- {"id": 18, "format": "short", "theme": "Relationships", "hook": "The 'I love you' you never said.", "angle": "Pride, timing, assuming there would be another chance. Say it today while they can hear it.", "status": "todo"},
- {"id": 19, "format": "long", "theme": "Moral dilemma", "hook": "If you could relive one day, which one would it be?", "angle": "Not the biggest day. Probably a small one: a kitchen, a summer evening, a voice. Ask the viewer for theirs in the comments.", "status": "todo"},
- {"id": 20, "format": "short", "theme": "Nostalgia", "hook": "Someone used to call you in for dinner.", "angle": "The voice from the porch at dusk. One day it stopped, and you never noticed the last time.", "status": "todo"},
- {"id": 21, "format": "long", "theme": "Psychology", "hook": "Why we remember embarrassing moments forever.", "angle": "Strong feelings make memories stick, and we replay them; everyone else forgot long ago. Be kind to the younger you. General, no clinical claims.", "status": "todo"},
- {"id": 22, "format": "short", "theme": "Aging parents", "hook": "Your parents were once young and scared too.", "angle": "They became parents without a manual, figuring it out one night at a time, just like you are now.", "status": "todo"},
- {"id": 23, "format": "long", "theme": "Story", "hook": "She kept his voicemail for ten years.", "angle": "Fictional story, told as a story: a saved voicemail, a phone she never upgraded, the day she lets it play one last time and finally smiles. No real names, no claim it happened.", "status": "todo"},
- {"id": 24, "format": "short", "theme": "Loneliness", "hook": "The quiet after everyone leaves.", "angle": "After the party, the holiday, the visit: plates in the sink, and a silence that says it mattered.", "status": "todo"},
- {"id": 25, "format": "long", "theme": "Existential", "hook": "Life is just a few dozen summers.", "angle": "Count them: if you are 30, you might have around 50 left. Not to scare, but to choose how to spend the next one. Keep numbers framed as rough.", "status": "todo"},
- {"id": 26, "format": "short", "theme": "Growth", "hook": "You're not behind. You're on your own timeline.", "angle": "Everyone's highlight reel versus your behind the scenes. Bloom when it's your season.", "status": "todo"},
- {"id": 27, "format": "long", "theme": "Relationships", "hook": "The people who stayed when you were hard to love.", "angle": "The ones who sat through the silence, the bad moods, the cancelled plans. Tell them you noticed.", "status": "todo"},
- {"id": 28, "format": "short", "theme": "Animals", "hook": "They wait by the door every single day.", "angle": "Every day, as if it were the first time you came home. Be the person your pet thinks you are.", "status": "todo"},
- {"id": 29, "format": "long", "theme": "Nostalgia", "hook": "The last day of summer when you were a kid.", "angle": "Sunburn, bikes, the smell of the evening, the feeling the world was endless. You didn't know summers would get shorter.", "status": "todo"},
- {"id": 30, "format": "short", "theme": "Moral dilemma", "hook": "Would you want to know the day you'll die?", "angle": "Would it change how you live tomorrow? Then why wait? Calm, reflective, not morbid. Ask for answers in the comments.", "status": "todo"}
+ {
+  "id": 1,
+  "format": "long",
+  "theme": "Aging parents",
+  "hook": "Your parents are getting older.",
+  "angle": "The small signs you only notice when you visit: slower steps, the same stories told twice, the way they wait for your call. Ends with: call them today.",
+  "status": "done",
+  "slug": "v002"
+ },
+ {
+  "id": 31,
+  "format": "short",
+  "theme": "Time & potential",
+  "hook": "You're 17 and you think you're already late.",
+  "angle": "Late compared to who? Most people you admire started long after they felt ready. You are not behind; you are early to your own story. One small thing today.",
+  "status": "todo"
+ },
+ {
+  "id": 32,
+  "format": "long",
+  "theme": "Time & potential",
+  "hook": "What one hour a day becomes in a year.",
+  "angle": "365 hours: enough to learn the basics of a language, an instrument, a skill. Show the quiet math, the boring middle, the version of you a year from now. Start tonight with one hour, or even twenty minutes.",
+  "status": "todo"
+ },
+ {
+  "id": 10,
+  "format": "short",
+  "theme": "Time & potential",
+  "hook": "Imagine meeting the person you could have become.",
+  "angle": "Would they be proud or would they ask you to try? It is not too late to walk toward them.",
+  "status": "todo"
+ },
+ {
+  "id": 34,
+  "format": "long",
+  "theme": "Time & potential",
+  "hook": "Everyone online looks ahead of you.",
+  "angle": "You are comparing your behind-the-scenes to everyone's highlight reel. Their timeline is not yours. Close the app, pick one thing, take one step. Never shaming; rest is part of it.",
+  "status": "todo"
+ },
+ {
+  "id": 33,
+  "format": "short",
+  "theme": "Time & potential",
+  "hook": "Your future self is watching what you do tonight.",
+  "angle": "Not to judge you, to thank you. One page, one rep, one message. Tonight counts more than someday.",
+  "status": "todo"
+ },
+ {
+  "id": 3,
+  "format": "long",
+  "theme": "Psychology",
+  "hook": "Why do we miss people who hurt us?",
+  "angle": "We miss who they were at their best, the version we hoped for, and the familiar. Missing someone is not a reason to go back. Gentle, general, no clinical claims.",
+  "status": "todo"
+ },
+ {
+  "id": 35,
+  "format": "short",
+  "theme": "Time & potential",
+  "hook": "Stop waiting to feel ready.",
+  "angle": "Ready is a feeling that shows up after you start, not before. Start badly, start small, start today.",
+  "status": "todo"
+ },
+ {
+  "id": 36,
+  "format": "long",
+  "theme": "Time & potential",
+  "hook": "Nobody has it figured out at 18.",
+  "angle": "The adults around you are still improvising too. You have more time than the panic says. Use it on purpose: one skill, one habit, one brave message at a time.",
+  "status": "todo"
+ },
+ {
+  "id": 26,
+  "format": "short",
+  "theme": "Time & potential",
+  "hook": "You're not behind. You're on your own timeline.",
+  "angle": "Everyone's highlight reel versus your behind the scenes. Bloom when it's your season.",
+  "status": "todo"
+ },
+ {
+  "id": 38,
+  "format": "long",
+  "theme": "Time & potential",
+  "hook": "You have more time than you think, and less than you'd like.",
+  "angle": "Both are true. Not a reason to panic, a reason to choose. Small, steady, today. Keep any numbers rough and clearly framed as rough.",
+  "status": "todo"
+ },
+ {
+  "id": 37,
+  "format": "short",
+  "theme": "Time & potential",
+  "hook": "The people you admire were beginners once.",
+  "angle": "Every expert had a first clumsy day nobody filmed. Yours can be today.",
+  "status": "todo"
+ },
+ {
+  "id": 15,
+  "format": "long",
+  "theme": "Growth",
+  "hook": "The version of you that almost gave up.",
+  "angle": "Speak to the past self on the worst night: you made it, the morning came. Speak to whoever is there now.",
+  "status": "todo"
+ },
+ {
+  "id": 39,
+  "format": "short",
+  "theme": "Time & potential",
+  "hook": "Small every day beats big someday.",
+  "angle": "Ten minutes a day is a habit; a perfect plan for next month is a wish. Pick your ten minutes.",
+  "status": "todo"
+ },
+ {
+  "id": 40,
+  "format": "long",
+  "theme": "Time & potential",
+  "hook": "A letter to the version of you that feels behind.",
+  "angle": "Spoken as a kind letter: I know you think you wasted time. You didn't; you were learning what matters. Here is what I wish you knew. Ends with one thing to do today.",
+  "status": "todo"
+ },
+ {
+  "id": 41,
+  "format": "short",
+  "theme": "Time & potential",
+  "hook": "You're not lazy. You just started too big.",
+  "angle": "Shrink the step until it's almost silly: one push-up, one sentence, one minute. Momentum does the rest. No clinical claims.",
+  "status": "todo"
+ },
+ {
+  "id": 42,
+  "format": "long",
+  "theme": "Time & potential",
+  "hook": "The day you decide is the day it starts.",
+  "angle": "Not New Year's, not Monday, not after the exams. Show ordinary days turning into a different life through tiny repeated choices. Hopeful, never hustle-toxic: sleep and rest are allowed.",
+  "status": "todo"
+ },
+ {
+  "id": 4,
+  "format": "short",
+  "theme": "Loneliness",
+  "hook": "Nobody talks about the loneliness of adulthood.",
+  "angle": "Friends become calendars, weekends get quiet, nobody knocks to ask if you can come out. Hopeful turn: someone is waiting for your message too.",
+  "status": "todo"
+ },
+ {
+  "id": 7,
+  "format": "long",
+  "theme": "Relationships",
+  "hook": "Sometimes love is not enough.",
+  "angle": "Two good people, wrong timing, different directions. Letting go can be the last loving thing you do. Warm, not bitter.",
+  "status": "todo"
+ },
+ {
+  "id": 6,
+  "format": "short",
+  "theme": "Existential",
+  "hook": "What if today was your last ordinary day?",
+  "angle": "Ordinary days are the ones we can't remember and would give anything for later. Notice this one.",
+  "status": "todo"
+ },
+ {
+  "id": 9,
+  "format": "long",
+  "theme": "Nostalgia",
+  "hook": "The friends you lost without a fight.",
+  "angle": "No argument, no goodbye, just fewer messages until there were none. Some friendships were meant for one season, and that is still beautiful.",
+  "status": "todo"
+ },
+ {
+  "id": 8,
+  "format": "short",
+  "theme": "Animals",
+  "hook": "Your dog has an entire world, and it's you.",
+  "angle": "You are a part of their day; you are all of theirs. The waiting by the door, the joy every single time.",
+  "status": "todo"
+ },
+ {
+  "id": 11,
+  "format": "long",
+  "theme": "Aging",
+  "hook": "One day, you'll be the old one in the photo.",
+  "angle": "Family photos across the years: the kids grow, the elders fade from the frame, and one day the center of the photo is you. Make memories worth being in.",
+  "status": "todo"
+ },
+ {
+  "id": 12,
+  "format": "short",
+  "theme": "Moral dilemma",
+  "hook": "Would you trade your memories for ten million dollars?",
+  "angle": "All of them: first love, your mother's laugh, the bad days that made you. Ask the viewer to answer in the comments.",
+  "status": "todo"
+ },
+ {
+  "id": 13,
+  "format": "long",
+  "theme": "Loneliness",
+  "hook": "Being surrounded by people and still feeling alone.",
+  "angle": "Laughing at the table and feeling far away. It is more common than anyone admits. Turn: the one person you can be honest with; reach out. Gentle, hopeful, no clinical claims.",
+  "status": "todo"
+ },
+ {
+  "id": 14,
+  "format": "short",
+  "theme": "Psychology",
+  "hook": "Why the past always looks better than it was.",
+  "angle": "Memory keeps the warm parts and quietly drops the rest. Maybe today will look golden too, someday.",
+  "status": "todo"
+ },
+ {
+  "id": 17,
+  "format": "long",
+  "theme": "Animals",
+  "hook": "What your old dog would tell you if he could.",
+  "angle": "Told from the dog's point of view: the walks, the waiting, why the grey muzzle doesn't matter, thank you for choosing me.",
+  "status": "todo"
+ },
+ {
+  "id": 16,
+  "format": "short",
+  "theme": "Existential",
+  "hook": "You've already lived some of your best days.",
+  "angle": "You just didn't know it then. That means the next ones could be happening right now.",
+  "status": "todo"
+ },
+ {
+  "id": 19,
+  "format": "long",
+  "theme": "Moral dilemma",
+  "hook": "If you could relive one day, which one would it be?",
+  "angle": "Not the biggest day. Probably a small one: a kitchen, a summer evening, a voice. Ask the viewer for theirs in the comments.",
+  "status": "todo"
+ },
+ {
+  "id": 18,
+  "format": "short",
+  "theme": "Relationships",
+  "hook": "The 'I love you' you never said.",
+  "angle": "Pride, timing, assuming there would be another chance. Say it today while they can hear it.",
+  "status": "todo"
+ },
+ {
+  "id": 21,
+  "format": "long",
+  "theme": "Psychology",
+  "hook": "Why we remember embarrassing moments forever.",
+  "angle": "Strong feelings make memories stick, and we replay them; everyone else forgot long ago. Be kind to the younger you. General, no clinical claims.",
+  "status": "todo"
+ },
+ {
+  "id": 20,
+  "format": "short",
+  "theme": "Nostalgia",
+  "hook": "Someone used to call you in for dinner.",
+  "angle": "The voice from the porch at dusk. One day it stopped, and you never noticed the last time.",
+  "status": "todo"
+ },
+ {
+  "id": 23,
+  "format": "long",
+  "theme": "Story",
+  "hook": "She kept his voicemail for ten years.",
+  "angle": "Fictional story, told as a story: a saved voicemail, a phone she never upgraded, the day she lets it play one last time and finally smiles. No real names, no claim it happened.",
+  "status": "todo"
+ },
+ {
+  "id": 22,
+  "format": "short",
+  "theme": "Aging parents",
+  "hook": "Your parents were once young and scared too.",
+  "angle": "They became parents without a manual, figuring it out one night at a time, just like you are now.",
+  "status": "todo"
+ },
+ {
+  "id": 25,
+  "format": "long",
+  "theme": "Existential",
+  "hook": "Life is just a few dozen summers.",
+  "angle": "Count them: if you are 30, you might have around 50 left. Not to scare, but to choose how to spend the next one. Keep numbers framed as rough.",
+  "status": "todo"
+ },
+ {
+  "id": 24,
+  "format": "short",
+  "theme": "Loneliness",
+  "hook": "The quiet after everyone leaves.",
+  "angle": "After the party, the holiday, the visit: plates in the sink, and a silence that says it mattered.",
+  "status": "todo"
+ },
+ {
+  "id": 27,
+  "format": "long",
+  "theme": "Relationships",
+  "hook": "The people who stayed when you were hard to love.",
+  "angle": "The ones who sat through the silence, the bad moods, the cancelled plans. Tell them you noticed.",
+  "status": "todo"
+ },
+ {
+  "id": 28,
+  "format": "short",
+  "theme": "Animals",
+  "hook": "They wait by the door every single day.",
+  "angle": "Every day, as if it were the first time you came home. Be the person your pet thinks you are.",
+  "status": "todo"
+ },
+ {
+  "id": 29,
+  "format": "long",
+  "theme": "Nostalgia",
+  "hook": "The last day of summer when you were a kid.",
+  "angle": "Sunburn, bikes, the smell of the evening, the feeling the world was endless. You didn't know summers would get shorter.",
+  "status": "todo"
+ },
+ {
+  "id": 30,
+  "format": "short",
+  "theme": "Moral dilemma",
+  "hook": "Would you want to know the day you'll die?",
+  "angle": "Would it change how you live tomorrow? Then why wait? Calm, reflective, not morbid. Ask for answers in the comments.",
+  "status": "todo"
+ },
+ {
+  "id": 5,
+  "format": "long",
+  "theme": "Story",
+  "hook": "He wrote her a letter every year. He never sent one.",
+  "angle": "A short fictional story told as a story ('This is a story about...'): an old man, a box of letters, one he finally sends. No real names, no claim it happened.",
+  "status": "todo"
+ },
+ {
+  "id": 2,
+  "format": "short",
+  "theme": "Nostalgia",
+  "hook": "Your childhood bedroom doesn't exist anymore.",
+  "angle": "The posters, the night light, the view from the window: repainted, sold, given away. But you could still walk it in the dark.",
+  "status": "todo"
+ }
 ]

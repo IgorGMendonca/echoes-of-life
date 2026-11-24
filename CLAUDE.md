@@ -93,6 +93,8 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
   advice, no statistics you cannot source.
 - Stay away from suicide, self-harm, abuse, eating disorders, politics and real tragedies.
   Loneliness and loss themes always turn toward connection and hope.
+- Many viewers are teenagers. Motivation stays healthy: no shaming, no pressure about money,
+  looks or bodies, no diet or appearance content, and never frame being "behind" as failure.
 - Every post is labelled AI-generated (synthetic voice).
 
 ## Errors

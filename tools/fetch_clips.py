@@ -4,7 +4,7 @@ Usage: python3 fetch_clips.py videos/<slug>
 Each scenes.json entry needs "pixabay_id"; "file" is set to videos/<slug>/footage/clips/scene_N.mp4.
 Prefers the 4K/large rendition, falls back to medium.
 """
-import json, os, sys, urllib.request
+import json, os, subprocess, sys, urllib.request
 
 proj = sys.argv[1]
 key = os.environ["PIXABAY_KEY"]
@@ -25,14 +25,18 @@ for i, sc in enumerate(scenes):
     hit = json.load(get(f"https://pixabay.com/api/videos/?key={key}&id={sc['pixabay_id']}"))["hits"][0]
     v = hit["videos"]
     url = v["large"]["url"] or v["medium"]["url"]
-    sc["width"], sc["height"] = (v["large"]["width"], v["large"]["height"]) if v["large"]["url"] else \
-        (v["medium"]["width"], v["medium"]["height"])
-    sc.setdefault("vertical", sc["height"] > sc["width"])
     tmp = out + ".part"
     with get(url) as r, open(tmp, "wb") as f:
         while chunk := r.read(1 << 20):
             f.write(chunk)
     os.replace(tmp, out)
-    print(i, sc["pixabay_id"], f"{sc['width']}x{sc['height']}", os.path.getsize(out) // 1_000_000, "MB")
+    print(i, sc["pixabay_id"], os.path.getsize(out) // 1_000_000, "MB")
 
+# record the real size from the file (the API sometimes reports 0x0)
+for sc in scenes:
+    w, h = map(int, subprocess.check_output(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height",
+         "-of", "csv=p=0:s=x", sc["file"]]).decode().strip().split("x")[:2])
+    sc["width"], sc["height"] = w, h
+    sc.setdefault("vertical", h > w)
 json.dump(scenes, open(path, "w"), indent=1)

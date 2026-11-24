@@ -154,7 +154,7 @@ hook = lines[hook_line]
 hw = [w for w in words if w["line"] == hook_line]
 split = len(hw) // 2 + (1 if len(hw) % 2 else 0)
 hook_text = " ".join(w["w"] for w in hw[:split]) + "\\N" + " ".join(w["w"] for w in hw[split:])
-ass.append(f"Dialogue: 2,{ts(0.25)},{ts(cuts[1] + 0.2)},Hook,,0,0,0,,{{\\pos({W//2},{int(H*0.42)})\\fad(450,350)\\blur9}}{hook_text}")
+ass.append(f"Dialogue: 2,{ts(0.25)},{ts(cuts[1] + 0.2)},Hook,,0,0,0,,{{\\pos({W//2},{int(H*0.34)})\\fad(450,350)\\blur9}}{hook_text}")
 
 # small wordmark during the film part
 ass.append(f"Dialogue: 0,{ts(0.4)},{ts(cuts[-1])},Brand,,0,0,0,,{{\\fad(600,400)}}ECHOES OF LIFE")

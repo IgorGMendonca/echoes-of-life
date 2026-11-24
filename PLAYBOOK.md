@@ -6,8 +6,16 @@ metrics; the "Starting rules" stay until the numbers say otherwise.
 ## Identity
 
 - Name: Echoes of Life. Tagline: "Stories that make you feel. Thoughts that stay with you."
-- Language: English. Audience: international, the US first.
-- Tone: calm, warm, bittersweet, never preachy, never morbid. Every video ends on something the viewer can do or feel today.
+- Language: English. Audience: international, the US first; many viewers are teenagers and young adults.
+- Two pillars:
+  1. **Time & potential (main, about two thirds of the videos):** for young people who feel late or behind.
+     The message is "you are not late, and you can do more than you think: start small, today".
+     Empowering and concrete, never shaming, never hustle-toxic (sleep, rest and bad days are allowed),
+     no comparisons with real named people, no invented statistics or "he was 22 when..." stories.
+     Footage: students at night, sunrise runs, notebooks, trains and roads, city lights, clocks.
+     Hashtags draw from #motivation #selfimprovement #growthmindset #studymotivation #discipline.
+  2. **Bittersweet reflections:** nostalgia, family, love, loneliness, small moral questions.
+- Tone: calm, warm, never preachy, never morbid. Every video ends on something the viewer can do or feel today.
 - Look: cinematic stock footage, warm desaturated grade, grain, slow push-ins, serif hook title, word-timed captions, echo-rings end card.
 
 ## Starting rules (hypotheses, not yet proven)

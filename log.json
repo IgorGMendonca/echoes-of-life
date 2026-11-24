@@ -2,16 +2,56 @@
  {
   "slug": "v001",
   "post_date": "2026-11-24",
-  "slot": "21:00",
+  "slot": "10:31",
   "format": "short",
   "theme": "Nostalgia",
   "hook": "You didn't know it was the last time.",
   "caption": "You never get a warning before the last time. Who would you call today? 🤍",
   "duration": 41.07,
   "upload_file": "echoes_v001_the_last_time.mp4",
-  "pixabay_ids": [364922, 304230, 186249, 172667, 11722, 55903, 349321, 245681],
+  "pixabay_ids": [
+   364922,
+   304230,
+   186249,
+   172667,
+   11722,
+   55903,
+   349321,
+   245681
+  ],
   "music_seed": 7,
   "voice": "Brian / eleven_multilingual_v2 / speed 0.9",
   "credits": 469
+ },
+ {
+  "slug": "v002",
+  "post_date": "2026-11-24",
+  "slot": "21:00",
+  "format": "long",
+  "theme": "Aging parents",
+  "hook": "Your parents are getting older.",
+  "caption": "The roles switch so quietly you almost miss it. When did you last call them just to talk? 🤍",
+  "duration": 71.6,
+  "upload_file": "echoes_v002_your_parents_are_getting_older.mp4",
+  "pixabay_ids": [
+   127943,
+   153991,
+   167295,
+   1261,
+   387765,
+   359755,
+   312087,
+   229069,
+   736,
+   35277,
+   39292,
+   379488,
+   6096,
+   86866,
+   385747
+  ],
+  "music_seed": 26,
+  "voice": "Brian / eleven_multilingual_v2 / speed 0.9",
+  "credits": 894
  }
 ]
