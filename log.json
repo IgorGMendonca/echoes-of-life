@@ -53,5 +53,23 @@
   "music_seed": 26,
   "voice": "Brian / eleven_multilingual_v2 / speed 0.9",
   "credits": 894
+ },
+ {
+  "slug": "v003",
+  "post_date": "2026-11-24",
+  "slot": "18:00",
+  "format": "ambient",
+  "theme": "City at blue hour",
+  "hook": "someday you'll miss this exact evening",
+  "caption": "Which city would you watch this from? 🌆",
+  "duration": 8.2,
+  "upload_file": "echoes_v003_city_blue_hour.mp4",
+  "pixabay_ids": [
+   191518,
+   248417
+  ],
+  "music_seed": 39,
+  "voice": null,
+  "credits": 0
  }
 ]

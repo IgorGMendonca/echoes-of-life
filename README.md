@@ -16,7 +16,7 @@ search query, the voice, and the post caption and hashtags.
 | 1. Voice | `python3 tools/tts.py videos/<slug>` | `audio/line_XX.mp3` + character timestamps (ElevenLabs) |
 | 2. Footage candidates | `python3 tools/footage_candidates.py videos/<slug> 4` | contact sheets `footage/sheet_XX.jpg` (Pixabay) |
 | 3. Pick clips | write `footage/scenes.json` (pixabay_id, start, crop, zoom), then `python3 tools/fetch_clips.py videos/<slug>` | `footage/clips/scene_N.mp4` |
-| 4. Timeline + captions | `python3 tools/timeline.py videos/<slug>` | `timeline.json`, `captions.ass`, `audio/voice.wav` |
+| 4. Timeline + captions | `python3 tools/timeline.py videos/<slug>` (ambient videos: `tools/ambient.py`) | `timeline.json`, `captions.ass`, `audio/voice.wav` |
 | 5. Music | `python3 tools/music.py videos/<slug>/audio/music.wav <seconds> <seed> <swell_at>` | original piano + strings bed |
 | 6. Review stills | `python3 tools/render.py videos/<slug> frames 1.8 7 16 30 39.8` | `review/frame_*.jpg` |
 | 7. Render | `python3 tools/render.py videos/<slug> full` | `render/<slug>.mp4` |

@@ -1,0 +1,26 @@
+[
+ {
+  "pixabay_id": 191518,
+  "src_start": 1.0,
+  "fx": 0.43,
+  "zoom": 0.04,
+  "dur": 4.0,
+  "file": "videos/v003/footage/clips/scene_0.mp4",
+  "width": 3240,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 248417,
+  "src_start": 1.0,
+  "fx": 0.5,
+  "zoom": 0.04,
+  "dur": 4.2,
+  "zoom_out": true,
+  "file": "videos/v003/footage/clips/scene_1.mp4",
+  "width": 1080,
+  "height": 1920,
+  "vertical": true,
+  "eq": "eq=brightness=0.05:gamma=1.12"
+ }
+]

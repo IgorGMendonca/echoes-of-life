@@ -17,6 +17,8 @@ W, H, FPS, XF = 1080, 1920, 30, 0.5
 tl = json.load(open(os.path.join(proj, "timeline.json")))
 scenes = json.load(open(os.path.join(proj, "footage", "scenes.json")))
 cuts, total = tl["cuts"], tl["total"]
+HAS_END = tl.get("endcard", True)      # ambient videos end on footage, no end card
+XF = tl.get("xfade", XF)
 ass = os.path.abspath(os.path.join(proj, "captions.ass"))
 
 GRADE = ("eq=contrast=1.06:saturation=0.82:brightness=-0.035:gamma=0.97,"
@@ -26,7 +28,7 @@ GRAIN = "noise=alls=5:allf=t"
 
 def seg_bounds(i):
     """Start/end of segment i in output time, including crossfade overlap."""
-    n = len(cuts)          # film scenes are 0..n-2, end card is n-1
+    n = len(cuts)          # film scenes are 0..n-2, end card is n-1 (all film when HAS_END is false)
     start = cuts[i] - (XF / 2 if i > 0 else 0)
     end = (cuts[i + 1] + XF / 2) if i + 1 < n else total
     return start, end
@@ -69,7 +71,7 @@ if mode == "frames":
     for t in map(float, sys.argv[3:]):
         i = max(k for k in range(len(cuts)) if cuts[k] <= t)
         out = os.path.join(proj, "review", f"frame_{t:05.1f}.jpg")
-        if i == len(cuts) - 1:
+        if HAS_END and i == len(cuts) - 1:
             inp = ["-loop", "1", "-i", ENDCARD]
             chain = f"scale={W}:{H},setsar=1,format=yuv420p"
         else:
@@ -89,7 +91,7 @@ n = len(cuts)
 for i in range(n):
     s0, s1 = seg_bounds(i)
     L = round(s1 - s0, 3)
-    if i == n - 1:
+    if HAS_END and i == n - 1:
         inputs += ["-i", ENDCARD]
         parts.append(f"[{i}:v]{endcard_chain(L)}[s{i}]")
     else:

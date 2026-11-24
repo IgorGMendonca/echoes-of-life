@@ -11,7 +11,6 @@ slug = os.path.basename(os.path.abspath(proj))
 master = os.path.join(proj, "render", f"{slug}.mp4")
 out = os.path.join(proj, "render", f"{name}.mp4")
 script = json.load(open(os.path.join(proj, "script.json")))
-tl = json.load(open(os.path.join(proj, "timeline.json")))
 
 tmp = out.replace(".mp4", ".part.mp4")
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", master, "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
@@ -52,7 +51,8 @@ checks = {
     "audio 48 kHz": a["sample_rate"] == "48000",
     "loudness -15..-13 LUFS": -15 <= lufs <= -13,
     "true peak <= -0.9 dBFS": peak <= -0.9,
-    "duration fits format": (61.5 <= dur <= 80) if fmt == "long" else (30 <= dur <= 50),
+    "duration fits format": {"long": 61.5 <= dur <= 80, "short": 30 <= dur <= 50,
+                             "ambient": 6 <= dur <= 15}[fmt],
 }
 report = {"file": out, "duration": round(dur, 2), "lufs": lufs, "peak": peak,
           "size_mb": round(int(probe["format"]["size"]) / 1e6, 1), "checks": checks}

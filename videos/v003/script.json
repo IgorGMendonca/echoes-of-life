@@ -1,0 +1,35 @@
+{
+  "slug": "v003",
+  "format": "ambient",
+  "theme": "City at blue hour",
+  "text": {
+    "line": "someday you'll miss\nthis exact evening",
+    "from": 0.6,
+    "to": 6.6,
+    "y": 0.26
+  },
+  "lines": [
+    {
+      "text": "",
+      "query": "city skyline dusk",
+      "alt": "city night skyline"
+    },
+    {
+      "text": "",
+      "query": "bridge traffic night",
+      "alt": "city street evening"
+    }
+  ],
+  "post": {
+    "caption": "Which city would you watch this from? 🌆",
+    "hashtags": [
+      "#citylights",
+      "#nightvibes",
+      "#aesthetic",
+      "#cityview",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "What song would you play here? 🎧",
+    "ai_label": false
+  }
+}

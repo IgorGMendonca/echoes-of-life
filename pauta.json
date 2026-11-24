@@ -335,5 +335,117 @@
   "hook": "Your childhood bedroom doesn't exist anymore.",
   "angle": "The posters, the night light, the view from the window: repainted, sold, given away. But you could still walk it in the dark.",
   "status": "todo"
+ },
+ {
+  "id": 43,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "City at blue hour, river and lights",
+  "text": "the city never sleeps,\nbut you're allowed to",
+  "status": "todo"
+ },
+ {
+  "id": 44,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Rain on a window at night, warm lamp inside",
+  "text": "rest is not\nfalling behind",
+  "status": "todo"
+ },
+ {
+  "id": 45,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Train window, fields at sunset",
+  "text": "you're not late.\nyou're on your way",
+  "status": "todo"
+ },
+ {
+  "id": 46,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Ocean waves at golden hour",
+  "text": "some days are just\nfor breathing",
+  "status": "todo"
+ },
+ {
+  "id": 47,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Snowy street with warm lights",
+  "text": "slow down.\nthis is the part you'll miss",
+  "status": "todo"
+ },
+ {
+  "id": 48,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Night highway with light trails",
+  "text": null,
+  "status": "todo"
+ },
+ {
+  "id": 49,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Mountain lake with morning fog",
+  "text": "quiet mornings\nbuild loud futures",
+  "status": "todo"
+ },
+ {
+  "id": 50,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Cherry blossoms falling in a park",
+  "text": null,
+  "status": "todo"
+ },
+ {
+  "id": 51,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Rooftop view over city lights at night",
+  "text": "one day this will be\na memory you smile at",
+  "status": "todo"
+ },
+ {
+  "id": 52,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Empty beach at sunrise",
+  "text": null,
+  "status": "todo"
+ },
+ {
+  "id": 53,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Autumn leaves on a park path",
+  "text": "everything changes.\nso can you",
+  "status": "todo"
+ },
+ {
+  "id": 54,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Neon street in the rain",
+  "text": null,
+  "status": "todo"
+ },
+ {
+  "id": 55,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Sunset clouds from a plane window",
+  "text": "the view gets better\nthe higher you go",
+  "status": "todo"
+ },
+ {
+  "id": 56,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Small town street at dusk, lights turning on",
+  "text": null,
+  "status": "todo"
  }
 ]

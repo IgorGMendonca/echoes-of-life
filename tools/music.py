@@ -9,7 +9,7 @@ import mido
 
 out, seconds = sys.argv[1], float(sys.argv[2])
 seed = int(sys.argv[3]) if len(sys.argv) > 3 else 1
-swell_at = float(sys.argv[4]) if len(sys.argv) > 4 else seconds * 0.78
+swell_at = float(sys.argv[4]) if len(sys.argv) > 4 else max(seconds, 24.0) * 0.78
 rng = random.Random(seed)
 SF2 = "/usr/share/sounds/sf2/FluidR3_GM.sf2"
 
@@ -27,10 +27,12 @@ base = rng.choice(PROGRESSIONS)
 key = rng.choice([0, 2, 5, 7, -3])          # C, D, F, G, A-flat-ish range
 # keep the tempo slow but natural (62-72 bpm) whatever the length: repeat the progression
 target_bpm = rng.uniform(62, 72)
-bars = max(8, round(seconds / (240 / target_bpm) + 0.25))
+# very short pieces (ambient clips) are composed at 24 s and cut, so the tempo stays natural
+compose = max(seconds, 24.0)
+bars = max(8, round(compose / (240 / target_bpm) + 0.25))
 body = base[:-1]
 prog = [body[k % len(body)] for k in range(bars - 1)] + ["I"]
-bar_sec = seconds / (bars - 0.25)            # last chord rings to the end
+bar_sec = compose / (bars - 0.25)            # last chord rings to the end
 bpm = 240 / bar_sec
 tpb = 480
 mid = mido.MidiFile(ticks_per_beat=tpb)
@@ -133,7 +135,7 @@ subprocess.run(["fluidsynth", "-ni", "-q", "-g", "0.7", "-r", "48000",
                 "-o", "synth.reverb.room-size=0.85", "-o", "synth.reverb.level=0.8",
                 "-o", "synth.reverb.width=1.0", "-o", "synth.reverb.damp=0.4",
                 "-F", raw, SF2, midi_path], check=True)
-fade_out = 2.2
+fade_out = min(2.2, seconds * 0.25)
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", raw, "-af",
                 f"highpass=f=55,lowpass=f=5200,aecho=0.85:0.6:70|140:0.22|0.12,"
                 f"atrim=0:{seconds},afade=t=in:d=1.2,afade=t=out:st={seconds - fade_out}:d={fade_out},"

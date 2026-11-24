@@ -22,9 +22,10 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
 1. **Pick the date.** Get the current date and time in America/Sao_Paulo. Candidates, in order:
    today (only if it is before 11:00, so the 14:00 slot is still reachable), tomorrow, the day
    after. Take the first candidate that has no video in `log.json`. If all are covered, send Igor
-   one short line and stop. Produce two videos for that date: the next `todo` idea with `"format": "short"`
-   (posting slot 14:00) and the next `todo` with `"format": "long"` (slot 21:00), in list order.
-2. **Number them.** Slugs continue from the highest in `log.json`: `v002`, `v003`, ...
+   one short line and stop. Produce three videos for that date, each from the next `todo` idea
+   of its format in list order: `"short"` (posting slot 14:00), `"ambient"` (18:00) and `"long"`
+   (21:00). Ambient videos follow "Ambient video" below instead of step 3.
+2. **Number them.** Slugs continue from the highest in `log.json` (`v004`, `v005`, ...), in the order short, ambient, long.
    Upload name: `echoes_<slug>_<3-5 word kebab of the hook>`.
 3. **For each video** (short first):
    1. Write `videos/<slug>/script.json` in the shape of `videos/v001/script.json`, adding
@@ -59,13 +60,29 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
    8. `python3 tools/render.py videos/<slug> full` (one full render per video).
    9. `python3 tools/finish.py videos/<slug> <upload name>` must exit 0; it makes the upload
       copy and `post.txt` and checks size, fps, −14 LUFS, true peak and duration.
-4. **Deliver.** Send both upload files with SendUserFile (status `proactive`), then one
+   **Ambient video** (no narration, no ElevenLabs credits):
+   1. Write `videos/<slug>/script.json` in the shape of `videos/v003/script.json`: the idea's
+      `setting` becomes `theme`; its `text` (if any) becomes `"text": {"line", "from", "to", "y"}`;
+      one entry in `lines` per shot with an empty `text` and a footage `query`/`alt`; the post
+      fields as in PLAYBOOK.md "Ambient videos" (`ai_label` only if the footage looks AI-made).
+   2. `python3 tools/footage_candidates.py videos/<slug> 6`, Read the sheets and pick two shots
+      (sometimes three) that feel like one place and time from different angles: 4K or vertical,
+      cinematic, nothing used in the last 20 videos, no text, logos or people facing the camera.
+   3. Write `footage/scenes.json` (shape of `videos/v003/footage/scenes.json`) with `"dur"` per
+      shot so the total is 7–9 s, then `python3 tools/fetch_clips.py videos/<slug>` and
+      `python3 tools/ambient.py videos/<slug>`.
+   4. `python3 tools/music.py videos/<slug>/audio/music.wav <total> <seed>`.
+   5. Review stills at 1.0, the cut and the end (`render.py ... frames`), keep the text clear of
+      the subject (`text.y`), brighten dark night shots with `eq` if needed; then
+      `render.py ... full` and `finish.py videos/<slug> <upload name>` (must exit 0).
+4. **Deliver.** Send the three upload files with SendUserFile (status `proactive`), then one
    SendUserMessage in Portuguese with, for each video: the date and time to post, the caption
    and hashtags in a code block ready to paste, the pinned comment in its own code block (post it
-   as the first comment and pin it), and the reminder to turn on "Conteúdo gerado por IA". Keep
-   it short.
-5. **Record.** Set the two ideas in `pauta.json` to `"status": "done", "slug": "<slug>"`, append
-   both to `log.json` (same fields as v001), commit only scripts, scenes and the json files
+   as the first comment and pin it), and the reminder to turn on "Conteúdo gerado por IA" when
+   `ai_label` is true. For the ambient video, remind him to add a calm sung song from the TikTok
+   library in the app and set the original sound to 0%. Keep it short.
+5. **Record.** Set the three ideas in `pauta.json` to `"status": "done", "slug": "<slug>"`, append
+   all three to `log.json` (same fields as v001), commit only scripts, scenes and the json files
    (media is git-ignored) with a message like `Add v002, v003 for 2026-11-25`, and push to `main`.
 
 ## Weekly analysis (Mondays)
@@ -81,7 +98,8 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
    conclusion only from 3+ videos per group, and mark it tentative until there are two weeks of
    data. Change a starting rule only when two weeks of data contradict it.
 4. Reorder the `todo` ideas in `pauta.json` toward what works and add new original ideas so at
-   least 14 remain, alternating long and short.
+   least 14 short/long ideas (alternating) and 7 ambient ideas remain. Compare ambient videos with
+   and without the text line, and by setting (city, rain, sea, nature…).
 5. If more than half the views come from Brazil, say so: the channel is aimed at the US.
 6. Commit and push, then send Igor a short Portuguese summary: the key numbers, what worked,
    what changes this week, anything he should do.
@@ -98,14 +116,16 @@ from the metrics. `pauta.json` is the idea backlog, `log.json` records every vid
   Loneliness and loss themes always turn toward connection and hope.
 - Many viewers are teenagers. Motivation stays healthy: no shaming, no pressure about money,
   looks or bodies, no diet or appearance content, and never frame being "behind" as failure.
-- Every post is labelled AI-generated (synthetic voice).
+- Every narrated post is labelled AI-generated (synthetic voice); ambient posts only when the
+  footage itself is AI-generated.
 
 ## Errors
 
 - Retry a failing step once. If it fails again, finish the other video if you can, deliver it,
   and tell Igor in Portuguese what failed and what he can do.
-- ElevenLabs `quota_exceeded`, `payment_required` or similar: stop, tell Igor the voice credits
-  ran out (the free plan has 10,000 credits a month; a short video uses about 500, a long one
-  about 900), and do not deliver videos without narration.
+- ElevenLabs `quota_exceeded`, `payment_required` or similar: tell Igor the voice credits ran
+  out (the free plan has 10,000 credits a month; a short video uses about 500, a long one about
+  900) and do not deliver narrated videos without narration. Still make and deliver the ambient
+  video, which needs no credits.
 - Never weaken the checks in `tools/finish.py` to make a video pass.
 - Commit messages end with `Co-Authored-By: Claude <noreply@anthropic.com>`.
