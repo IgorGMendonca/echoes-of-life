@@ -23,9 +23,13 @@ PROGRESSIONS = [
     ["vi", "IV", "I", "V", "vi", "IV", "I/3", "Vsus", "IV", "iii", "IV", "I"],
     ["I", "iii", "vi", "IV", "I", "iii", "IV", "Vsus", "vi", "IV", "ii", "I"],
 ]
-prog = rng.choice(PROGRESSIONS)
+base = rng.choice(PROGRESSIONS)
 key = rng.choice([0, 2, 5, 7, -3])          # C, D, F, G, A-flat-ish range
-bars = len(prog)
+# keep the tempo slow but natural (62-72 bpm) whatever the length: repeat the progression
+target_bpm = rng.uniform(62, 72)
+bars = max(8, round(seconds / (240 / target_bpm) + 0.25))
+body = base[:-1]
+prog = [body[k % len(body)] for k in range(bars - 1)] + ["I"]
 bar_sec = seconds / (bars - 0.25)            # last chord rings to the end
 bpm = 240 / bar_sec
 tpb = 480

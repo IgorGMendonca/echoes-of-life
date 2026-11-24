@@ -1,0 +1,17 @@
+[
+ {
+  "slug": "v001",
+  "post_date": "2026-11-24",
+  "slot": "21:00",
+  "format": "short",
+  "theme": "Nostalgia",
+  "hook": "You didn't know it was the last time.",
+  "caption": "You never get a warning before the last time. Who would you call today? 🤍",
+  "duration": 41.07,
+  "upload_file": "echoes_v001_the_last_time.mp4",
+  "pixabay_ids": [364922, 304230, 186249, 172667, 11722, 55903, 349321, 245681],
+  "music_seed": 7,
+  "voice": "Brian / eleven_multilingual_v2 / speed 0.9",
+  "credits": 469
+ }
+]
