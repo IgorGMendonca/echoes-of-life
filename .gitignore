@@ -5,7 +5,7 @@
 *.m4a
 *.mid
 videos/*/footage/clips/
-videos/*/footage/sheet_*.jpg
+videos/*/footage/*.jpg
 videos/*/footage/candidates.json
 videos/*/review/
 videos/*/render/
