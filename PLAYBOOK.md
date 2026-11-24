@@ -40,6 +40,8 @@ A third daily video, posted at 18:00 Brasília, made to be watched to the end an
   a landmark with something meaningful beside it. Motion is real and natural, never sped up or
   timelapse (check a frame at two times a few seconds apart; if the sky changes fast, skip it).
 - Pick a source whose two halves are both worth looking at: the turn should reveal something.
+- People make it (Igor, 2026-11-24): prefer street-level scenes with life in them (people walking
+  past a lit landmark at blue hour) over empty landscapes. Example: v005, Tokyo Station.
 - Avoid shots dominated by billboards or brand logos (e.g. busy crossings full of ads).
 - Image quality matters (Igor, 2026-11-24): 4K sources only, no film grain (TikTok's re-encode
   turns it into blur), light sharpening and a high-bitrate upload copy. The tools do this by default.

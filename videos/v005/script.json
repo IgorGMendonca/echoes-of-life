@@ -1,25 +1,25 @@
 {
   "slug": "v005",
   "format": "ambient",
-  "theme": "Tokyo Gate Bridge at sunset, handheld turn to Mt. Fuji",
+  "theme": "Tokyo Station at blue hour, handheld turn to the main entrance",
   "text": null,
   "lines": [
     {
       "text": "",
-      "query": "tokyo gate bridge",
-      "alt": "tokyo bridge sunset"
+      "query": "tokyo station night",
+      "alt": "tokyo evening"
     }
   ],
   "post": {
-    "caption": "Tokyo at sunset, and Fuji watching over it 🗻",
+    "caption": "Blue hour in Tokyo. Where would you be going tonight? 🌃",
     "hashtags": [
       "#tokyo",
       "#japan",
-      "#mtfuji",
-      "#sunset",
+      "#bluehour",
+      "#citylights",
       "#echoesoflife"
     ],
-    "pinned_comment": "Which neighborhood would you walk first? 🌃",
+    "pinned_comment": "What song would you play here? 🎧",
     "ai_label": false
   }
 }

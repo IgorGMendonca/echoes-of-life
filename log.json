@@ -95,13 +95,13 @@
   "post_date": "2026-11-24",
   "slot": "extra",
   "format": "ambient",
-  "theme": "Tokyo Gate Bridge at sunset, handheld turn to Mt. Fuji",
+  "theme": "Tokyo Station at blue hour, handheld turn to the main entrance",
   "hook": null,
-  "caption": "Tokyo at sunset, and Fuji watching over it 🗻",
+  "caption": "Blue hour in Tokyo. Where would you be going tonight? 🌃",
   "duration": 8.2,
-  "upload_file": "echoes_v005_tokyo_bridge_fuji.mp4",
+  "upload_file": "echoes_v005_tokyo_station_blue_hour.mp4",
   "pixabay_ids": [
-   241122
+   246618
   ],
   "music_seed": 65,
   "voice": null,
