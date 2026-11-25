@@ -24,11 +24,15 @@ ass = os.path.abspath(os.path.join(proj, "captions.ass"))
 
 GRADE = ("eq=contrast=1.06:saturation=0.82:brightness=-0.035:gamma=0.97,"
          "colorbalance=rs=0.04:bs=-0.04:rm=0.02:bm=-0.02,vignette=angle=PI/4.6")
+# a script may set its own look and encoder quality: the muted grade above suits the essays, while
+# a city edit wants natural, vivid colour ("grade"), a lighter "sharpen" and a lower "crf"
+SCRIPT = json.load(open(os.path.join(proj, "script.json")))
+GRADE = SCRIPT.get("grade", GRADE)
 # film grain looks nice locally but TikTok's re-encode turns it into mush: none by default since
 # 2026-11-24 (a script can still ask for it with "grain")
 GRAIN_AMOUNT = tl.get("grain", 0)
 GRAIN = f"noise=alls={GRAIN_AMOUNT}:allf=t" if GRAIN_AMOUNT else "null"
-SHARPEN = "unsharp=5:5:0.45:5:5:0"
+SHARPEN = f"unsharp=5:5:{SCRIPT.get('sharpen', 0.45)}:5:5:0"
 
 
 def xf(k):
@@ -185,7 +189,7 @@ os.makedirs(os.path.dirname(out), exist_ok=True)
 tmp = out.replace(".mp4", ".part.mp4")
 cmd = ["ffmpeg", "-y", "-v", "error", "-nostats", *inputs, "-filter_complex", ";".join(parts),
        "-map", "[vout]", "-map", "[aout]", "-r", str(FPS),
-       "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-pix_fmt", "yuv420p", "-profile:v", "high",
+       "-c:v", "libx264", "-preset", SCRIPT.get("preset", "medium"), "-crf", str(SCRIPT.get("crf", 16)), "-pix_fmt", "yuv420p", "-profile:v", "high",
        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", tmp]
 subprocess.run(cmd, check=True)
 os.replace(tmp, out)

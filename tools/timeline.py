@@ -170,7 +170,7 @@ ass.append(f"Dialogue: 0,{ts(0.4)},{ts(cuts[-1])},Brand,,0,0,0,,{{\\fad(600,400)
 # end card text
 ec = cuts[-1]
 ass.append(f"Dialogue: 3,{ts(ec + 0.35)},{ts(total)},End,,0,0,0,,{{\\pos({W//2},{int(H*0.57)})\\fad(600,0)}}Echoes of Life")
-ass.append(f"Dialogue: 3,{ts(ec + 0.9)},{ts(total)},EndSub,,0,0,0,,{{\\pos({W//2},{int(H*0.63)})\\fad(600,0)}}{script.get('endcard', 'follow for more')}")
+ass.append(f"Dialogue: 3,{ts(ec + 0.9)},{ts(total)},EndSub,,0,0,0,,{{\\pos({W//2},{int(H*0.63)})\\fad(600,0)}}{script.get('endcard', 'siga para ver mais')}")
 open(os.path.join(proj, "captions.ass"), "w").write("\n".join(ass) + "\n")
 
 # 6. voice track: the take as it was read, or each separate clip placed at its start

@@ -6,7 +6,8 @@ metrics; the "Starting rules" stay until the numbers say otherwise.
 ## Identity
 
 - Name: Echoes of Life. Tagline: "Stories that make you feel. Thoughts that stay with you."
-- Language: English. Audience: international, the US first; many viewers are teenagers and young adults.
+- Language: Brazilian Portuguese since 2026-11-25 (Igor: TikTok was delivering the channel almost
+  only in Brazil); English before. Audience: Brazil; many viewers are teenagers and young adults.
 - Positioning (Igor's brief, 2026-11-24): "modern philosophy for a generation that feels lost":
   emotional storytelling, human psychology and modern Stoicism, filmed cinematically. Stoicism is a
   layer of depth under the feelings, never a lecture.
@@ -16,14 +17,15 @@ metrics; the "Starting rules" stay until the numbers say otherwise.
      Empowering and concrete, never shaming, never hustle-toxic (sleep, rest and bad days are allowed),
      no comparisons with real named people, no invented statistics or "he was 22 when..." stories.
      Footage: students at night, sunrise runs, notebooks, trains and roads, city lights, clocks.
-     Hashtags draw from #motivation #selfimprovement #growthmindset #studymotivation #discipline.
+     Hashtags draw from #motivacao #disciplina #desenvolvimentopessoal #autoconhecimento #estudos.
   2. **Bittersweet reflections:** nostalgia, family, love, loneliness, small moral questions.
 - Tone: calm, warm, never preachy, never morbid. Every video ends on something the viewer can do or feel today.
-- Look: real cinematic footage, warm desaturated grade, no grain, slow push-ins, serif hook title on the first frame, word-timed captions, echo-rings end card.
+- Look: real cinematic footage in 4K only (see "Image quality" in CLAUDE.md), warm desaturated grade, no grain, slow push-ins, serif hook title on the first frame, word-timed captions, echo-rings end card.
 
 ## Daily lineup (from 2026-11-25, Igor's decision after the v007 and v008 pilots)
 
-Four videos a day, posted in Brasília time (New York is 2 hours behind until March):
+Four videos a day, posted in Brasília time (the audience is in Brazil since 2026-11-25; the New
+York times below are kept only for reference):
 
 | Slot | Video | Why |
 |---|---|---|
@@ -39,7 +41,7 @@ compares them. The old 35–45 s narrated format is retired; its ideas are parke
 ## Starting rules (hypotheses, not yet proven)
 
 - Hook in the first 2 seconds, 9 words or fewer, shown as the title. It is a statement or a question that hits a universal memory.
-- Long videos: 70–85 s, 165–195 words, 14–19 lines, read in one take (v008: 181 words ran 77.7 s).
+- Long videos: 70–85 s, 150–180 words in Portuguese, 14–19 lines, read in one take (English v008: 181 words ran 77.7 s).
 - One scene per line; a cut every 3–6 s.
 - Specific images beat abstractions ("the porch light", "your mom's voice at dinner") .
 - End with a gentle call to act ("call them today") or a question for the comments.
@@ -56,11 +58,17 @@ compares them. The old 35–45 s narrated format is retired; its ideas are parke
   work; everything else is our paraphrase or interpretation, recorded as such in `script.json`.
   Stoicism here is perspective and calm: never bottled-up feelings, coldness, isolation, hustle
   or toughness. Psychology joins only with a credible source, said carefully.
-- **Story (21:00):** fiction and said to be ("This is a story about…"): one named character, one
+- **Story (21:00):** fiction and said to be ("Esta é uma história sobre…"): one named character, one
   specific moment, an emotional shift, a satisfying and hopeful ending. Half the stories serve the
   main pillar (feeling behind, starting late), half nostalgia. No real people, no tragedies.
 - **Look:** one real shot per line, light that moves from night blue (the heavy part) to warm
   daylight (the turn); the hook title on screen from the first frame; no film grain.
+- **Voice in Portuguese (2026-11-25):** Brian (`nPczCjzI2devNBz1zQrb`, eleven_multilingual_v2,
+  the settings in `tools/tts.py`) reads the Portuguese script, because the free plan's API refuses
+  the Voice Library, where the native Brazilian narrators are. If Igor upgrades (Starter or above),
+  cast with the `voice-direction` skill among calm, deep pt-BR narrators such as Leo Antonio
+  (`EbiSUflQjzm4g7S895SC`), Lucas, Deep & Profound (`GIuLCSVfgJaUuh7hYOY8`) and Victor Power
+  (`YNOujSUmHtgN6anjqXPf`), and write the chosen voice here.
 - **Voice (Igor, 2026-11-24):** the narration is read in one take, so the pauses are the voice's
   own. Separate takes joined by silence sounded like the audio stalling after every sentence.
 - **First second (from v011, 2026-11-25 early read):** the voice starts at 0.1 s (`"lead": 0.1` in
@@ -77,7 +85,7 @@ Modelled on the reference Igor sent (@tonito.rt, see "Pilots" below) and on v007
 - The whole line is on screen from the first frame to the last: 6–12 words, one per line, each
   with a period, lowercase, small warm-cream sans-serif, on a calm dark area of the frame (a soft
   shade when needed). Readable in one breath, so the loop does the rest.
-- The line is ours: a principle worth keeping, usually a Stoic idea in plain modern words
+- The line is ours: a principle worth keeping, usually a Stoic idea in plain modern Portuguese
   (dichotomy of control, the present moment, patience, judgments). Never a quote, never attributed.
 - Caption: the idea behind the line plus a question. Pinned comment: a second, lighter question.
 - Music-free export; 2–3 song picks per delivery.
@@ -101,35 +109,40 @@ kids playing, warm windows at dusk; v006 is the model.
 - Image quality matters (Igor, 2026-11-24): 4K sources only, no film grain (TikTok's re-encode
   turns it into blur), light sharpening and a high-bitrate upload copy. The tools do this by default.
 - Every one carries one short lowercase line in Playfair italic (10 words or fewer, shown after
-  the lift) that fits the mood ("rest is not falling behind", "someone rode next to you until you
-  didn't need them to."). Igor, 2026-11-25, after a no-text cut of v012: always the line on
+  the lift) that fits the mood; in Portuguese since 2026-11-25 ("ninguém olhava o relógio naquela
+  época."; earlier, in English: "rest is not falling behind"). Igor, 2026-11-25, after a no-text cut of v012: always the line on
   screen; pick a view with a calm area (sky, dark wall, water) that keeps it clear of the
   subject, and if the subject fills the frame, change the footage rather than drop the line.
 - Sound: the export is music-free (silent track). Igor adds a soft, sung, currently trending song
   from the TikTok library in the app; each delivery names 2–3 picks with a start point that puts a
   sung line or a beat on the camera lift.
-- Caption: a short question tied to the place ("Which city would you watch this from?"). Pinned
-  comment: a light prompt such as "What song would you play here? 🎧".
+- Caption: a short question tied to the place ("De qual cidade você assistiria isso?"). Pinned
+  comment: a light prompt such as "Que música você colocaria aqui? 🎧".
 - AI label only when the footage itself looks AI-generated (no synthetic voice in this format).
 
 ## Search and hashtags (TikTok SEO, from 2026-11-25)
 
 TikTok search reads the caption, the words on screen, the spoken words and the hashtags, and
 creators can now review the keywords TikTok attaches to each post. So every video gets one
-**search phrase**, written the way people type it ("feeling behind in life", "seneca on time",
-"stoicism for students", "childhood nostalgia"), and it appears naturally, never stuffed:
+**search phrase**, written the way people type it, in Portuguese since 2026-11-25 ("me sinto
+atrasado na vida", "sêneca sobre o tempo", "estoicismo para estudantes", "nostalgia da
+infância"), and it appears naturally, never stuffed:
 - on screen early (the hook title, or the stack when it fits),
 - in the first spoken line of a long video,
 - at the start of the caption's first line, then the line that adds something, then the question.
 
 Hashtags: 4–5, in this order: one broad community tag, two or three that name the topic, and
 #echoesoflife last. Never #fyp, #foryou or #viral: they say nothing about the video.
-Starting sets (the weekly analysis rotates them):
-- One-shot (feeling behind): #stoicism #feelingbehind #mindset #selfimprovement #echoesoflife
-- Philosophy essay: #stoicism #<the philosopher: seneca, marcusaurelius, epictetus> #philosophy #feelingbehind #echoesoflife
-- Nostalgia edit: #nostalgia #childhoodmemories #growingup #<season: autumn, winter, christmas> #echoesoflife
-- Story: #shortstory #<theme: nostalgia or feelingbehind> #deepthoughts #emotional #echoesoflife
-  (never #storytime: our stories are fiction)
+Starting sets in Portuguese (2026-11-25; written without accents, the form most posts use, e.g.
+#reflexao and #motivacao; the weekly analysis rotates them):
+- One-shot (feeling behind): #estoicismo #reflexao #motivacao #desenvolvimentopessoal #echoesoflife
+- Philosophy essay: #estoicismo #<the philosopher: seneca, marcoaurelio, epicteto> #filosofia #reflexao #echoesoflife
+- Nostalgia edit: #nostalgia #infancia #saudade #<period or season: anos2000, natal, ferias> #echoesoflife
+- Story: #conto #reflexao #<theme: nostalgia or motivacao> #emocionante #echoesoflife
+  (#conto says fiction; never #storytime or #historiareal: our stories are invented)
+- City edit: #<city> #<country> #viagem #<region: europa, asia> #echoesoflife
+English sets used before the switch: #stoicism #feelingbehind #mindset #selfimprovement;
+#nostalgia #childhoodmemories #growingup; #shortstory #deepthoughts #emotional.
 
 After posting, Igor opens the video's three dots → "Manage keywords", blocks anything off-topic
 and suggests the search phrase plus two related keywords; every delivery lists them.
@@ -148,13 +161,32 @@ Rotate the kind across the week and let the metrics decide which works.
 - **Pinned comment:** Igor posts it as the first comment and pins it. It is a second, more
   playful question than the caption ("What's the story your parents always tell twice? 👇"),
   never a fake personal memory written as if it were Igor's.
-- The end card shows the save/share line or "follow for more"; only one call to action per video.
+- The end card shows the save/share line ("salva pra quando você precisar", "manda pra quem
+  precisa ouvir isso hoje") or "siga para ver mais"; only one call to action per video.
 - Never: "like if you agree", "comment YES", "type 1 for…", follow-for-follow, like-for-like,
   fake "part 2" promises, false urgency, or asking for age, school, location or other personal
   information (many viewers are teenagers). TikTok treats fake engagement as ineligible for the
   For You feed, and forced asks also feel cheap.
 - Keep the mood mostly hopeful: a channel of only sad videos risks being shown less, and the
   endings should leave people lighter than they arrived.
+
+## City edits (extras on request, from 2026-11-25)
+
+Igor asked for short city videos besides the lineup: v014 (China at night, 13.7 s) and v015
+(Venice, 7.4 s). His direction for v015: "é interessante que a música contraste com a cidade
+escolhida, como no exemplo que mandei. Mantenha a qualidade do vídeo alta [...] Uns 7-8seg de
+vídeo impactantes". His example was a Tokyo-at-night montage (13.7 s, 10 shots, heavy electronic
+track with a drop near 4 s and cuts on the beat after it).
+- 7–8 s, 4–6 real 4K shots, the strongest first (an aerial or the city's best-known view), cuts
+  every 1.2–1.5 s with near-hard transitions (`"xfade"` 0.05), the city's name on screen at the
+  start over a calm area, and the last shot slightly longer with a slow zoom out.
+- Vivid, natural colour instead of the essays' muted grade, lighter sharpening and a high-quality
+  master: `"grade"`, `"sharpen"` 0.3, `"crf"` 12, `"preset"` "slow" in script.json (v015).
+- The music contrasts with the place (a romantic old city under a street or game theme, a sleek
+  metropolis under Brazilian funk or forró). Pick 2–3 currently trending sounds, clean enough for
+  teenagers (instrumental first; check lyrics before recommending a song with words), never in the
+  file. Brand names stay out of our own text and hashtags; the sound's title shows by itself.
+- Music-free export, `"slot": "extra"` in `log.json`; post between the regular slots.
 
 ## Pilots (2026-11-24, approved)
 
@@ -191,6 +223,10 @@ formats from 2026-11-25. Nothing here is a learned rule from metrics yet.
   same TikTok re-encode problem we saw on the ambient videos.
 
 ## Learned (updated weekly, newest first)
+
+- 2026-11-25 (evening): Igor switched the channel to Brazilian Portuguese because TikTok was delivering it
+  almost only in Brazil (his reading of the app's analytics; the connector still returns no
+  countries). Everything made from then on is in Portuguese; the English posts stay up.
 
 - 2026-11-25 18:44 UTC (tentative; 13 posts, 2.9–29 h old): v011, the second essay, reached 448
   views in 5.6 h (79/h) and brought 35 follows, 7.8 per 100 views, the best follow rate so far

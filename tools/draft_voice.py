@@ -10,7 +10,10 @@ import json, os, subprocess, sys
 
 proj = sys.argv[1]
 script = json.load(open(os.path.join(proj, "script.json")))
-CPS = 15.6                     # characters per second, Brian at speed 0.9 (v002)
+# characters per second: Brian at speed 0.9 reads English at 15.6 (v002) and Portuguese at about
+# 13.2 (measured at speed 0.95 on 2026-11-25: 13.9, scaled to 0.9); scripts are in Portuguese since
+# 2026-11-25, and a script can set its own "cps"
+CPS = script.get("cps", 15.6 if script.get("language") == "en" else 13.2)
 PAUSE = {",": 0.18, ".": 0.28, "?": 0.28, "!": 0.28, ";": 0.22, ":": 0.22, "—": 0.22}
 os.makedirs(os.path.join(proj, "audio"), exist_ok=True)
 

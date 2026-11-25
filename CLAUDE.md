@@ -1,8 +1,10 @@
 # Echoes of Life: instructions for Claude
 
 This repository runs the Echoes of Life TikTok channel for Igor. Claude produces the videos;
-Igor posts them by hand. Talk to Igor in Brazilian Portuguese; everything in the videos,
-captions and hashtags is in English.
+Igor posts them by hand. Talk to Igor in Brazilian Portuguese. Since 2026-11-25 everything in
+the videos, captions, hashtags and keywords is in Brazilian Portuguese too (Igor: "Vamos mudar
+para pt/br mesmo, pelas métricas o tiktok só está entregando para o Brasil"); the name Echoes of
+Life, the "ECHOES OF LIFE" mark and #echoesoflife stay. Videos made before that date are in English.
 
 Read `PLAYBOOK.md` before writing anything: it holds the channel identity and the rules learned
 from the metrics. `pauta.json` is the idea backlog, `log.json` records every video produced.
@@ -14,7 +16,10 @@ the review. Read a skill's SKILL.md when its step comes up:
 
 - Writing any script or on-screen line: `emotional-storytelling`, `gen-z-emotional-insights` and
   `scriptwriting` (hooks, structures, writing for the ear, AI-sounding tells). Write three honest
-  hooks, pick the best, and keep the other two in `script.json` as `"hooks_considered"`.
+  hooks, pick the best, and keep the other two in `script.json` as `"hooks_considered"`. The
+  skills are written for English: apply their craft in natural spoken Brazilian Portuguese ("você",
+  "a gente"; written for the ear, never a literal translation) and avoid the Portuguese AI tells too
+  ("não é sobre X, é sobre Y", "e tá tudo bem", "jornada", strings of rhetorical questions).
 - Hooks, pacing and the weekly analysis: `short-form-retention`.
 - One-shot and nostalgia edits, and footage choices: `cinematic-video-direction`.
 - Picking and framing themes for teens and young adults: `gen-z-emotional-insights`.
@@ -55,12 +60,22 @@ pilots Igor approved on 2026-11-24 (v007 and v008: "vamos seguir esse padrão"):
 | 21:00 | long, story (fiction) | `"format": "long", "kind": "story"` |
 
 The two short formats differ on purpose (the brief asks for more than one visual model, and the
-weekly analysis compares them). Ideas with `"status": "parked"` are never picked.
+weekly analysis compares them). Ideas with `"status": "parked"` are never picked. The ideas in
+`pauta.json` are written in English: treat each one as a brief and write the video in Portuguese.
 
 Every `script.json` carries `"post": {"search_phrase", "keywords": [two related ones], …}` and
 follows PLAYBOOK.md "Search and hashtags": the search phrase starts the caption's first line and
 shows up on screen early (and in the first spoken line of a long video); hashtags come from that
 section's sets, never #fyp, #foryou or #viral.
+
+**Image quality** (Igor, 2026-11-25: "Mantenha a qualidade do vídeo alta, alguns vídeos a
+qualidade fica meio baixa"): every format uses 4K sources only (`min_width` 3800 in
+`footage_candidates.py`). A 1080p clip cropped to 9:16 is 608 px wide and turns soft after
+TikTok's re-encode, and most of v008's clips were 1080p. Skip 4K clips under about 10 Mbps
+(`candidates.json` has the file size and duration) and, for any shot with camera or subject
+motion, prefer 30 or 60 fps (29.97/59.94 included): a 24 or 25 fps clip judders when turned into
+30, so use it only for a still shot or with `"speed"` 1.2513 (23.976 fps) or 1.2 (25 fps), which
+puts every source frame on one output frame. Keep `zoom` at 0.04 or less.
 
 0. **Metrics first.** Before producing, read how the posted videos are doing: Windsor.ai
    connector `tiktok_organic`, `get_data` with the fields listed at the top of
@@ -92,7 +107,7 @@ section's sets, never #fyp, #foryou or #viral.
    1. Write `videos/<slug>/script.json` in the shape of `videos/v007/script.json`:
       `"format": "oneshot"`, `"mood": "behind"`, the idea's `setting` as `theme`, and `"stack"` with
       the idea's `line` one word per entry, lowercase, each ending with a period (6–12 words). The
-      line is ours: a principle worth keeping, in plain modern English; keep its Stoic idea and work
+      line is ours: a principle worth keeping, in plain, natural Brazilian Portuguese; keep its Stoic idea and work
       in `"philosophy": {"idea", "source", "use": "interpretation in our own words, not a quote"}`.
       Three honest lines in `"hooks_considered"`. Post fields: a caption that adds the idea behind the
       line plus a question, 4–5 hashtags ending with `#echoesoflife`, `"pinned_comment"`;
@@ -145,25 +160,35 @@ section's sets, never #fyp, #foryou or #viral.
 6. **Long videos** (philosophy and story), for each:
    1. Write `videos/<slug>/script.json` in the shape of `videos/v008/script.json`, with
       `"format": "long"` and `"kind": "philosophy"|"story"`. Line 0 is the hook exactly as it will
-      be shown (it is on screen from the first frame). Length: 165–195 words in 14–19 lines (about
-      70–85 s read in one take; v008 had 181 words and ran 77.7 s; `finish.py` accepts 64–91 s).
+      be shown (it is on screen from the first frame). Length: 150–180 words in 14–19 lines, about
+      70–85 s read in one take (Portuguese words are longer than English ones: Brian reads about
+      13–14 characters a second in Portuguese, measured 2026-11-25; in English v008 had 181 words
+      and ran 77.7 s; `finish.py` accepts 64–91 s).
       Add `"bed": "none"`: the file carries the voice alone and Igor adds an instrumental from the
       TikTok library (his decision, 2026-11-24). Every line gets a
       footage `query` and `alt`: 2–3 words naming something filmable ("empty kitchen morning",
       "old man window"), never a feeling. Plan the light as an arc: night and blue while the
-      feeling is heavy, warm daylight once the thought turns. Keep the same voice block. The post
+      feeling is heavy, warm daylight once the thought turns. Keep the same voice block (Brian, `nPczCjzI2devNBz1zQrb`, `eleven_multilingual_v2`, now reading
+      Portuguese): on the free ElevenLabs plan the API refuses every Voice Library voice, Brazilian
+      narrators included (`payment_required`, 2026-11-25), so a standard voice is the only option
+      until Igor upgrades; PLAYBOOK.md then names the new voice. The post
       caption is one line that adds to the video plus a question; 4–5 hashtags ending with
       `#echoesoflife`; `"ai_label": true`. Follow "Engagement" in PLAYBOOK.md: add
       `"post.pinned_comment"` and `"endcard"` (a save or share invitation when it fits, otherwise
-      "follow for more").
+      "siga para ver mais").
       - **Philosophy:** a feeling from the idea (feeling behind, comparison, time anxiety…) seen
         through a Stoic text, in the order of v008: the hook, a modern scene, what the philosopher
         said, what it means and what it does not mean, one small thing to do tonight, a closing
         line. Before writing, find the passage named in the idea's `stoic` lead (only a lead) in a
         public-domain translation online (Wikisource, Project Gutenberg, Perseus or a reliable
         reprint: Basore or Gummere for Seneca, Oldfather or Higginson for Epictetus, Long for
-        Marcus Aurelius). Quote at most one short passage, word for word, and say who wrote it
-        and where; everything else is our paraphrase or interpretation. Record each in
+        Marcus Aurelius; a public-domain Portuguese translation when one exists online). Quote at most
+        one short passage and say who wrote it and where; everything else is our paraphrase or
+        interpretation. In Portuguese the quote is either word for word from a public-domain
+        Portuguese translation or our own translation of the checked passage (from the Latin or
+        Greek when it can be read, otherwise from the public-domain English), recorded as
+        `"translation": "tradução nossa a partir de <translator>"` and named as ours in the delivery
+        note; never a modern, copyrighted Portuguese translation. Record each in
         `"philosophy": [{"type": "quote"|"paraphrase"|"interpretation", "text", "work",
         "translation", "checked": [urls]}]`. If the passage cannot be found, do not quote: paraphrase
         and mark it. Never attribute a modern saying to a philosopher; "amor fati" is Nietzsche's
@@ -172,14 +197,14 @@ section's sets, never #fyp, #foryou or #viral.
         psychology claim needs a credible source in `"sources"` (peer-reviewed paper, university,
         APA or national health service page), said carefully, or it is cut.
       - **Story:** one specific character and moment, a real emotional shift and a satisfying,
-        hopeful ending. Say it is a story in the video ("This is a story about…") and add
+        hopeful ending. Say it is a story in the video ("Esta é uma história sobre…") and add
         `"fiction": true`. A Stoic idea may sit underneath, never as a lecture.
    2. `python3 tools/tts.py videos/<slug>` reads the whole script in one take (exit code 2 =
       ElevenLabs refused: see Errors). Never stitch separately generated sentences with silence
       between them: Igor heard that as the audio stalling after every sentence (v008). If a
       sentence comes out wrong, fix the text (a comma gives the voice a breath) and generate the
       whole take again.
-   3. `python3 tools/footage_candidates.py videos/<slug> 4`, then Read every
+   3. `python3 tools/footage_candidates.py videos/<slug> 4 3800` (4K, see "Image quality"), then Read every
       `footage/sheet_XX.jpg`. For each line pick the clip that shows what the line says, looks
       cinematic and fits the grade and the light arc. Reject: visible text, logos, watermarks, UI,
       cartoon/3D unless the whole video is illustrated, people talking to camera, nudity (classical
@@ -189,7 +214,7 @@ section's sets, never #fyp, #foryou or #viral.
    4. Write `videos/<slug>/footage/scenes.json`, one entry per line, in the shape of
       `videos/v008/footage/scenes.json`: `pixabay_id`, `src_start` (skip the first second),
       `fx` (0–1 horizontal crop centre that keeps the subject in the 9:16 frame; check the clip at
-      full width, the thumbnail is not the whole clip), `zoom` 0.04–0.06, optional `eq` to darken
+      full width, the thumbnail is not the whole clip), `zoom` 0.03–0.04, optional `eq` to darken
       bright daylight clips, `"zoom_out": true` on the last. Then
       `python3 tools/fetch_clips.py videos/<slug>`. Check each clip is long enough for its scene
       (`timeline.json` cuts + 0.5 s) and move `src_start` if not.
@@ -214,7 +239,8 @@ section's sets, never #fyp, #foryou or #viral.
    under the long videos he sets the added sound to about 15–20% and the original sound to 100%),
    and the three keywords to suggest under "Manage keywords" once the video is up (the search
    phrase and the two related ones). For the philosophy essay add one line naming the text,
-   section and translation (and any psychology source), so Igor can answer comments. Keep it
+   section and translation (and any psychology source), so Igor can answer comments. Remind
+   him to turn on "Permitir uploads de alta qualidade" under "Mais opções" when he posts. Keep it
    short.
 9. **Record.** Set the idea in `pauta.json` to `"status": "done", "slug": "<slug>"`, append the
    video to `log.json` (same fields as v006, v007 and v008, with `kind` or `mood`, the
@@ -234,6 +260,10 @@ section's sets, never #fyp, #foryou or #viral.
   compressed and ducked under the voice.
 - `tts.py --per-line [index ...]` is the old one-clip-per-sentence mode, kept only for old
   projects.
+- **City edits** (extras on request, like v014 and v015): see PLAYBOOK.md "City edits". Script and
+  scenes as for an ambient video, then `ambient.py` and `render.py full`; script.json may set
+  `"grade"`, `"sharpen"`, `"crf"` and `"preset"` for a vivid, sharp look. Log them with
+  `"slot": "extra"`.
 
 ## Weekly analysis (Mondays)
 
@@ -254,7 +284,8 @@ section's sets, never #fyp, #foryou or #viral.
    philosophy, long story). Compare the four kinds with each other, the one-shot against the
    tilt-up reveal, nostalgia edits by setting and by kind of line, and philosophy
    against stories.
-5. If more than half the views come from Brazil, say so: the channel is aimed at the US.
+5. The channel is aimed at Brazil since 2026-11-25 (TikTok was delivering it almost only there):
+   report the share of views from Brazil and say so if it falls below half.
 6. Commit and push, then send Igor a short Portuguese summary: the key numbers, what worked,
    what changes this week, anything he should do.
 
@@ -262,7 +293,7 @@ section's sets, never #fyp, #foryou or #viral.
 
 - Write everything original. No song lyrics, poems or passages from books, no famous quotes
   attributed to real people, no real private people, no brands.
-- Stories are fiction and say so ("This is a story about…", "Imagine…"); never present an
+- Stories are fiction and say so ("Esta é uma história sobre…", "Imagine…"); never present an
   invented story as something that happened.
 - Psychology topics stay general and well established; no diagnoses, no medical or therapy
   advice, no statistics you cannot source.
@@ -281,5 +312,7 @@ section's sets, never #fyp, #foryou or #viral.
   out (a long video uses about 1,000 credits, so the lineup needs about 2,000 a day) and do not
   deliver a narrated video without narration. The two short slots need no credits and go on as
   usual.
+- ElevenLabs `payment_required` for a voice ("Free users cannot use library voices via the API"):
+  use the voice block in PLAYBOOK.md; a Voice Library voice needs Igor's paid plan first.
 - Never weaken the checks in `tools/finish.py` to make a video pass.
 - Commit messages end with `Co-Authored-By: Claude <noreply@anthropic.com>`.

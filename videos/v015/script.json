@@ -1,0 +1,70 @@
+{
+  "slug": "v015",
+  "format": "ambient",
+  "mood": "city",
+  "extra": true,
+  "language": "pt-BR",
+  "music_free": true,
+  "bed": "none",
+  "theme": "Veneza em 7-8 s de cortes rápidos, para a música do app contrastar com a cidade (pedido do Igor, 2026-11-25, no espírito do vídeo de Tóquio que ele mandou)",
+  "lines": [
+    {
+      "text": "",
+      "query": "venice aerial",
+      "alt": "venice drone"
+    },
+    {
+      "text": "",
+      "query": "venice gondola",
+      "alt": "gondola canal"
+    },
+    {
+      "text": "",
+      "query": "grand canal venice",
+      "alt": "venice canal"
+    },
+    {
+      "text": "",
+      "query": "st marks square venice",
+      "alt": "venice basilica"
+    },
+    {
+      "text": "",
+      "query": "rialto bridge",
+      "alt": "venice bridge"
+    }
+  ],
+  "ai_label": false,
+  "text": {
+    "line": "veneza",
+    "from": 0.1,
+    "to": 1.4,
+    "y": 0.6
+  },
+  "xfade": 0.05,
+  "grade": "eq=contrast=1.05:saturation=1.08:gamma=0.99,colorbalance=rs=0.02:bs=-0.02:rh=0.02:bh=-0.03",
+  "sharpen": 0.3,
+  "crf": 12,
+  "preset": "slow",
+  "hooks_considered": [
+    "veneza",
+    "veneza, itália",
+    "canais no lugar de ruas"
+  ],
+  "post": {
+    "search_phrase": "veneza",
+    "keywords": [
+      "veneza itália",
+      "viagem para veneza"
+    ],
+    "caption": "Veneza: canais no lugar de ruas, gôndolas no lugar de carros. Você iria? 🇮🇹",
+    "hashtags": [
+      "#veneza",
+      "#italia",
+      "#viagem",
+      "#europa",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Marca quem você levaria pra Veneza 👇"
+  }
+}
