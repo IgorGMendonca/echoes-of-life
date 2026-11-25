@@ -1,0 +1,70 @@
+{
+  "slug": "v017",
+  "format": "ambient",
+  "mood": "city",
+  "extra": true,
+  "language": "pt-BR",
+  "music_free": true,
+  "bed": "none",
+  "lines": [
+    {
+      "text": "",
+      "query": "japan night street",
+      "alt": "tokyo people night"
+    },
+    {
+      "text": "",
+      "query": "japan night street",
+      "alt": "tokyo people night"
+    },
+    {
+      "text": "",
+      "query": "japan night street",
+      "alt": "tokyo people night"
+    },
+    {
+      "text": "",
+      "query": "japan night street",
+      "alt": "tokyo people night"
+    },
+    {
+      "text": "",
+      "query": "japan night street",
+      "alt": "tokyo people night"
+    }
+  ],
+  "ai_label": false,
+  "theme": "Japão à noite ao nível da rua e em tempo real: Dotonbori (Osaka) com gente e neon, Asakusa (Tóquio) cheia de gente, uma rua molhada à hora azul e Kyoto em silêncio sob a neve; música profunda escolhida no app (feedback do Igor, 2026-11-25: menos cidade de longe, mais ruas e pessoas, sem acelerar sempre)",
+  "text": {
+    "line": "japão à noite",
+    "from": 0.15,
+    "to": 1.55,
+    "y": 0.69
+  },
+  "xfade": 0.25,
+  "grade": "eq=contrast=1.05:saturation=1.08:gamma=0.99,colorbalance=bs=0.015:bm=0.01",
+  "sharpen": 0.25,
+  "crf": 12,
+  "preset": "slow",
+  "hooks_considered": [
+    "japão à noite",
+    "as ruas do japão à noite",
+    "tóquio, osaka e kyoto depois que escurece"
+  ],
+  "post": {
+    "search_phrase": "japão à noite",
+    "keywords": [
+      "tóquio à noite",
+      "kyoto neve"
+    ],
+    "caption": "Japão à noite: Osaka e Tóquio cheias de gente, e Kyoto em silêncio debaixo da neve. Qual dessas ruas você andaria? 🌙",
+    "hashtags": [
+      "#japao",
+      "#toquio",
+      "#kyoto",
+      "#viagem",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Marca quem você levaria pra andar por essas ruas 👇"
+  }
+}

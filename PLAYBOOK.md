@@ -177,9 +177,17 @@ Igor asked for short city videos besides the lineup: v014 (China at night, 13.7 
 escolhida, como no exemplo que mandei. Mantenha a qualidade do vídeo alta [...] Uns 7-8seg de
 vídeo impactantes". His example was a Tokyo-at-night montage (13.7 s, 10 shots, heavy electronic
 track with a drop near 4 s and cuts on the beat after it).
-- 7–8 s, 4–6 real 4K shots, the strongest first (an aerial or the city's best-known view), cuts
-  every 1.2–1.5 s with near-hard transitions (`"xfade"` 0.05), the city's name on screen at the
-  start over a calm area, and the last shot slightly longer with a slow zoom out.
+- Igor, 2026-11-25, after v016 (Seoul seen from the air): "Os vídeos estão ficando com muita
+  imagem da cidade de longe, algo mais próximo, mostrando as pessoas e ruas legais fica melhor,
+  não precisa ser sempre acelerado também". So: street level first, with people and streets that
+  have character (neon, lanterns, markets, canals, rain, snow); one wide view at most; real-time
+  motion by default. Reject hyperlapses and time-lapses: check the tags and compare two frames
+  0.2 s apart (in a time-lapse the crowd jumps; Pixabay's 4K Seoul street clips all do). v017
+  (Japan at night) is the model.
+- 7–8 s, 4–6 real 4K shots, the strongest street-level shot first, cuts every 1.2–1.8 s (near-hard
+  `"xfade"` 0.05 for an energetic song, 0.2–0.25 for a deep one), the city's name on screen at the
+  start over a calm area (water, sky, a dark wall), and the last shot slightly longer with a slow
+  zoom out.
 - Vivid, natural colour instead of the essays' muted grade, lighter sharpening and a high-quality
   master: `"grade"`, `"sharpen"` 0.3, `"crf"` 12, `"preset"` "slow" in script.json (v015).
 - The music contrasts with the place (a romantic old city under a street or game theme, a sleek

@@ -490,7 +490,7 @@
   "slug": "v016",
   "post_date": "2026-11-25",
   "slot": "extra",
-  "status": "ready to post",
+  "status": "superseded",
   "format": "ambient",
   "mood": "city",
   "language": "pt-BR",
@@ -516,6 +516,39 @@
   "pauta_id": null,
   "search_phrase": "seul à noite",
   "quality": "4K sources only (24/25 fps clips played at 1.25x/1.2x), mild temporal denoise for night noise, vivid grade, CRF 12 master, 0.22 s dissolves",
-  "hypothesis": "A night city edit with a deep, slow song and softer dissolves holds viewers longer (watch share, replays) than the fast-cut day edit v015, at the cost of fewer shares."
+  "hypothesis": "A night city edit with a deep, slow song and softer dissolves holds viewers longer (watch share, replays) than the fast-cut day edit v015, at the cost of fewer shares.",
+  "note": "Igor found it too distant (aerials) and sped up; replaced by v017, street level in real time"
+ },
+ {
+  "slug": "v017",
+  "post_date": "2026-11-25",
+  "slot": "extra",
+  "status": "ready to post",
+  "format": "ambient",
+  "mood": "city",
+  "language": "pt-BR",
+  "requested_by": "Igor, 2026-11-25: night city with a deep song; then: closer, people and nice streets, not always sped up",
+  "theme": "Japão à noite ao nível da rua e em tempo real: Dotonbori (Osaka) com gente e neon, Asakusa (Tóquio) cheia de gente, uma rua molhada à hora azul e Kyoto em silêncio sob a neve; música profunda escolhida no app (feedback do Igor, 2026-11-25: menos cidade de longe, mais ruas e pessoas, sem acelerar sempre)",
+  "hook": null,
+  "text": "japão à noite",
+  "caption": "Japão à noite: Osaka e Tóquio cheias de gente, e Kyoto em silêncio debaixo da neve. Qual dessas ruas você andaria? 🌙",
+  "duration": 8.2,
+  "upload_file": "echoes_v017_japao-a-noite.mp4",
+  "pixabay_ids": [
+   235285,
+   44622,
+   44621,
+   341315,
+   153086
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; deep picks: Snowfall (Oneheart & Reidenshi), Time Back (Sinny & 7vvch), Drag Path (Twenty One Pilots)",
+  "assets": "Pixabay Content License (real footage)",
+  "pauta_id": null,
+  "search_phrase": "japão à noite",
+  "quality": "4K sources at real speed (60 fps Dotonbori, 30 fps blue-hour street, 23.976 fps Asakusa and Kyoto kept at 1x), mild denoise on the two dark shots, CRF 12 master",
+  "hypothesis": "Street-level shots with people in real time (Igor's direction) keep viewers longer and earn more likes per 100 views than the aerial city edits v014 and v016."
  }
 ]
