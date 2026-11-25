@@ -202,5 +202,44 @@
   "credits_note": "979 per-line take + 83 redo of line 10 + 995 one-take version",
   "music": "none in the file; Igor adds a TikTok instrumental (picks: Idea 22, snowfall, Cornfield Chase) at 15-20%",
   "tiktok_id": "7711925379031682325"
+ },
+ {
+  "slug": "v009",
+  "post_date": "2026-11-25",
+  "slot": "extra",
+  "status": "ready to post",
+  "format": "oneshot",
+  "mood": "behind",
+  "derived_from": "v008",
+  "theme": "10-second one-shot of v008's message: someone running along the shore toward the sunrise",
+  "hook": null,
+  "text": "life. isn't. short. we. give. it. away. take. one. hour. back.",
+  "caption": "“It is not that we have a short space of time, but that we waste much of it.” Seneca, On the Shortness of Life. Which hour are you taking back today? 🌅",
+  "duration": 10.0,
+  "upload_file": "echoes_v009_life-isnt-short.mp4",
+  "pixabay_ids": [
+   139365
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; Igor adds Idea 22 (same as v008) or snowfall / Cornfield Chase",
+  "assets": "Pixabay Content License (real footage)",
+  "philosophy": [
+   {
+    "type": "quote",
+    "text": "It is not that we have a short space of time, but that we waste much of it.",
+    "work": "Seneca, On the Shortness of Life 1.3",
+    "translation": "J. W. Basore (1932)",
+    "where": "caption only"
+   },
+   {
+    "type": "paraphrase",
+    "text": "life isn't short. we give it away.",
+    "work": "On the Shortness of Life 1",
+    "where": "on screen"
+   }
+  ],
+  "hypothesis": "A short cut of a long video's message, pointing to it in the pinned comment, reaches more people and sends some to the long video"
  }
 ]

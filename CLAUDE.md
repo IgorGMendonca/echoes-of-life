@@ -67,8 +67,9 @@ weekly analysis compares them). Ideas with `"status": "parked"` are never picked
    the connector fails, say so in one line and go on with production.
 1. **Pick the date.** Get the current date and time in America/Sao_Paulo. Candidates, in order:
    today (only if it is before 09:00, so the 11:00 slot is still reachable), tomorrow, the day
-   after. Take the first candidate that has no video in `log.json`. If all are covered, send Igor
-   one short line and stop.
+   after. Take the first candidate that has no video in `log.json` in one of the four regular slots
+   (videos whose `slot` starts with "extra" do not count: Igor sometimes asks for one more). If all
+   are covered, send Igor one short line and stop.
 2. **Number them.** Slugs continue from the highest in `log.json`, in slot order (11:00, 14:00,
    18:00, 21:00). Upload name: `echoes_<slug>_<3-5 word kebab of the line, hook or scene>`.
 3. **Order of work.** Make the two short videos first (they need no voice credits), then the

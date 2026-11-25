@@ -1,0 +1,64 @@
+{
+  "slug": "v009",
+  "format": "oneshot",
+  "mood": "behind",
+  "format_name": "Cinematic One Shot",
+  "extra": true,
+  "theme": "Someone running along the shore toward the sunrise; the 10-second version of v008 (Seneca, On the Shortness of Life)",
+  "lines": [
+    {
+      "text": "",
+      "query": "beach sunrise running",
+      "alt": "man walking beach sunrise"
+    }
+  ],
+  "stack": {
+    "words": [
+      "life.",
+      "isn't.",
+      "short.",
+      "we.",
+      "give.",
+      "it.",
+      "away.",
+      "take.",
+      "one.",
+      "hour.",
+      "back."
+    ],
+    "x": 0.08,
+    "y": 0.52,
+    "size": 50,
+    "color": "F2E7C4",
+    "align": "left",
+    "from": 0.0
+  },
+  "shade": {
+    "top": 0.45,
+    "strength": 0.45
+  },
+  "hypothesis": "A 10-second one-shot carrying the long video's message (and pointing to it in the pinned comment) reaches more people than the long video alone and sends some of them to it.",
+  "philosophy": {
+    "idea": "Seneca, On the Shortness of Life 1: life is long enough if it is well used; we waste much of it",
+    "source": "tr. J. W. Basore (1932)",
+    "use": "our paraphrase on screen; the checked quote only in the caption"
+  },
+  "hooks_considered": [
+    "life. isn't. short. we. give. it. away. take. one. hour. back.",
+    "you're. not. behind. you're. taking. your. time. back.",
+    "you're. not. out. of. time. you're. out. of. hours. you. chose."
+  ],
+  "post": {
+    "caption": "“It is not that we have a short space of time, but that we waste much of it.” Seneca, On the Shortness of Life. Which hour are you taking back today? 🌅",
+    "hashtags": [
+      "#stoicism",
+      "#seneca",
+      "#feelingbehind",
+      "#selfimprovement",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "The full Seneca video is on our profile 👆 What will your hour be?"
+  },
+  "music_free": true,
+  "ai_label": false
+}
