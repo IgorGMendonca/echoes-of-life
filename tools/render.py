@@ -33,6 +33,24 @@ GRADE = SCRIPT.get("grade", GRADE)
 GRAIN_AMOUNT = tl.get("grain", 0)
 GRAIN = f"noise=alls={GRAIN_AMOUNT}:allf=t" if GRAIN_AMOUNT else "null"
 SHARPEN = f"unsharp=5:5:{SCRIPT.get('sharpen', 0.45)}:5:5:0"
+# optional halation for cinematic night scenes: the brightest parts (lamps, neon) get a soft
+# glow on the luma only. script.json: "glow": {"sigma": 14, "opacity": 0.2, "threshold": 0.7}
+GLOW = SCRIPT.get("glow")
+
+
+def glow(src, dst):
+    if not GLOW:
+        return f"[{src}]null[{dst}]"
+    th = GLOW.get("threshold", 0.7)
+    # in RGB, so warm lamps glow warm; everything under the threshold adds nothing
+    return (f"[{src}]format=gbrp,split[{dst}a][{dst}b];"
+            f"[{dst}b]curves=all='0/0 {th}/0 1/1',gblur=sigma={GLOW.get('sigma', 14)}[{dst}c];"
+            f"[{dst}a][{dst}c]blend=all_mode=screen:all_opacity={GLOW.get('opacity', 0.2)},format=yuv420p[{dst}]")
+
+
+def rate(sc):
+    """fps=30 repeats frames of a 24/25 fps clip (judder); a scene may ask to blend them instead."""
+    return f"framerate=fps={FPS}" if sc.get("blend_fps") else f"fps={FPS}"
 
 
 def xf(k):
@@ -71,7 +89,7 @@ def pan_chain(sc, t_off=0.0):
             f"y='max(0,min(ih-oh,(ih-oh)/2+{sy}))'")
     pre = f"setpts=PTS-STARTPTS+{t_off}/TB," if t_off else ""
     eq = ("," + sc["eq"]) if sc.get("eq") else ""
-    return f"fps={FPS},{pre}{crop},scale={W}:{H}:flags=lanczos,setsar=1{eq},{SHARPEN},format=yuv420p"
+    return f"{rate(sc)},{pre}{crop},scale={W}:{H}:flags=lanczos,setsar=1{eq},{SHARPEN},format=yuv420p"
 
 
 def scene_chain(i, length, t_off=0.0):
@@ -94,7 +112,7 @@ def scene_chain(i, length, t_off=0.0):
     if sc.get("zoom_out"):
         zp = (f"zoompan=z='1+{zoom}*(1-on/{frames})':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
               f":d=1:s={W}x{H}:fps={FPS}")
-    return f"fps={FPS},{base},{zp},{SHARPEN},setsar=1,format=yuv420p"
+    return f"{rate(sc)},{base},{zp},{SHARPEN},setsar=1,format=yuv420p"
 
 
 def endcard_chain(length):
@@ -122,9 +140,10 @@ if mode == "frames":
             sp = sc.get("speed", 1.0)
             inp = ["-ss", str(sc["src_start"] + (t - s0) * sp), "-i", sc["file"]]
             chain = scene_chain(i, 1.0, t_off=t - s0)
-        vf = f"{chain},setpts=PTS-STARTPTS+{t}/TB,{GRADE},{GRAIN},{subs()}"
-        subprocess.run(["ffmpeg", "-y", "-v", "error", *inp, "-frames:v", "1", "-vf", vf, "-q:v", "2", out],
-                       check=True)
+        fc = (f"[0:v]{chain},setpts=PTS-STARTPTS+{t}/TB,{GRADE},{GRAIN}[pre];{glow('pre', 'glo')};"
+              f"[glo]{subs()}[out]")
+        subprocess.run(["ffmpeg", "-y", "-v", "error", *inp, "-frames:v", "1", "-filter_complex", fc,
+                        "-map", "[out]", "-q:v", "2", out], check=True)
         print(out)
     sys.exit()
 
@@ -149,7 +168,9 @@ for k in range(1, n):
     parts.append(f"[{prev}][s{k}]xfade=transition={transition(k)}:duration={xf(k)}:offset={off}[x{k}]")
     prev = f"x{k}"
 # grade the film part only: the end card stays clean black
-parts.append(f"[{prev}]{GRADE},{GRAIN},{subs()},trim=duration={total},format=yuv420p[vout]")
+parts.append(f"[{prev}]{GRADE},{GRAIN}[pre]")
+parts.append(glow("pre", "glo"))
+parts.append(f"[glo]{subs()},trim=duration={total},format=yuv420p[vout]")
 
 # audio is mixed first, then brought to -14 LUFS with one fixed gain and a limiter. A one-pass
 # loudnorm rides the gain up in every pause, so the music surged between sentences (v008).

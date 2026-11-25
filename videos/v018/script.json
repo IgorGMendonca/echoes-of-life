@@ -1,0 +1,60 @@
+{
+  "slug": "v018",
+  "format": "ambient",
+  "mood": "city",
+  "extra": true,
+  "language": "pt-BR",
+  "music_free": true,
+  "bed": "none",
+  "theme": "Japão no inverno, à noite: o canal de Otaru na hora azul, com lampiões e neve, e a rua do pagode Yasaka em Kyoto sob a neve caindo; dois planos longos, em tempo real, para a música profunda do app (Igor, 2026-11-25: 'cenas mais belas, algo cinematográfico mesmo... o importante é o cenário')",
+  "lines": [
+    {
+      "text": "",
+      "query": "otaru canal",
+      "alt": "japan winter night"
+    },
+    {
+      "text": "",
+      "query": "kyoto snow night",
+      "alt": "japan snow street"
+    }
+  ],
+  "text": {
+    "line": "japão no inverno",
+    "from": 0.4,
+    "to": 3.6,
+    "y": 0.21
+  },
+  "xfade": 0.7,
+  "grade": "eq=contrast=1.05:saturation=1.04:gamma=0.99,colorbalance=rs=-0.01:bs=0.03:bm=0.015:rh=0.035:gh=0.012:bh=-0.02",
+  "glow": {
+    "sigma": 16,
+    "opacity": 0.22,
+    "threshold": 0.72
+  },
+  "sharpen": 0.25,
+  "crf": 12,
+  "preset": "slow",
+  "hooks_considered": [
+    "japão no inverno",
+    "o japão quando neva",
+    "inverno no japão, à noite"
+  ],
+  "post": {
+    "search_phrase": "japão no inverno",
+    "keywords": [
+      "kyoto neve",
+      "otaru inverno"
+    ],
+    "caption": "Japão no inverno: o canal de Otaru na hora azul e Kyoto em silêncio debaixo da neve. Qual dos dois você veria ao vivo? ❄️",
+    "hashtags": [
+      "#japao",
+      "#inverno",
+      "#kyoto",
+      "#viagem",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Marca quem você levaria pra ver o Japão nevando 👇"
+  },
+  "ai_label": false
+}

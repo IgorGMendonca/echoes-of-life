@@ -265,8 +265,9 @@ puts every source frame on one output frame. Keep `zoom` at 0.04 or less.
   projects.
 - **City edits** (extras on request, like v014 and v015): see PLAYBOOK.md "City edits". Script and
   scenes as for an ambient video, then `ambient.py` and `render.py full`; script.json may set
-  `"grade"`, `"sharpen"`, `"crf"` and `"preset"` for a vivid, sharp look. Log them with
-  `"slot": "extra"`.
+  `"grade"`, `"sharpen"`, `"crf"` and `"preset"` for a vivid, sharp look, `"glow"` for a soft
+  halation on lamps and neon, and a scene may set `"blend_fps": true` to blend a 24/25 fps clip
+  into 30 fps instead of repeating frames. Log them with `"slot": "extra"`.
 
 ## Weekly analysis (Mondays)
 

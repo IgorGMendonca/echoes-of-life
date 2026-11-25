@@ -184,6 +184,14 @@ track with a drop near 4 s and cuts on the beat after it).
   motion by default. Reject hyperlapses and time-lapses: check the tags and compare two frames
   0.2 s apart (in a time-lapse the crowd jumps; Pixabay's 4K Seoul street clips all do). v017
   (Japan at night) is the model.
+- Igor, 2026-11-25, after v017: "Ainda sinto falta de cenas mais belas, algo cinematográfico
+  mesmo, use as skills para isso, o importante é o cenário". Following the
+  `cinematic-video-direction` skill (aesthetic edits: 7–15 s, 1–3 shots): two or three long shots,
+  each a scene beautiful enough to hold on its own (blue or golden hour, snow, rain, mist, lamps,
+  reflections), in real time with one slow camera move per shot (a `"pan"` across the 4K frame or
+  a slow push-in), 0.6–0.8 s dissolves, warm highlights over cool shadows and a soft `"glow"` on
+  the lights. People belong to the scenery, they are not the subject. v018 (Otaru and Kyoto under
+  snow) is the model; the faster multi-cut layout below is for energetic songs.
 - 7–8 s, 4–6 real 4K shots, the strongest street-level shot first, cuts every 1.2–1.8 s (near-hard
   `"xfade"` 0.05 for an energetic song, 0.2–0.25 for a deep one), the city's name on screen at the
   start over a calm area (water, sky, a dark wall), and the last shot slightly longer with a slow

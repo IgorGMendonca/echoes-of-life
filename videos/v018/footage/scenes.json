@@ -1,0 +1,33 @@
+[
+ {
+  "pixabay_id": 330502,
+  "file": "videos/v018/footage/clips/scene_0_330502.mp4",
+  "width": 3872,
+  "height": 2160,
+  "vertical": false,
+  "src_start": 2.0,
+  "dur": 4.6,
+  "xf": 0.7,
+  "zoom": 0.06,
+  "shake": 0,
+  "pan": {
+   "from": 0.18,
+   "to": 0.42,
+   "at": 0.0,
+   "dur": 5.2
+  }
+ },
+ {
+  "pixabay_id": 153086,
+  "file": "videos/v018/footage/clips/scene_1_153086.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false,
+  "src_start": 24.0,
+  "dur": 5.0,
+  "xf": 0.7,
+  "fx": 0.5,
+  "zoom": 0.05,
+  "blend_fps": true
+ }
+]

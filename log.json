@@ -523,7 +523,7 @@
   "slug": "v017",
   "post_date": "2026-11-25",
   "slot": "extra",
-  "status": "ready to post",
+  "status": "superseded",
   "format": "ambient",
   "mood": "city",
   "language": "pt-BR",
@@ -549,6 +549,36 @@
   "pauta_id": null,
   "search_phrase": "japão à noite",
   "quality": "4K sources at real speed (60 fps Dotonbori, 30 fps blue-hour street, 23.976 fps Asakusa and Kyoto kept at 1x), mild denoise on the two dark shots, CRF 12 master",
-  "hypothesis": "Street-level shots with people in real time (Igor's direction) keep viewers longer and earn more likes per 100 views than the aerial city edits v014 and v016."
+  "hypothesis": "Street-level shots with people in real time (Igor's direction) keep viewers longer and earn more likes per 100 views than the aerial city edits v014 and v016.",
+  "note": "Igor wanted more beautiful, cinematic scenery; replaced by v018"
+ },
+ {
+  "slug": "v018",
+  "post_date": "2026-11-25",
+  "slot": "extra",
+  "status": "ready to post",
+  "format": "ambient",
+  "mood": "city",
+  "language": "pt-BR",
+  "requested_by": "Igor, 2026-11-25: more beautiful, truly cinematic scenes, use the skills, the scenery is what matters",
+  "theme": "Japão no inverno, à noite: o canal de Otaru na hora azul, com lampiões e neve, e a rua do pagode Yasaka em Kyoto sob a neve caindo; dois planos longos, em tempo real, para a música profunda do app (Igor, 2026-11-25: 'cenas mais belas, algo cinematográfico mesmo... o importante é o cenário')",
+  "hook": null,
+  "text": "japão no inverno",
+  "caption": "Japão no inverno: o canal de Otaru na hora azul e Kyoto em silêncio debaixo da neve. Qual dos dois você veria ao vivo? ❄️",
+  "duration": 9.6,
+  "upload_file": "echoes_v018_japao-no-inverno.mp4",
+  "pixabay_ids": [
+   330502,
+   153086
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; deep picks: Snowfall (Oneheart & Reidenshi), Time Back (Sinny & 7vvch), Drag Path (Twenty One Pilots)",
+  "assets": "Pixabay Content License (real footage)",
+  "pauta_id": null,
+  "search_phrase": "japão no inverno",
+  "quality": "two long real-time 4K shots: Otaru (30 fps) with a slow pan, Kyoto (23.976 fps, frames blended to 30) with a slow push-in; warm/cool grade, RGB glow on the lamps, CRF 12 master",
+  "hypothesis": "Two long, beautiful real-time shots with a deep song (the cinematic-video-direction layout) hold viewers to the end more often than the multi-cut city edits."
  }
 ]
