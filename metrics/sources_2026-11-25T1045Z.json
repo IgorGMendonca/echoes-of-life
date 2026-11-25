@@ -1,0 +1,95 @@
+{
+ "pulled_utc": "2026-11-25T10:46Z",
+ "connector": "tiktok_organic",
+ "date_preset": "last_7dT",
+ "fields": [
+  "video_id",
+  "video_create_datetime",
+  "video_impression_sources_impression_source",
+  "video_impression_sources_percentage"
+ ],
+ "note": "63 rows regrouped per video (share of views by impression source); values as returned",
+ "by_video": {
+  "7711861867890691349": {
+   "For You": 0.996,
+   "Follow": 0.001,
+   "Others": 0.001,
+   "Personal Profile": 0.002,
+   "Search": 0,
+   "Sound": 0,
+   "Direct Message": 0
+  },
+  "7711859921746218292": {
+   "For You": 0.973,
+   "Follow": 0,
+   "Others": 0,
+   "Personal Profile": 0.011,
+   "Search": 0.011,
+   "Sound": 0.005,
+   "Direct Message": 0
+  },
+  "7711846934989901077": {
+   "For You": 0.962,
+   "Follow": 0,
+   "Others": 0,
+   "Personal Profile": 0.038,
+   "Search": 0,
+   "Sound": 0,
+   "Direct Message": 0
+  },
+  "7711845639134432532": {
+   "For You": 0.979,
+   "Follow": 0,
+   "Others": 0,
+   "Personal Profile": 0.016,
+   "Search": 0.005,
+   "Sound": 0,
+   "Direct Message": 0
+  },
+  "7711793294870580501": {
+   "For You": 0.977,
+   "Follow": 0,
+   "Others": 0,
+   "Personal Profile": 0.017,
+   "Search": 0,
+   "Sound": 0.006,
+   "Direct Message": 0
+  },
+  "7711729316219964692": {
+   "For You": 0.972,
+   "Follow": 0,
+   "Others": 0,
+   "Personal Profile": 0.028,
+   "Search": 0,
+   "Sound": 0,
+   "Direct Message": 0
+  },
+  "7711976723415436565": {
+   "For You": 0.971,
+   "Follow": 0.006,
+   "Others": 0.006,
+   "Personal Profile": 0.014,
+   "Search": 0.003,
+   "Sound": 0,
+   "Direct Message": 0
+  },
+  "7711958513261481237": {
+   "For You": 0.965,
+   "Follow": 0,
+   "Others": 0,
+   "Personal Profile": 0.035,
+   "Search": 0,
+   "Sound": 0,
+   "Direct Message": 0
+  },
+  "7711908191566662933": {
+   "For You": 0.96,
+   "Follow": 0,
+   "Others": 0,
+   "Personal Profile": 0,
+   "Search": 0.02,
+   "Sound": 0,
+   "Direct Message": 0.02
+  }
+ }
+}

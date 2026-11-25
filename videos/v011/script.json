@@ -1,0 +1,154 @@
+{
+  "slug": "v011",
+  "format": "long",
+  "kind": "philosophy",
+  "format_name": "Philosophical Visual Essay",
+  "pauta_id": 34,
+  "theme": "Social comparison, through Epictetus' Enchiridion 1 (what is within our power and what is not)",
+  "hook": "Comparing yourself to everyone online?",
+  "hypothesis": "A short spoken question hook that starts at once (voice from 0.1 s, a person with a phone in the first shot) keeps more viewers past 2 s than v008's statement hook after 0.5 s of silence.",
+  "hooks_considered": [
+    "Comparing yourself to everyone online?",
+    "Everyone online looks ahead of you.",
+    "A Stoic's answer to comparing yourself to others."
+  ],
+  "philosophy": [
+    {
+      "type": "quote",
+      "text": "There are things which are within our power, and there are things which are beyond our power.",
+      "work": "Epictetus, Enchiridion (Handbook) 1.1",
+      "translation": "Thomas Wentworth Higginson, The Works of Epictetus (Thomas Nelson and Sons, 1890; first published 1865), public domain",
+      "checked": [
+        "https://cts.perseids.org/read/greekLit/tlg0557/tlg002/perseus-eng4/1",
+        "https://daedalus.umkc.edu/sandbox/perseus/epictetus_higg/page.435.a.php"
+      ]
+    },
+    {
+      "type": "paraphrase",
+      "text": "Other people's results, and what anyone thinks of them, sit beyond your power.",
+      "work": "Enchiridion 1.1 lists reputation, property and office among the things beyond our power; 'results' is our modern reading"
+    },
+    {
+      "type": "interpretation",
+      "text": "Put your energy where your power is: your next step and how you spend today.",
+      "work": "Our reading of Enchiridion 1 (opinion, aim, desire and aversion are within our power)"
+    }
+  ],
+  "sources": [
+    {
+      "claim": "Psychologists call this social comparison: without a clear measure, people evaluate their opinions and abilities by comparing themselves with others.",
+      "title": "Festinger, L. (1954). A Theory of Social Comparison Processes. Human Relations, 7(2), 117-140. doi:10.1177/001872675400700202",
+      "url": "https://www2.psych.ubc.ca/%7Eschaller/528Readings/Festinger1954.pdf",
+      "also_checked": "https://www.ebsco.com/research-starters/psychology/social-comparison-theory"
+    }
+  ],
+  "voice": {
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian",
+    "model_id": "eleven_multilingual_v2"
+  },
+  "lines": [
+    {
+      "text": "Comparing yourself to everyone online?",
+      "query": "smartphone dark room",
+      "alt": "phone screen night"
+    },
+    {
+      "text": "It's late, you're scrolling, and everyone seems a little further ahead.",
+      "query": "hand scrolling phone",
+      "alt": "phone screen night"
+    },
+    {
+      "text": "A new job, a new city, someone your age already doing the thing you keep planning.",
+      "query": "city night window",
+      "alt": "apartment window city night"
+    },
+    {
+      "text": "Psychologists call this social comparison. When there's no clear measure, we size ourselves up against the people around us.",
+      "query": "people walking blur",
+      "alt": "walkway lamps dusk"
+    },
+    {
+      "text": "And online, you mostly see everyone's best days.",
+      "query": "fireworks night",
+      "alt": "fireworks city"
+    },
+    {
+      "text": "Almost two thousand years ago, the Stoic teacher Epictetus put it simply.",
+      "query": "ancient columns",
+      "alt": "greek ruins"
+    },
+    {
+      "text": "“There are things which are within our power, and there are things which are beyond our power.”",
+      "query": "old book candle",
+      "alt": "ancient manuscript"
+    },
+    {
+      "text": "Other people's results, and what anyone thinks of them, sit beyond your power.",
+      "query": "rain window night",
+      "alt": "night window rain"
+    },
+    {
+      "text": "You can still be happy for them, and still want things for yourself.",
+      "query": "hands together",
+      "alt": "team hands"
+    },
+    {
+      "text": "Epictetus only asks you to put your energy where your power is.",
+      "query": "blue hour city",
+      "alt": "dawn window"
+    },
+    {
+      "text": "Your next step, and the way you spend today.",
+      "query": "sunbeams forest morning",
+      "alt": "morning light forest"
+    },
+    {
+      "text": "So tonight, put the phone face down.",
+      "query": "lantern night",
+      "alt": "warm lamp night"
+    },
+    {
+      "text": "Write one thing you'll do tomorrow that's fully yours. Small is fine.",
+      "query": "writing notebook",
+      "alt": "journal writing desk"
+    },
+    {
+      "text": "A page, a walk, an hour of practice.",
+      "query": "morning walk park",
+      "alt": "guitar practice"
+    },
+    {
+      "text": "Their story was never your scoreboard.",
+      "query": "sunrise field",
+      "alt": "sunrise meadow"
+    },
+    {
+      "text": "You're on your own road, and the next step on it is yours.",
+      "query": "road sunrise",
+      "alt": "walking road morning"
+    }
+  ],
+  "post": {
+    "search_phrase": "comparing yourself to others",
+    "keywords": [
+      "stoicism",
+      "epictetus"
+    ],
+    "caption": "Comparing yourself to others gets loudest late at night. “There are things which are within our power, and there are things which are beyond our power.” Epictetus, Enchiridion 1. What's one thing that's fully yours tomorrow? 🌙",
+    "hashtags": [
+      "#stoicism",
+      "#epictetus",
+      "#philosophy",
+      "#feelingbehind",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Finish the sentence: tomorrow, the one thing that's fully mine is… 👇",
+    "ai_label": true
+  },
+  "endcard": "save this for the next late-night scroll",
+  "ai_label": true,
+  "grain": 0,
+  "bed": "none",
+  "lead": 0.1
+}

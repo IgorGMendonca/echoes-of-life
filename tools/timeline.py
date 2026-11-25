@@ -9,7 +9,9 @@ proj = sys.argv[1]
 script = json.load(open(os.path.join(proj, "script.json")))
 al = json.load(open(os.path.join(proj, "audio", "alignment.json")))
 
-LEAD = 0.5
+# silence before the first word; "lead" in script.json overrides it (0.1 from v011: the 2026-11-25
+# early read showed viewers of the v008 essay leaving after about 1.7 s, so the voice starts at once)
+LEAD = float(script.get("lead", 0.5))
 TAIL_HOLD = 1.2        # last scene keeps playing after the final word
 ENDCARD = 2.8
 W, H = 1080, 1920

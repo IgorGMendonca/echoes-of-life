@@ -201,13 +201,15 @@
   "hypothesis": "A real, verified Stoic text gives the long format depth; visual arc from 2 a.m. blue to sunrise warmth follows the argument",
   "credits_note": "979 per-line take + 83 redo of line 10 + 995 one-take version",
   "music": "none in the file; Igor adds a TikTok instrumental (picks: Idea 22, snowfall, Cornfield Chase) at 15-20%",
-  "tiktok_id": "7711925379031682325"
+  "tiktok_id": "7711976723415436565",
+  "tiktok_id_first_post": "7711925379031682325",
+  "repost_note": "First post 7711925379031682325 (2026-11-24 23:09 Brasília) no longer in the 2026-11-25 pull; a 77.8 s video with v009's Seneca-quote caption was posted 2026-11-25 02:29 Brasília (matched by duration: v008 is the only ~77.7 s video)"
  },
  {
   "slug": "v009",
   "post_date": "2026-11-25",
   "slot": "extra",
-  "status": "ready to post",
+  "status": "posted",
   "format": "oneshot",
   "mood": "behind",
   "derived_from": "v008",
@@ -240,6 +242,176 @@
     "where": "on screen"
    }
   ],
-  "hypothesis": "A short cut of a long video's message, pointing to it in the pinned comment, reaches more people and sends some to the long video"
+  "hypothesis": "A short cut of a long video's message, pointing to it in the pinned comment, reaches more people and sends some to the long video",
+  "tiktok_id": "7711958513261481237",
+  "posted_brasilia": "2026-11-25 01:18"
+ },
+ {
+  "slug": "v010",
+  "post_date": "2026-11-25",
+  "slot": "11:00",
+  "status": "ready to post (delivered 08:30 Brasília)",
+  "format": "oneshot",
+  "mood": "behind",
+  "theme": "Blue hour on an elevated train platform: the train pulls away and leaves the platform still; the line sits in the sky from the first frame",
+  "hook": null,
+  "text": "everyone's. rushing. you. can. stand. still. and. choose.",
+  "caption": "Feeling behind in life when everyone seems to be running somewhere. Seneca noticed the busiest people often had the least time to actually live. If you stood still for a minute, what would you choose? 🚉",
+  "duration": 7.5,
+  "upload_file": "echoes_v010_you-can-stand-still.mp4",
+  "pixabay_ids": [
+   119568
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; picks: Chopin Nocturne Op. 9 No. 2 (moshimo sound design), Pink Floyd 'Time' clip, Idea 22",
+  "assets": "Pixabay Content License (real footage)",
+  "philosophy": {
+   "idea": "Busyness steals the time we think we lack: the most occupied people are the least able to live, so stop and choose",
+   "source": "Seneca, On the Shortness of Life, ch. 7 (the preoccupied, occupati, are the last to learn how to live)",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "pauta_id": 70,
+  "search_phrase": "feeling behind in life",
+  "hypothesis": "A shorter stack (8 words, readable in about 2 s) over a moving world holds more of the first seconds than v007's 9-word line (early read 2026-11-25)"
+ },
+ {
+  "slug": "v011",
+  "post_date": "2026-11-25",
+  "slot": "14:00",
+  "status": "ready to post",
+  "format": "long",
+  "kind": "philosophy",
+  "theme": "Social comparison, through Epictetus' Enchiridion 1 (what is within our power and what is not)",
+  "hook": "Comparing yourself to everyone online?",
+  "caption": "Comparing yourself to others gets loudest late at night. “There are things which are within our power, and there are things which are beyond our power.” Epictetus, Enchiridion 1. What's one thing that's fully yours tomorrow? 🌙",
+  "duration": 76.6,
+  "upload_file": "echoes_v011_comparing-yourself-online.mp4",
+  "pixabay_ids": [
+   169445,
+   735,
+   201671,
+   2351,
+   225661,
+   269310,
+   107189,
+   74388,
+   363873,
+   333339,
+   382582,
+   11186,
+   4952,
+   177081,
+   62390,
+   134908
+  ],
+  "music_seed": null,
+  "voice": "Brian, one take (eleven_multilingual_v2, speed 0.9), voice from 0.1 s",
+  "credits": 1036,
+  "bed": "none",
+  "music": "none in the file; picks: Chopin Nocturne Op. 9 No. 2, Idea 22, Comptine d'un autre ete (instrumental, 15-20%)",
+  "assets": "Pixabay Content License",
+  "philosophy": [
+   {
+    "type": "quote",
+    "text": "There are things which are within our power, and there are things which are beyond our power.",
+    "work": "Epictetus, Enchiridion (Handbook) 1.1",
+    "translation": "Thomas Wentworth Higginson, The Works of Epictetus (Thomas Nelson and Sons, 1890; first published 1865), public domain",
+    "checked": [
+     "https://cts.perseids.org/read/greekLit/tlg0557/tlg002/perseus-eng4/1",
+     "https://daedalus.umkc.edu/sandbox/perseus/epictetus_higg/page.435.a.php"
+    ]
+   },
+   {
+    "type": "paraphrase",
+    "text": "Other people's results, and what anyone thinks of them, sit beyond your power.",
+    "work": "Enchiridion 1.1 lists reputation, property and office among the things beyond our power; 'results' is our modern reading"
+   },
+   {
+    "type": "interpretation",
+    "text": "Put your energy where your power is: your next step and how you spend today.",
+    "work": "Our reading of Enchiridion 1 (opinion, aim, desire and aversion are within our power)"
+   }
+  ],
+  "sources": [
+   {
+    "claim": "Psychologists call this social comparison: without a clear measure, people evaluate their opinions and abilities by comparing themselves with others.",
+    "title": "Festinger, L. (1954). A Theory of Social Comparison Processes. Human Relations, 7(2), 117-140. doi:10.1177/001872675400700202",
+    "url": "https://www2.psych.ubc.ca/%7Eschaller/528Readings/Festinger1954.pdf",
+    "also_checked": "https://www.ebsco.com/research-starters/psychology/social-comparison-theory"
+   }
+  ],
+  "pauta_id": 34,
+  "search_phrase": "comparing yourself to others",
+  "hypothesis": "A short spoken question hook that starts at once (voice from 0.1 s, a person with a phone in the first shot) keeps more viewers past 2 s than v008's statement hook after 0.5 s of silence."
+ },
+ {
+  "slug": "v012",
+  "post_date": "2026-11-25",
+  "slot": "18:00",
+  "status": "ready to post",
+  "format": "ambient",
+  "mood": "nostalgia",
+  "theme": "Nostalgia: a young woman slowly spinning on an old playground merry-go-round in autumn backlight; the tilt-up lifts from the fallen leaves to her",
+  "hook": null,
+  "text": null,
+  "text_note": "The idea's line ('nobody checked the time back then.') moved to the caption: the woman fills the 9:16 frame from top to bottom, so no area keeps the text clear of her. This one counts as a no-text nostalgia edit.",
+  "caption": "Childhood nostalgia: I miss the days when nobody checked the time. What did you play until someone called you home? 🍂",
+  "duration": 8.5,
+  "upload_file": "echoes_v012_nobody-checked-the-time.mp4",
+  "pixabay_ids": [
+   236070,
+   52655
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; picks: Pink Floyd 'Time' clip, 'my moon my man' Finneas cover by niki, Forever (The Little Dippers)",
+  "assets": "Pixabay Content License (real footage)",
+  "pauta_id": 58,
+  "search_phrase": "childhood nostalgia",
+  "hypothesis": "A grown-up on a childhood merry-go-round plus a first-person caption ('I miss the days...', the shape of the 2026-11-24 outlier) reaches past the first test batch without on-screen text"
+ },
+ {
+  "slug": "v013",
+  "post_date": "2026-11-25",
+  "slot": "21:00",
+  "status": "ready to post",
+  "format": "long",
+  "kind": "story",
+  "fiction": true,
+  "theme": "Feeling behind: Nora, 19, stays home and works the 5 a.m. bakery shift while friends move away; her receipt sketches of the regulars become a sketchbook and a wall",
+  "hook": "At nineteen, Nora felt behind in life.",
+  "caption": "Feeling behind in life when everyone else moved away. A short story about Nora, a 5 a.m. bakery and a stack of receipts. What are you quietly getting good at? 🥐",
+  "duration": 70.0,
+  "upload_file": "echoes_v013_nora-still-at-home.mp4",
+  "pixabay_ids": [
+   106087,
+   12127,
+   169000,
+   43653,
+   2336,
+   3595,
+   63066,
+   77021,
+   39887,
+   24449,
+   80,
+   6409,
+   32246,
+   43459,
+   170258,
+   174150
+  ],
+  "music_seed": null,
+  "voice": "Brian, one take (eleven_multilingual_v2, speed 0.9), voice from 0.1 s",
+  "credits": 958,
+  "bed": "none",
+  "music": "none in the file; picks: Comptine d'un autre ete, Chopin Nocturne Op. 9 No. 2, Nuvole Bianche (instrumental, 15-20%)",
+  "assets": "Pixabay Content License",
+  "pauta_id": 67,
+  "search_phrase": "feeling behind in life",
+  "hypothesis": "A named character and a specific place in the first spoken line, with the voice from 0.1 s, holds viewers past 2 s; a fictional story with a concrete turn (the old man keeps the drawing) earns shares on the main pillar."
  }
 ]

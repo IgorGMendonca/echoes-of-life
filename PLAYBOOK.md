@@ -63,6 +63,9 @@ compares them. The old 35–45 s narrated format is retired; its ideas are parke
   daylight (the turn); the hook title on screen from the first frame; no film grain.
 - **Voice (Igor, 2026-11-24):** the narration is read in one take, so the pauses are the voice's
   own. Separate takes joined by silence sounded like the audio stalling after every sentence.
+- **First second (from v011, 2026-11-25 early read):** the voice starts at 0.1 s (`"lead": 0.1` in
+  script.json; `timeline.py` still defaults to 0.5 s for older projects) and the first shot has a
+  person or a hand in motion, because v008's viewers left after about 1.7 s on average.
 - **Music (Igor, 2026-11-24):** none in the file. Igor adds a calm instrumental from the TikTok
   library and sets it to about 15–20% under the voice; each delivery names 2–3 picks.
 
@@ -187,4 +190,14 @@ formats from 2026-11-25. Nothing here is a learned rule from metrics yet.
 
 ## Learned (updated weekly, newest first)
 
-_No data yet. First analysis: Monday 2026-11-30._
+- 2026-11-25 (tentative; 9 posts, one per format, 5–21 h old, 68–4,256 views each): only two
+  posts got past TikTok's first test batch of about 70–150 views, the v008 essay repost (1,737
+  views in 5.3 h) and an ambient clip captioned "I miss the days when life felt slower…" (4,256
+  in 12.7 h). Both ran about 330 views/h with about 14–15 likes per 100 views; the other seven
+  had 1–9 likes per 100 and 6–12 views/h. 96–99.6% of every post's views came from For You. The
+  essay kept almost nobody (1.7 s of 78 s on average, 0.1% to the end), so its reach came from
+  the first frame and caption, not from watching; v007, the one-shot, sat at 68 views (27% of its
+  length watched, 4.9% to the end). Hints only: a first-person, relatable caption line, and a
+  long video whose voice and moving image start at once. Audience countries not yet delivered.
+
+_First full analysis: Monday 2026-11-30._

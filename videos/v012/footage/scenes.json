@@ -1,0 +1,25 @@
+[
+ {
+  "role": "ground",
+  "pixabay_id": 236070,
+  "src_start": 2.0,
+  "fx": 0.5,
+  "dur": 0,
+  "file": "videos/v012/footage/clips/scene_0_236070.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "role": "view",
+  "pixabay_id": 52655,
+  "src_start": 6.0,
+  "fx": 0.38,
+  "dur": 8.5,
+  "shake": 8,
+  "file": "videos/v012/footage/clips/scene_1_52655.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ }
+]

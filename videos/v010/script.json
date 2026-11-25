@@ -1,0 +1,61 @@
+{
+  "slug": "v010",
+  "format": "oneshot",
+  "mood": "behind",
+  "theme": "Blue hour on an elevated train platform: the train pulls away and leaves the platform still; the line sits in the sky from the first frame",
+  "pauta_id": 70,
+  "lines": [
+    {
+      "text": "",
+      "query": "subway station",
+      "alt": "train leaving platform"
+    }
+  ],
+  "stack": {
+    "words": [
+      "everyone's.",
+      "rushing.",
+      "you.",
+      "can.",
+      "stand.",
+      "still.",
+      "and.",
+      "choose."
+    ],
+    "x": 0.08,
+    "y": 0.17,
+    "size": 54,
+    "color": "F2E7C4",
+    "align": "left",
+    "from": 0.0
+  },
+  "music_free": true,
+  "philosophy": {
+    "idea": "Busyness steals the time we think we lack: the most occupied people are the least able to live, so stop and choose",
+    "source": "Seneca, On the Shortness of Life, ch. 7 (the preoccupied, occupati, are the last to learn how to live)",
+    "use": "interpretation in our own words, not a quote"
+  },
+  "hooks_considered": [
+    "everyone's. rushing. you. can. stand. still. and. choose.",
+    "everyone. is. rushing. somewhere. you're. allowed. to. stand. still. and. choose.",
+    "busy. isn't. the. same. as. alive. choose. your. hour."
+  ],
+  "hook_note": "Shortened from the idea's 11 words to 8 after the 2026-11-25 early read (v007 viewers left at about 1.8 s); readable in about 2 s.",
+  "post": {
+    "search_phrase": "feeling behind in life",
+    "keywords": [
+      "stoicism",
+      "feeling lost in life"
+    ],
+    "caption": "Feeling behind in life when everyone seems to be running somewhere. Seneca noticed the busiest people often had the least time to actually live. If you stood still for a minute, what would you choose? 🚉",
+    "hashtags": [
+      "#stoicism",
+      "#feelingbehind",
+      "#mindset",
+      "#selfimprovement",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "What's one thing you'd do today if nobody was rushing you? 👇"
+  },
+  "ai_label": false
+}

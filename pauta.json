@@ -48,7 +48,8 @@
    "idea": "Seneca, On the Shortness of Life: busyness steals the time we think we lack",
    "use": "interpretation in our own words, not a quote"
   },
-  "status": "todo"
+  "status": "done",
+  "slug": "v010"
  },
  {
   "id": 71,
@@ -251,10 +252,11 @@
   "theme": "Social comparison",
   "hook": "Everyone online looks ahead of you.",
   "angle": "Everyone online looks ahead of you. Their results are not up to you; your next small step is. End with one thing tonight that is yours.",
-  "status": "todo",
+  "status": "done",
   "kind": "philosophy",
   "research": "Social comparison theory (Festinger, 1954); studies on upward comparison on social media. Verify before citing.",
-  "stoic": "Epictetus, Enchiridion 1: some things are up to us, others are not (other people's results are not; your effort is)."
+  "stoic": "Epictetus, Enchiridion 1: some things are up to us, others are not (other people's results are not; your effort is).",
+  "slug": "v011"
  },
  {
   "id": 36,
@@ -377,9 +379,10 @@
   "id": 58,
   "format": "ambient",
   "mood": "nostalgia",
-  "status": "todo",
+  "status": "done",
   "setting": "Kids running across a park at golden hour",
-  "text": "nobody checked the time\nback then."
+  "text": "nobody checked the time\nback then.",
+  "slug": "v012"
  },
  {
   "id": 51,
@@ -456,7 +459,8 @@
   "theme": "Feeling behind",
   "hook": "At 19, Nora was the last one still at home.",
   "angle": "Fiction. Nora watches everyone's move-in videos from the bakery where she works the 5 a.m. shift. She knows every regular's order and starts sketching their faces on the back of receipts. A year later the sketchbook is full, and so, quietly, is her life. She didn't catch up; she found her own road.",
-  "status": "todo"
+  "status": "done",
+  "slug": "v013"
  },
  {
   "id": 20,

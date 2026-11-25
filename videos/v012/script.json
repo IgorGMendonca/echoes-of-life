@@ -1,0 +1,48 @@
+{
+  "slug": "v012",
+  "format": "ambient",
+  "mood": "nostalgia",
+  "theme": "Nostalgia: a young woman slowly spinning on an old playground merry-go-round in autumn backlight; the tilt-up lifts from the fallen leaves to her",
+  "pauta_id": 58,
+  "music_free": true,
+  "reveal": {
+    "at": 0.55,
+    "dur": 0.7
+  },
+  "hooks_considered": [
+    "Childhood nostalgia: I miss the days when nobody checked the time.",
+    "nobody checked the time back then.",
+    "we only went home when someone called our name."
+  ],
+  "lines": [
+    {
+      "text": "",
+      "query": "fallen leaves ground",
+      "alt": "autumn ground"
+    },
+    {
+      "text": "",
+      "query": "swing sunset",
+      "alt": "playground sunset"
+    }
+  ],
+  "post": {
+    "search_phrase": "childhood nostalgia",
+    "keywords": [
+      "growing up",
+      "childhood memories"
+    ],
+    "caption": "Childhood nostalgia: I miss the days when nobody checked the time. What did you play until someone called you home? 🍂",
+    "hashtags": [
+      "#nostalgia",
+      "#childhoodmemories",
+      "#growingup",
+      "#autumn",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "What song would you play over this one? 🎧"
+  },
+  "ai_label": false,
+  "footage_note": "No 4K real clip of kids running in a park at golden hour on Pixabay (searched 12 queries); a grown-up on a childhood merry-go-round keeps the idea and the line.",
+  "text_note": "The idea's line ('nobody checked the time back then.') moved to the caption: the woman fills the 9:16 frame from top to bottom, so no area keeps the text clear of her. This one counts as a no-text nostalgia edit."
+}

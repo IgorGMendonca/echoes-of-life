@@ -1,0 +1,23 @@
+{
+ "pulled_utc": "2026-11-25T10:46Z",
+ "connector": "tiktok_organic",
+ "date_preset": "last_7dT",
+ "fields": [
+  "video_id",
+  "video_create_datetime",
+  "video_audience_countries_country",
+  "video_audience_countries_percentage"
+ ],
+ "note": "all 9 videos returned country null and percentage 0: TikTok had not delivered audience countries yet",
+ "by_video": {
+  "7711861867890691349": null,
+  "7711859921746218292": null,
+  "7711846934989901077": null,
+  "7711845639134432532": null,
+  "7711793294870580501": null,
+  "7711729316219964692": null,
+  "7711976723415436565": null,
+  "7711958513261481237": null,
+  "7711908191566662933": null
+ }
+}

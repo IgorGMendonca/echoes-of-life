@@ -1,0 +1,130 @@
+{
+  "slug": "v013",
+  "format": "long",
+  "kind": "story",
+  "fiction": true,
+  "pauta_id": 67,
+  "theme": "Feeling behind: Nora, 19, stays home and works the 5 a.m. bakery shift while friends move away; her receipt sketches of the regulars become a sketchbook and a wall",
+  "hook": "At nineteen, Nora felt behind in life.",
+  "hypothesis": "A named character and a specific place in the first spoken line, with the voice from 0.1 s, holds viewers past 2 s; a fictional story with a concrete turn (the old man keeps the drawing) earns shares on the main pillar.",
+  "hooks_considered": [
+    "At nineteen, Nora felt behind in life.",
+    "At nineteen, Nora was the last one still at home.",
+    "Everyone left for college. Nora baked bread."
+  ],
+  "stoic_undercurrent": "The present task, done with care, is already a life (Marcus Aurelius' focus on the work in front of you); never stated as a lecture.",
+  "voice": {
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian",
+    "model_id": "eleven_multilingual_v2"
+  },
+  "lines": [
+    {
+      "text": "At nineteen, Nora felt behind in life.",
+      "query": "woman silhouette window",
+      "alt": "window light dark room"
+    },
+    {
+      "text": "This is a story about her, and a stack of old receipts.",
+      "query": "moon bay night",
+      "alt": "city lights water dawn"
+    },
+    {
+      "text": "That fall, her friends posted move-in days and new cities.",
+      "query": "moving boxes",
+      "alt": "cardboard boxes room"
+    },
+    {
+      "text": "Nora worked the five a.m. shift at a small bakery.",
+      "query": "baker kneading dough",
+      "alt": "bakery early morning"
+    },
+    {
+      "text": "The ovens were the only warm light on the street.",
+      "query": "fire flames",
+      "alt": "oven fire"
+    },
+    {
+      "text": "She knew every regular by their order.",
+      "query": "coffee steam window",
+      "alt": "coffee cup morning"
+    },
+    {
+      "text": "The nurse who wanted the burnt end. The old man who paid in coins.",
+      "query": "bread slicing",
+      "alt": "fresh bread loaf"
+    },
+    {
+      "text": "On slow mornings, she sketched them on the backs of receipts and hid them in her apron.",
+      "query": "pencil sketch paper",
+      "alt": "sketching hand"
+    },
+    {
+      "text": "One morning, the old man saw a drawing of himself.",
+      "query": "old man cap",
+      "alt": "elderly man looking down"
+    },
+    {
+      "text": "He looked at it for a long time, then asked to keep it.",
+      "query": "old man cap",
+      "alt": "elderly man looking down"
+    },
+    {
+      "text": "The next week, he brought her a sketchbook.",
+      "query": "sketchbook drawing",
+      "alt": "ink sketch book"
+    },
+    {
+      "text": "Nora kept going, one regular at a time.",
+      "query": "hand drawing sketchbook",
+      "alt": "pen sketching"
+    },
+    {
+      "text": "By the next fall, the book was full, and the bakery had a wall of her drawings.",
+      "query": "cafe people window",
+      "alt": "couple talking cafe"
+    },
+    {
+      "text": "People came in just to find themselves.",
+      "query": "coffee cup cafe",
+      "alt": "cafe counter people"
+    },
+    {
+      "text": "Nora was still at home, still up at five.",
+      "query": "girl bed notebook",
+      "alt": "writing in bed"
+    },
+    {
+      "text": "But for the first time, her life felt like it had already started.",
+      "query": "woman silhouette sunset",
+      "alt": "woman beach dusk"
+    },
+    {
+      "text": "If you're the one still at home, look around. Your road might already be under your feet.",
+      "query": "forest path sunlight",
+      "alt": "family walking path"
+    }
+  ],
+  "post": {
+    "search_phrase": "feeling behind in life",
+    "keywords": [
+      "short story",
+      "finding your path"
+    ],
+    "caption": "Feeling behind in life when everyone else moved away. A short story about Nora, a 5 a.m. bakery and a stack of receipts. What are you quietly getting good at? 🥐",
+    "hashtags": [
+      "#shortstory",
+      "#feelingbehind",
+      "#deepthoughts",
+      "#emotional",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "If you drew the regulars in your life, who'd be first? 👇",
+    "ai_label": true
+  },
+  "endcard": "send this to someone still finding their road",
+  "ai_label": true,
+  "grain": 0,
+  "bed": "none",
+  "lead": 0.1
+}
