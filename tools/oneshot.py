@@ -9,6 +9,8 @@ and script.json:
             "align": "left"|"center", "from": 0.0}
   "shade": {"top": 0.5, "strength": 0.45}  optional: darkens the frame from "top" down, for text contrast
   "music_free": true  (always: the song is added on TikTok)
+  optional "grade", "sharpen", "crf", "preset" (as in render.py); the scene may set "blend_fps": true
+  to blend a 24/25 fps clip into 30 fps instead of repeating frames
 Writes captions.ass and render/<slug>.mp4 (silent track) for finish.py.
 """
 import json, os, subprocess, sys
@@ -26,6 +28,9 @@ CW, CH = 1120, 1992                    # a little larger than the frame when the
 GRADE = ("eq=contrast=1.06:saturation=0.86:brightness=-0.02:gamma=0.98,"
          "colorbalance=rs=0.04:bs=-0.03:rm=0.02:bm=-0.02,vignette=angle=PI/4.6")
 SHARPEN = "unsharp=5:5:0.45:5:5:0"
+# a script may set its own look and encoder quality (as in render.py): "grade", "sharpen", "crf", "preset"
+GRADE = script.get("grade", GRADE)
+SHARPEN = f"unsharp=5:5:{script.get('sharpen', 0.45)}:5:5:0"
 
 
 def ts(x):
@@ -82,7 +87,7 @@ if sh:
             f"x='{(CW-W)//2}+{sx}':y='{(CH-H)//2}+{sy}'")
 else:
     hold = f"scale={W}:{H}:flags=lanczos"
-base = (f"[0:v]trim=duration={T},setpts=PTS-STARTPTS,fps={FPS},"
+base = (f"[0:v]trim=duration={T},setpts=PTS-STARTPTS,{'framerate=fps=' if sc.get('blend_fps') else 'fps='}{FPS},"
         f"crop=w=trunc(ih*9/16/2)*2:h=ih:x={cx}:y=0,{hold},setsar=1{eq},{SHARPEN},{GRADE}")
 subs = f"subtitles=filename='{ass_path}':fontsdir='{FONTS}',format=yuv420p[vout]"
 fc = ";".join([
@@ -96,7 +101,7 @@ subprocess.run(["ffmpeg", "-y", "-v", "error", "-nostats",
                 "-ss", str(sc["src_start"]), "-t", str(T + 0.3), "-i", sc["file"],
                 *(["-loop", "1", "-t", str(T + 0.3), "-i", shade_png] if shade_png else []),
                 "-filter_complex", fc, "-map", "[vout]", "-map", "[aout]", "-r", str(FPS),
-                "-c:v", "libx264", "-preset", "medium", "-crf", "16", "-pix_fmt", "yuv420p", "-profile:v", "high",
+                "-c:v", "libx264", "-preset", script.get("preset", "medium"), "-crf", str(script.get("crf", 16)), "-pix_fmt", "yuv420p", "-profile:v", "high",
                 "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-movflags", "+faststart", tmp], check=True)
 os.replace(tmp, out)
 print(out)

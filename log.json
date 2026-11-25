@@ -615,5 +615,38 @@
   "quality": "six real 4K shots, two 60 fps trains and the snowfall in true half-speed slow motion, the rest real time; matte warm grade with RGB glow; CRF 12 master",
   "hypothesis": "A nostalgic scenery montage whose line opens a loop at the start ('a gente nunca sabe qual noite comum') and closes it on the last shot ('vai virar saudade.') keeps viewers to the end and earns more likes and shares per 100 views than the plain city edits.",
   "line_revision": "2026-11-25: Igor found 'parece lembrança, mas eu nunca estive aqui.' weak and asked for something more sentimental or Stoic"
+ },
+ {
+  "slug": "v020",
+  "post_date": "2026-11-25",
+  "slot": "extra",
+  "status": "ready to post",
+  "format": "oneshot",
+  "mood": "behind",
+  "language": "pt-BR",
+  "requested_by": "Igor, 2026-11-25: 'Agora gere algo com a frase, aqueles vídeos curtos com uma frase parecido com o do tomito em pt/br'",
+  "theme": "Cinematic One Shot: uma pessoa sentada na areia vendo o sol encostar no mar; a frase estoica (impermanência e atenção ao presente) na tela desde o primeiro quadro",
+  "hook": null,
+  "text": "nada. disso. fica. pra. sempre. então. repara.",
+  "caption": "Estoicismo: Marco Aurélio comparava o tempo a um rio de acontecimentos, em que tudo o que a gente vê já está indo embora. O que você reparou hoje? 🌅",
+  "duration": 7.0,
+  "upload_file": "echoes_v020_nada-disso-fica.mp4",
+  "pixabay_ids": [
+   317882
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; picks: Idea 22 (Gibran Alcocer), Cornfield Chase – Piano (Dorian Marko), Space Song (Beach House)",
+  "assets": "Pixabay Content License (real footage)",
+  "pauta_id": null,
+  "search_phrase": "estoicismo",
+  "philosophy": {
+   "idea": "Impermanence and attention to the present moment",
+   "source": "Marcus Aurelius, Meditations 4.43 (time as a river of events: as soon as a thing is seen, it is carried away), checked in George Long's translation",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "quality": "one real 4K tripod shot (3840 px, ~43 Mbps, 25 fps blended to 30 fps); CRF 12 slow master",
+  "hypothesis": "First pt-BR one-shot in the @tonito.rt / v007 style: compare with v007 (English) and the pt-BR scenery edits on watch share, replays and saves per 100 views"
  }
 ]

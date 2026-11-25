@@ -1,0 +1,69 @@
+{
+  "slug": "v020",
+  "format": "oneshot",
+  "mood": "behind",
+  "extra": true,
+  "language": "pt-BR",
+  "theme": "Uma pessoa sentada na areia olhando o sol encostar no mar; as ondas e o céu mudando enquanto ela fica parada",
+  "lines": [
+    {
+      "text": "",
+      "query": "person sitting sea sunset",
+      "alt": "silhouette beach sunset"
+    }
+  ],
+  "stack": {
+    "words": [
+      "nada.",
+      "disso.",
+      "fica.",
+      "pra.",
+      "sempre.",
+      "então.",
+      "repara."
+    ],
+    "x": 0.075,
+    "y": 0.56,
+    "size": 56,
+    "color": "F2E7C4",
+    "align": "left",
+    "from": 0.0
+  },
+  "music_free": true,
+  "shade": {
+    "top": 0.5,
+    "strength": 0.45
+  },
+  "grade": "eq=contrast=1.05:saturation=1.0:gamma=0.99,colorbalance=bs=0.02:bm=0.01:rh=0.03:bh=-0.02,vignette=angle=PI/5",
+  "sharpen": 0.3,
+  "crf": 12,
+  "preset": "slow",
+  "format_name": "Cinematic One Shot",
+  "philosophy": {
+    "idea": "Impermanence and attention to the present moment",
+    "source": "Marcus Aurelius, Meditations 4.43 (time as a river of events: as soon as a thing is seen, it is carried away), checked in George Long's translation",
+    "use": "interpretation in our own words, not a quote"
+  },
+  "hooks_considered": [
+    "nada. disso. fica. pra. sempre. então. repara.",
+    "o. sol. vai. embora. todo. dia. e. mesmo. assim. a. gente. não. olha.",
+    "tudo. passa. por. isso. presta. atenção. em. hoje."
+  ],
+  "post": {
+    "search_phrase": "estoicismo",
+    "keywords": [
+      "marco aurélio",
+      "frases estoicas"
+    ],
+    "caption": "Estoicismo: Marco Aurélio comparava o tempo a um rio de acontecimentos, em que tudo o que a gente vê já está indo embora. O que você reparou hoje? 🌅",
+    "hashtags": [
+      "#estoicismo",
+      "#marcoaurelio",
+      "#reflexao",
+      "#motivacao",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Conta uma coisa pequena que você reparou hoje 👇"
+  },
+  "ai_label": false
+}
