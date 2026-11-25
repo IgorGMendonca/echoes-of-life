@@ -54,6 +54,11 @@ Four videos a day. Since 2026-11-25 the lineup follows the pilots Igor approved 
 The two short formats differ on purpose (the brief asks for more than one visual model, and the
 weekly analysis compares them). Ideas with `"status": "parked"` are never picked.
 
+Every `script.json` carries `"post": {"search_phrase", "keywords": [two related ones], …}` and
+follows PLAYBOOK.md "Search and hashtags": the search phrase starts the caption's first line and
+shows up on screen early (and in the first spoken line of a long video); hashtags come from that
+section's sets, never #fyp, #foryou or #viral.
+
 0. **Metrics first.** Before producing, read how the posted videos are doing: Windsor.ai
    connector `tiktok_organic`, `get_data` with the fields listed at the top of
    `tools/early_read.py` and `date_preset` "last_7dT". Save the result as it came to
@@ -195,7 +200,8 @@ weekly analysis compares them). Ideas with `"status": "parked"` are never picked
    block (post it as the first comment and pin it), the reminder to turn on "Conteúdo gerado por
    IA" when `ai_label` is true, and the 2–3 sound picks for every video with their start point
    (he adds the song in the app; under the long videos he sets the added sound to about 15–20% and
-   the original sound to 100%). For the philosophy essay add
+   the original sound to 100%), and the three keywords to suggest under "Manage keywords" once
+   the video is up (the search phrase and the two related ones). For the philosophy essay add
    one line naming the text, section and translation (and any psychology source), so Igor can
    answer comments. Keep it short.
 9. **Record.** Set the four ideas in `pauta.json` to `"status": "done", "slug": "<slug>"`, append

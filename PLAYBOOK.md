@@ -107,6 +107,28 @@ kids playing, warm windows at dusk; v006 is the model.
   comment: a light prompt such as "What song would you play here? 🎧".
 - AI label only when the footage itself looks AI-generated (no synthetic voice in this format).
 
+## Search and hashtags (TikTok SEO, from 2026-11-25)
+
+TikTok search reads the caption, the words on screen, the spoken words and the hashtags, and
+creators can now review the keywords TikTok attaches to each post. So every video gets one
+**search phrase**, written the way people type it ("feeling behind in life", "seneca on time",
+"stoicism for students", "childhood nostalgia"), and it appears naturally, never stuffed:
+- on screen early (the hook title, or the stack when it fits),
+- in the first spoken line of a long video,
+- at the start of the caption's first line, then the line that adds something, then the question.
+
+Hashtags: 4–5, in this order: one broad community tag, two or three that name the topic, and
+#echoesoflife last. Never #fyp, #foryou or #viral: they say nothing about the video.
+Starting sets (the weekly analysis rotates them):
+- One-shot (feeling behind): #stoicism #feelingbehind #mindset #selfimprovement #echoesoflife
+- Philosophy essay: #stoicism #<the philosopher: seneca, marcusaurelius, epictetus> #philosophy #feelingbehind #echoesoflife
+- Nostalgia edit: #nostalgia #childhoodmemories #growingup #<season: autumn, winter, christmas> #echoesoflife
+- Story: #shortstory #<theme: nostalgia or feelingbehind> #deepthoughts #emotional #echoesoflife
+  (never #storytime: our stories are fiction)
+
+After posting, Igor opens the video's three dots → "Manage keywords", blocks anything off-topic
+and suggests the search phrase plus two related keywords; every delivery lists them.
+
 ## Engagement: invite, never beg
 
 Each video carries one invitation that grows out of its own content, so answering feels natural.
