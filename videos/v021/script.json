@@ -19,13 +19,23 @@
   "voice": {
     "voice_id": "nPczCjzI2devNBz1zQrb",
     "name": "Brian",
-    "model_id": "eleven_multilingual_v2"
+    "model_id": "eleven_v4",
+    "settings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75
+    },
+    "language_code": "pt",
+    "seed": 7,
+    "join": "\n",
+    "context": "Um narrador brasileiro, com voz calorosa e emocionada, conta uma reflexão sobre família para quem mora longe de casa:",
+    "tempo": 0.95
   },
   "lines": [
     {
       "text": "Amor de família, às vezes, se diz “já comeu?”",
       "query": "mother cooking kitchen",
-      "alt": "hands serving food"
+      "alt": "hands serving food",
+      "say": "[warm, gently smiling] Amor de família, às vezes, se diz “já comeu?”"
     },
     {
       "text": "Ou “leva um casaco”, mesmo num dia de calor.",
@@ -40,12 +50,14 @@
     {
       "text": "Tem casa onde ninguém fala “eu te amo” em voz alta.",
       "query": "family dinner table",
-      "alt": "family eating together"
+      "alt": "family eating together",
+      "say": "[softer, sincere] Tem casa onde ninguém fala “eu te amo” em voz alta."
     },
     {
       "text": "Mas sempre tem um prato guardado no micro-ondas pra você.",
       "query": "microwave oven",
-      "alt": "plate food kitchen"
+      "alt": "plate food kitchen",
+      "say": "[warmly] Mas sempre tem um prato guardado no micro-ondas pra você."
     },
     {
       "text": "E a luz da sala fica acesa,",
@@ -60,27 +72,32 @@
     {
       "text": "Quando a gente é mais novo, revira os olhos e jura que já sabe se cuidar.",
       "query": "teenager headphones bedroom",
-      "alt": "teen girl phone bed"
+      "alt": "teen girl phone bed",
+      "say": "[lightly, with a hint of a smile] Quando a gente é mais novo, revira os olhos e jura que já sabe se cuidar."
     },
     {
       "text": "Aí um dia você mora longe e chega tarde numa sala escura.",
       "query": "man entering apartment night",
-      "alt": "opening door dark"
+      "alt": "opening door dark",
+      "say": "[slowly, wistful] Aí um dia você mora longe… e chega tarde numa sala escura."
     },
     {
       "text": "Ninguém pergunta se você já comeu.",
       "query": "eating alone night",
-      "alt": "man kitchen night"
+      "alt": "man kitchen night",
+      "say": "Ninguém pergunta se você já comeu…"
     },
     {
       "text": "É aí que a ficha cai.",
       "query": "woman window city night",
-      "alt": "man window night"
+      "alt": "man window night",
+      "say": "[gently] É aí que a ficha cai."
     },
     {
       "text": "E, sem perceber, você começa a fazer igual.",
       "query": "young woman cooking",
-      "alt": "man cooking morning"
+      "alt": "man cooking morning",
+      "say": "[warmer] E, sem perceber, você começa a fazer igual."
     },
     {
       "text": "Pergunta se a pessoa já comeu. Pede pra ela avisar quando chegar.",
@@ -95,7 +112,8 @@
     {
       "text": "Então, da próxima vez que te pedirem pra avisar quando chegar, avisa.",
       "query": "walking home sunset",
-      "alt": "woman walking street sunset"
+      "alt": "woman walking street sunset",
+      "say": "[warm and sincere, measured but present] Então, da próxima vez que te pedirem pra avisar quando chegar… avisa."
     },
     {
       "text": "E aproveita pra responder, com todas as letras, o que eles dizem há anos.",
@@ -105,7 +123,8 @@
     {
       "text": "Cheguei. Também te amo.",
       "query": "family walking sunset",
-      "alt": "golden hour family"
+      "alt": "golden hour family",
+      "say": "[softly, with a smile] Cheguei… Também te amo."
     }
   ],
   "post": {
@@ -129,5 +148,6 @@
   "ai_label": true,
   "grain": 0,
   "bed": "none",
-  "lead": 0.1
+  "lead": 0.1,
+  "voice_note": "Igor, 2026-11-25 18:38: 'é possível colocar mais emoção nessa narração? parece uma leitura simples sem sentimento'; 18:42 chose the eleven_v4 sample with emotion direction ('Pode ser a C, ficou bem legal')"
 }

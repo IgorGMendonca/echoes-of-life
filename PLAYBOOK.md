@@ -41,7 +41,7 @@ compares them. The old 35–45 s narrated format is retired; its ideas are parke
 ## Starting rules (hypotheses, not yet proven)
 
 - Hook in the first 2 seconds, 9 words or fewer, shown as the title. It is a statement or a question that hits a universal memory.
-- Long videos: 70–85 s, 150–180 words in Portuguese, 14–19 lines, read in one take (English v008: 181 words ran 77.7 s).
+- Long videos: 70–85 s, 175–205 words in Portuguese, 15–20 lines, read in one take (v4 at tempo 0.95: 165 words gave 61.7 s of speech in v021; English v008: 181 words ran 77.7 s).
 - One scene per line; a cut every 3–6 s.
 - Specific images beat abstractions ("the porch light", "your mom's voice at dinner") .
 - End with a gentle call to act ("call them today") or a question for the comments.
@@ -63,9 +63,13 @@ compares them. The old 35–45 s narrated format is retired; its ideas are parke
   main pillar (feeling behind, starting late), half nostalgia. No real people, no tragedies.
 - **Look:** one real shot per line, light that moves from night blue (the heavy part) to warm
   daylight (the turn); the hook title on screen from the first frame; no film grain.
-- **Voice in Portuguese (2026-11-25):** Brian (`nPczCjzI2devNBz1zQrb`, eleven_multilingual_v2,
-  the settings in `tools/tts.py`) reads the Portuguese script, because the free plan's API refuses
-  the Voice Library, where the native Brazilian narrators are. If Igor upgrades (Starter or above),
+- **Voice in Portuguese (2026-11-25):** Brian (`nPczCjzI2devNBz1zQrb`) on `eleven_v4`, directed
+  with English audio tags on the shifts and played at tempo 0.95 (the voice block of
+  `videos/v021/script.json`; `tools/tts.py` explains each key). Igor found the v2 read flat ("parece
+  uma leitura simples sem sentimento") and chose v4 in an A/B/C test of the same passage: its pitch
+  range measured 15.6 semitones against 12.4 for v2, and it is louder at source (−22.6 against
+  −24.5 LUFS, where v2 bordered on a breathy read). Brian is the voice because the free plan's API
+  refuses the Voice Library, where the native Brazilian narrators are. If Igor upgrades (Starter or above),
   cast with the `voice-direction` skill among calm, deep pt-BR narrators such as Leo Antonio
   (`EbiSUflQjzm4g7S895SC`), Lucas, Deep & Profound (`GIuLCSVfgJaUuh7hYOY8`) and Victor Power
   (`YNOujSUmHtgN6anjqXPf`), and write the chosen voice here.

@@ -163,18 +163,24 @@ puts every source frame on one output frame. Keep `zoom` at 0.04 or less.
 6. **Long videos** (philosophy and story), for each:
    1. Write `videos/<slug>/script.json` in the shape of `videos/v008/script.json`, with
       `"format": "long"` and `"kind": "philosophy"|"story"`. Line 0 is the hook exactly as it will
-      be shown (it is on screen from the first frame). Length: 150–180 words in 14–19 lines, about
-      70–85 s read in one take (Portuguese words are longer than English ones: Brian reads about
-      13–14 characters a second in Portuguese, measured 2026-11-25; in English v008 had 181 words
-      and ran 77.7 s; `finish.py` accepts 64–91 s).
+      be shown (it is on screen from the first frame). Length: 175–205 words in 15–20 lines, about
+      70–85 s read in one take (the eleven_v4 voice below is faster than v2: v021's 165 words gave
+      61.7 s of speech at tempo 0.95 and 65.8 s in all; `finish.py` accepts 64–91 s).
       Add `"bed": "none"`: the file carries the voice alone and Igor adds an instrumental from the
       TikTok library (his decision, 2026-11-24). Every line gets a
       footage `query` and `alt`: 2–3 words naming something filmable ("empty kitchen morning",
       "old man window"), never a feeling. Plan the light as an arc: night and blue while the
-      feeling is heavy, warm daylight once the thought turns. Keep the same voice block (Brian, `nPczCjzI2devNBz1zQrb`, `eleven_multilingual_v2`, now reading
-      Portuguese): on the free ElevenLabs plan the API refuses every Voice Library voice, Brazilian
-      narrators included (`payment_required`, 2026-11-25), so a standard voice is the only option
-      until Igor upgrades; PLAYBOOK.md then names the new voice. The post
+      feeling is heavy, warm daylight once the thought turns. Use the voice block of `videos/v021/script.json` (Brian,
+      `nPczCjzI2devNBz1zQrb`, on `eleven_v4` with stability 0.5 and similarity 0.75, `"language_code": "pt"`,
+      a Portuguese `"context"` frame, `"join": "\n"` and `"tempo": 0.95`; Igor chose it on 2026-11-25
+      over the flat v2 read, "parece uma leitura simples sem sentimento"). Direct the emotion: give
+      about half the lines a `"say"`, the line with an English audio tag at its start on the shifts
+      only (`[warm, gently smiling]`, `[wistful, softly remembering]`, `[gently]`, `[warm and sincere,
+      measured but present]`, `[softly, with a smile]`) and ellipses where a pause should fall; never a
+      tag in the middle of a line (it would show in the captions), never sad, crying, whispered or
+      "quiet" tags (`voice-direction`, direction.md). On the free plan the API refuses every Voice
+      Library voice, Brazilian narrators included (`payment_required`, 2026-11-25), so a standard voice
+      is the only option until Igor upgrades; PLAYBOOK.md then names the new voice. The post
       caption is one line that adds to the video plus a question; 4–5 hashtags ending with
       `#echoesoflife`; `"ai_label": true`. Follow "Engagement" in PLAYBOOK.md: add
       `"post.pinned_comment"` and `"endcard"` (a save or share invitation when it fits, otherwise
@@ -206,7 +212,11 @@ puts every source frame on one output frame. Keep `zoom` at 0.04 or less.
       ElevenLabs refused: see Errors). Never stitch separately generated sentences with silence
       between them: Igor heard that as the audio stalling after every sentence (v008). If a
       sentence comes out wrong, fix the text (a comma gives the voice a breath) and generate the
-      whole take again.
+      whole take again. Check the take before timing it: `uv run --with faster-whisper
+      .claude/skills/voice-direction/scripts/voice_qa.py videos/<slug>/audio/take.mp3 --text "<the
+      lines>" --language pt --stt whisper --whisper-model small` (the key has no ElevenLabs
+      speech-to-text); "pra"/"para" and "tá"/"está" are the transcriber's spelling, not misreads, and
+      a doubtful word is checked again on its own segment with the `medium` model.
    3. `python3 tools/footage_candidates.py videos/<slug> 4 3800` (4K, see "Image quality"), then Read every
       `footage/sheet_XX.jpg`. For each line pick the clip that shows what the line says, looks
       cinematic and fits the grade and the light arc. Reject: visible text, logos, watermarks, UI,
