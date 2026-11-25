@@ -106,6 +106,39 @@ Rotate the kind across the week and let the metrics decide which works.
 - Keep the mood mostly hopeful: a channel of only sad videos risks being shown less, and the
   endings should leave people lighter than they arrived.
 
+## Pilots in validation (2026-11-24)
+
+Igor's brief of 2026-11-24 (`docs/brief-2026-11-24-stoic-direction.md`) points the channel toward
+"modern philosophy for a generation that feels lost": emotional storytelling, human psychology and
+modern Stoicism, with more than one visual format. Two pilots test it before anything changes in
+the daily routine. Nothing here is a learned rule yet.
+
+**Reference sent by Igor: @tonito.rt, video 7581604527090961687**
+- Observed in the file he uploaded: 5.2 s, one static shot of a young man standing still on a metro
+  platform while a train passes behind him; a 12-word principle, one word per line with a period,
+  lowercase, small cream sans-serif, on screen from the first frame to the last over his dark
+  jacket; muted cool grade; a sung song underneath (which song was not verified).
+- Derived: the video ID encodes its upload time, 2025-12-08 (UTC).
+- Not accessible: the video's own views, likes, shares and saves (TikTok blocks automated access;
+  not worked around). Igor can add them from the app.
+- Third-party, TokPortal, scraped 2026-09-28: the account had 1,059,735 followers and 2,777 videos;
+  its last 10 videos averaged 7.17M views, 1.15M likes, 1,818 comments and 90.5K shares, so likes
+  were about 16% and shares about 1.3% of views, comments about 0.03%.
+- Hypotheses (one reference, tentative): the whole message readable from frame one and short
+  enough to read in one breath invites replays; a principle people want to identify with travels
+  by likes and shares more than by comments; a still subject against a moving world carries the
+  mood without cuts.
+
+**Pilots**
+- v007, Cinematic One Shot (`tools/oneshot.py`): one real shot (a man walking out of morning mist
+  into the sun), 6.5 s, "do. your. part. today. the. timeline. was. never. yours." (our own line on
+  Epictetus' dichotomy of control, Enchiridion 1), music-free. Ready to post.
+- v008, Philosophical Visual Essay: Seneca, On the Shortness of Life, with the Basore translation
+  quote checked; visual arc from 2 a.m. blue to sunrise warmth. Delivered as a draft without voice
+  (`tools/draft_voice.py`) so Igor approves the images before credits are spent.
+- Long videos are rendered without film grain from now on (`"grain": 0` in script.json): the
+  same TikTok re-encode problem we saw on the ambient videos.
+
 ## Learned (updated weekly, newest first)
 
 _No data yet. First analysis: Monday 2026-11-30._

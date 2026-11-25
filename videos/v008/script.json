@@ -1,0 +1,139 @@
+{
+  "slug": "v008",
+  "format": "long",
+  "kind": "philosophy",
+  "format_name": "Philosophical Visual Essay",
+  "pilot": true,
+  "theme": "Feeling behind, through Seneca's On the Shortness of Life",
+  "hook": "Feeling behind is two thousand years old.",
+  "hypothesis": "Grounding the 'feeling behind' theme in a real, verified Stoic text gives the long format more depth and saves than a generic pep talk; the visual arc moves from 2 a.m. blue to sunrise warmth with the shift in the argument.",
+  "hooks_considered": [
+    "Feeling behind is two thousand years old.",
+    "A Roman wrote about your 2 a.m. panic.",
+    "You're not out of time. You're out of hours you chose."
+  ],
+  "philosophy": [
+    {
+      "type": "quote",
+      "text": "It is not that we have a short space of time, but that we waste much of it.",
+      "work": "Seneca, On the Shortness of Life (De Brevitate Vitae) 1.3",
+      "translation": "John W. Basore, Loeb Classical Library, 1932 (public domain)",
+      "checked": [
+        "https://tim.blog/2009/04/24/on-the-shortness-of-life-an-introduction-to-seneca/",
+        "https://www.everand.com/book/292867315"
+      ]
+    },
+    {
+      "type": "paraphrase",
+      "text": "People complained that life ends just as they are getting ready to live.",
+      "work": "On the Shortness of Life 1.1"
+    },
+    {
+      "type": "interpretation",
+      "text": "Guard your hours the way you guard what is yours; our reading of Seneca's argument that people protect their money but give away their time (ch. 3).",
+      "work": "On the Shortness of Life 3"
+    }
+  ],
+  "voice": {
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian",
+    "model_id": "eleven_multilingual_v2"
+  },
+  "lines": [
+    {
+      "text": "Feeling behind is two thousand years old.",
+      "query": "colosseum dusk aerial",
+      "alt": "roman ruins sunset"
+    },
+    {
+      "text": "Nearly two thousand years ago, the Roman philosopher Seneca wrote about it.",
+      "query": "old book pages",
+      "alt": "ancient columns"
+    },
+    {
+      "text": "Most people, he wrote, complain that life is too short, that it ends just as they're getting ready to live.",
+      "query": "hourglass sand",
+      "alt": "old clock"
+    },
+    {
+      "text": "Sound familiar? Nineteen, scrolling at two in the morning, sure everyone else started without you.",
+      "query": "phone bed night",
+      "alt": "girl phone dark room"
+    },
+    {
+      "text": "Seneca's answer wasn't what they wanted to hear.",
+      "query": "candle flame dark",
+      "alt": "statue shadow"
+    },
+    {
+      "text": "\"It is not that we have a short space of time, but that we waste much of it.\"",
+      "query": "old book candle",
+      "alt": "writing quill"
+    },
+    {
+      "text": "It sounds harsh. Read it again.",
+      "query": "rain window night",
+      "alt": "window night city"
+    },
+    {
+      "text": "He isn't saying you failed. He's saying the time is still there.",
+      "query": "street lamp night",
+      "alt": "empty street night"
+    },
+    {
+      "text": "Most of it doesn't disappear in big mistakes. It slips away in small hours nobody chose.",
+      "query": "hand scrolling phone",
+      "alt": "phone screen night"
+    },
+    {
+      "text": "The scroll you didn't even enjoy. The plan you keep moving to Monday.",
+      "query": "calendar pages",
+      "alt": "clock night"
+    },
+    {
+      "text": "His advice was to guard your hours the way you'd guard anything else that's yours.",
+      "query": "blue hour city",
+      "alt": "dawn window"
+    },
+    {
+      "text": "Not every hour. Just one.",
+      "query": "sunrise window",
+      "alt": "morning light room"
+    },
+    {
+      "text": "One hour tonight that you choose on purpose: a page, a walk, a call, a first try.",
+      "query": "writing notebook",
+      "alt": "walking morning park"
+    },
+    {
+      "text": "Then do it again tomorrow.",
+      "query": "morning street people",
+      "alt": "sunrise city street"
+    },
+    {
+      "text": "You're not behind. You're taking your time back.",
+      "query": "man walking sunrise",
+      "alt": "woman walking sunrise"
+    },
+    {
+      "text": "Start with tonight.",
+      "query": "sun rays forest",
+      "alt": "sunrise clouds"
+    }
+  ],
+  "post": {
+    "caption": "Seneca wrote this almost 2,000 years ago, and it still lands. What would you do with one hour that's fully yours? 🌅",
+    "hashtags": [
+      "#stoicism",
+      "#seneca",
+      "#feelingbehind",
+      "#selfimprovement",
+      "#echoesoflife"
+    ],
+    "ai_label": true,
+    "pinned_comment": "Be honest: where does your 2 a.m. hour usually go? 👇"
+  },
+  "endcard": "save this for the night you need it",
+  "ai_label": true,
+  "grain": 0
+}

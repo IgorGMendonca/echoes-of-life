@@ -19,3 +19,4 @@ videos/*/captions.ass
 __pycache__/
 # Remotion skills are fetched by setup.sh, not committed
 .claude/skills/remotion-*/
+videos/*/footage/*.png

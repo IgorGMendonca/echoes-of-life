@@ -1,0 +1,62 @@
+{
+  "slug": "v007",
+  "format": "oneshot",
+  "mood": "behind",
+  "pilot": true,
+  "theme": "A man walks out of the morning mist toward the low sun; the line is on screen from the first frame",
+  "lines": [
+    {
+      "text": "",
+      "query": "man walking fog sunrise",
+      "alt": "man walking alone nature"
+    }
+  ],
+  "stack": {
+    "words": [
+      "do.",
+      "your.",
+      "part.",
+      "today.",
+      "the.",
+      "timeline.",
+      "was.",
+      "never.",
+      "yours."
+    ],
+    "x": 0.075,
+    "y": 0.555,
+    "size": 54,
+    "color": "F2E7C4",
+    "align": "left",
+    "from": 0.0
+  },
+  "music_free": true,
+  "shade": {
+    "top": 0.45,
+    "strength": 0.5
+  },
+  "format_name": "Cinematic One Shot",
+  "hypothesis": "A principle the viewer wants to keep, fully on screen from frame one over one real, quiet shot, earns replays and shares better than our tilt-up reveal (model: the reference Igor sent, 2026-11-24).",
+  "philosophy": {
+    "idea": "Dichotomy of control",
+    "source": "Epictetus, Enchiridion 1 (some things are up to us, others are not)",
+    "use": "interpretation in our own words, not a quote"
+  },
+  "hooks_considered": [
+    "do. your. part. today. the. timeline. was. never. yours.",
+    "you. are. not. behind. there. was. never. a. race.",
+    "worry. about. today's. part. let. the. rest. go."
+  ],
+  "post": {
+    "caption": "The Stoics split life into what's up to you and what isn't. Which part are you carrying today? 🌫️",
+    "hashtags": [
+      "#stoicism",
+      "#feelingbehind",
+      "#selfimprovement",
+      "#motivation",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Name one small thing that's your part today 👇"
+  },
+  "ai_label": false
+}

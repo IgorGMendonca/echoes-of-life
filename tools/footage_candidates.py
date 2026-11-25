@@ -3,7 +3,7 @@
 Usage: python3 footage_candidates.py <project_dir> [per_query] [min_width]
 Writes <project_dir>/footage/candidates.json and sheet_XX.jpg (one per line).
 """
-import io, json, os, sys, urllib.parse, urllib.request
+import io, json, os, sys, time, urllib.error, urllib.parse, urllib.request
 from PIL import Image, ImageDraw, ImageFont
 
 proj = sys.argv[1]
@@ -26,7 +26,15 @@ def get(url):
 
 
 def fetch(url):
-    return Image.open(io.BytesIO(get(url).read())).convert("RGB")
+    # the CDN answers 429 when thumbnails are pulled too fast: back off and retry
+    for wait in (0, 2, 5, 10, 20):
+        time.sleep(wait)
+        try:
+            return Image.open(io.BytesIO(get(url).read())).convert("RGB")
+        except urllib.error.HTTPError as e:
+            if e.code != 429:
+                raise
+    raise RuntimeError("thumbnail still rate-limited: " + url)
 
 
 allc = {}
@@ -52,7 +60,8 @@ for i, line in enumerate(script["lines"]):
     for k, h in enumerate(hits):
         try:
             im = fetch(h["videos"]["small"]["thumbnail"] or h["videos"]["tiny"]["thumbnail"]).resize((tw, th))
-        except Exception:
+        except Exception as e:
+            print("  thumbnail failed:", h["id"], e)
             continue
         x, y = (k % cols) * tw, (k // cols) * (th + 30)
         sheet.paste(im, (x, y))

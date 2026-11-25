@@ -154,7 +154,8 @@ hook = lines[hook_line]
 hw = [w for w in words if w["line"] == hook_line]
 split = len(hw) // 2 + (1 if len(hw) % 2 else 0)
 hook_text = " ".join(w["w"] for w in hw[:split]) + "\\N" + " ".join(w["w"] for w in hw[split:])
-ass.append(f"Dialogue: 2,{ts(0.25)},{ts(cuts[1] + 0.2)},Hook,,0,0,0,,{{\\pos({W//2},{int(H*0.34)})\\fad(450,350)\\blur9}}{hook_text}")
+# on screen from the very first frame (the feed shows frame one before anyone decides to stay)
+ass.append(f"Dialogue: 2,{ts(0)},{ts(cuts[1] + 0.2)},Hook,,0,0,0,,{{\\pos({W//2},{int(H*0.34)})\\fad(0,350)\\blur9}}{hook_text}")
 
 # small wordmark during the film part
 ass.append(f"Dialogue: 0,{ts(0.4)},{ts(cuts[-1])},Brand,,0,0,0,,{{\\fad(600,400)}}ECHOES OF LIFE")
@@ -175,7 +176,9 @@ filt.append(f"{mix}amix=inputs={len(lines)}:normalize=0,apad,atrim=0:{total}[v]"
 subprocess.run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join(filt), "-map", "[v]",
                 "-ac", "2", "-ar", "48000", os.path.join(proj, "audio", "voice.wav")], check=True)
 
-json.dump({"lines": lines, "cuts": cuts, "total": total, "speech_end": speech_end, "words": words},
+# "grain" in script.json (0 = none) carries through to render.py; without it render.py uses its default
+json.dump({"lines": lines, "cuts": cuts, "total": total, "speech_end": speech_end, "words": words,
+           **({"grain": script["grain"]} if "grain" in script else {})},
           open(os.path.join(proj, "timeline.json"), "w"), indent=1)
 print("total", total, "speech_end", round(speech_end, 2))
 print("cuts", cuts)

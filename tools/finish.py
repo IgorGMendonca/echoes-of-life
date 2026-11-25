@@ -62,7 +62,7 @@ else:
     checks["true peak <= -0.9 dBFS"] = peak <= -0.9
 checks.update({
     "duration fits format": {"long": 64 <= dur <= 91, "short": 30 <= dur <= 50,
-                             "ambient": 6 <= dur <= 15}[fmt],
+                             "ambient": 6 <= dur <= 15, "oneshot": 5 <= dur <= 12}[fmt],
 })
 report = {"file": out, "duration": round(dur, 2), "lufs": lufs, "peak": peak,
           "size_mb": round(int(probe["format"]["size"]) / 1e6, 1), "checks": checks}

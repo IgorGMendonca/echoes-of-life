@@ -146,6 +146,20 @@ Ideas with `"status": "parked"` are never picked.
    psychology), commit only scripts, scenes and the json files (media is git-ignored) with a
    message like `Add v007–v010 for 2026-11-25`, and push to `main`.
 
+## Pilot formats (being validated; not in the daily routine yet)
+
+- **Cinematic One Shot** (5–12 s): one real shot, the whole line on screen from the first frame, one
+  word per line. Script in the shape of `videos/v007/script.json` (`"format": "oneshot"`, `"stack"`,
+  optional `"shade"`), one entry in `footage/scenes.json`, then `python3 tools/oneshot.py
+  videos/<slug>` and `finish.py` (music-free).
+- **Draft without voice**: when Igor wants to approve the images first, run
+  `python3 tools/draft_voice.py videos/<slug>` instead of `tts.py` (silent lines timed at the
+  narrator's measured pace), then `timeline.py`, a silent `audio/music.wav`, `render.py full`, and
+  deliver a light copy named `..._PREVIEW-no-voice.mp4` without `finish.py`. Once approved: `tts.py`,
+  `timeline.py`, `music.py`, `render.py full`, `finish.py`.
+- `docs/brief-2026-11-24-stoic-direction.md` is Igor's brief for the Stoic direction. The daily
+  routine changes only after he validates the pilots (v007, v008).
+
 ## Weekly analysis (Mondays)
 
 1. Use the Windsor.ai connector, connector `tiktok_organic`, account "Echoes of Life". Call

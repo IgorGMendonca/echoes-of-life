@@ -129,5 +129,72 @@
   "voice": null,
   "credits": 0,
   "music": "music-free; TikTok sound added by Igor (picks: Fade Into You, Stolen From Each Other, My Moon My Man)"
+ },
+ {
+  "slug": "v007",
+  "post_date": null,
+  "slot": "pilot",
+  "status": "ready to post",
+  "format": "oneshot",
+  "mood": "behind",
+  "theme": "Cinematic One Shot: a man walks out of the morning mist toward the low sun; a Stoic line (dichotomy of control) on screen from frame one",
+  "hook": null,
+  "text": "do. your. part. today. the. timeline. was. never. yours.",
+  "caption": "The Stoics split life into what's up to you and what isn't. Which part are you carrying today? 🌫️",
+  "duration": 6.5,
+  "upload_file": "echoes_v007_your-part-today.mp4",
+  "pixabay_ids": [
+   298105
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; Igor adds a song on TikTok",
+  "assets": "Pixabay Content License (real footage)",
+  "hypothesis": "Full text from the first frame over one quiet real shot (reference: @tonito.rt, 2026-11-24) earns more replays and shares than the tilt-up reveal"
+ },
+ {
+  "slug": "v008",
+  "post_date": null,
+  "slot": "pilot",
+  "status": "draft without voice, for image review",
+  "format": "long",
+  "kind": "philosophy",
+  "theme": "Philosophical Visual Essay: feeling behind, through Seneca's On the Shortness of Life (verified Basore quote, 1.3)",
+  "hook": "Feeling behind is two thousand years old.",
+  "caption": "Seneca wrote this almost 2,000 years ago, and it still lands. What would you do with one hour that's fully yours? 🌅",
+  "duration": 84.8,
+  "duration_note": "estimated at Brian's pace; the real narration sets the final length",
+  "upload_file": "echoes_v008_seneca-feeling-behind_PREVIEW-no-voice.mp4 (preview)",
+  "pixabay_ids": [
+   272520,
+   207982,
+   108947,
+   202987,
+   51749,
+   103787,
+   11722,
+   40797,
+   21549,
+   736,
+   136740,
+   246894,
+   12040,
+   199,
+   202743,
+   112058
+  ],
+  "music_seed": null,
+  "voice": "Brian (not generated yet)",
+  "credits": 0,
+  "assets": "Pixabay Content License",
+  "sources": [
+   {
+    "claim": "It is not that we have a short space of time, but that we waste much of it.",
+    "title": "Seneca, On the Shortness of Life 1.3, tr. J. W. Basore (1932)",
+    "url": "https://tim.blog/2009/04/24/on-the-shortness-of-life-an-introduction-to-seneca/"
+   }
+  ],
+  "hypothesis": "A real, verified Stoic text gives the long format depth; visual arc from 2 a.m. blue to sunrise warmth follows the argument"
  }
 ]
