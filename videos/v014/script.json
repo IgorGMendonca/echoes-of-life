@@ -1,0 +1,89 @@
+{
+  "slug": "v014",
+  "format": "ambient",
+  "mood": "city",
+  "extra": true,
+  "music_free": true,
+  "bed": "none",
+  "theme": "China at night: Chongqing (Hongyadong, Qiansimen bridge, light-trail interchange) and Shanghai (Pudong), a fast cut montage in the spirit of the Japan Walker video Igor shared",
+  "text": {
+    "line": "china at night",
+    "from": 0.3,
+    "to": 2.6,
+    "y": 0.2
+  },
+  "lines": [
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    },
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    },
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    },
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    },
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    },
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    },
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    },
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    },
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    },
+    {
+      "text": "",
+      "query": "chongqing night",
+      "alt": "shanghai night"
+    }
+  ],
+  "hooks_considered": [
+    "china at night",
+    "chongqing after dark",
+    "the city that never dims"
+  ],
+  "post": {
+    "search_phrase": "china at night",
+    "keywords": [
+      "chongqing night",
+      "shanghai skyline"
+    ],
+    "caption": "China at night: Chongqing's golden cliffside and Shanghai's skyline, one after another. Which one would you visit first? 🌃",
+    "hashtags": [
+      "#china",
+      "#chongqing",
+      "#shanghai",
+      "#citylights",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Chongqing or Shanghai? Drop your pick 👇"
+  },
+  "ai_label": false
+}

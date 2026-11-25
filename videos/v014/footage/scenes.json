@@ -1,0 +1,123 @@
+[
+ {
+  "pixabay_id": 212370,
+  "src_start": 10.0,
+  "fx": 0.5,
+  "zoom": 0.03,
+  "dur": 1.4,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_0_212370.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 267747,
+  "src_start": 3.5,
+  "fx": 0.5,
+  "zoom": 0.03,
+  "dur": 1.35,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_1_267747.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 174319,
+  "src_start": 19.0,
+  "fx": 0.43,
+  "zoom": 0.03,
+  "dur": 1.35,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_2_174319.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 173683,
+  "src_start": 2.0,
+  "fx": 0.38,
+  "zoom": 0.03,
+  "dur": 1.35,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_3_173683.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 200193,
+  "src_start": 2.0,
+  "fx": 0.5,
+  "zoom": 0.03,
+  "dur": 1.35,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_4_200193.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 212366,
+  "src_start": 3.0,
+  "fx": 0.5,
+  "zoom": 0.03,
+  "dur": 1.35,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_5_212366.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 216809,
+  "src_start": 16.0,
+  "fx": 0.5,
+  "zoom": 0.03,
+  "dur": 1.35,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_6_216809.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 220942,
+  "src_start": 5.0,
+  "fx": 0.43,
+  "zoom": 0.03,
+  "dur": 1.35,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_7_220942.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 174473,
+  "src_start": 5.0,
+  "fx": 0.5,
+  "zoom": 0.03,
+  "dur": 1.35,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_8_174473.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false
+ },
+ {
+  "pixabay_id": 216957,
+  "src_start": 2.0,
+  "fx": 0.5,
+  "zoom": 0.03,
+  "dur": 1.5,
+  "xf": 0.1,
+  "file": "videos/v014/footage/clips/scene_9_216957.mp4",
+  "width": 3840,
+  "height": 2160,
+  "vertical": false,
+  "zoom_out": true
+ }
+]

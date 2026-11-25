@@ -417,5 +417,40 @@
   "pauta_id": 67,
   "search_phrase": "feeling behind in life",
   "hypothesis": "A named character and a specific place in the first spoken line, with the voice from 0.1 s, holds viewers past 2 s; a fictional story with a concrete turn (the old man keeps the drawing) earns shares on the main pillar."
+ },
+ {
+  "slug": "v014",
+  "post_date": "2026-11-25",
+  "slot": "extra",
+  "status": "ready to post",
+  "format": "ambient",
+  "mood": "city",
+  "requested_by": "Igor, 2026-11-25: short China-themed video with a viral song",
+  "theme": "China at night: Chongqing (Hongyadong, Huguang Guild Hall, bridges, light-trail interchange) and Shanghai (Pudong, Oriental Pearl), 10 shots cut every 1.35 s",
+  "hook": null,
+  "text": "china at night",
+  "caption": "China at night: Chongqing's golden cliffside and Shanghai's skyline, one after another. Which one would you visit first? 🌃",
+  "duration": 13.7,
+  "upload_file": "echoes_v014_china-at-night.mp4",
+  "pixabay_ids": [
+   212370,
+   267747,
+   174319,
+   173683,
+   200193,
+   212366,
+   216809,
+   220942,
+   174473,
+   216957
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; Igor adds a trending sound in the app: Time Back (Sinny & 7vvch), G.T.A. - Grand Trance Audio (Tahara) or Gotta Be (Seemann)",
+  "assets": "Pixabay Content License (real footage)",
+  "pauta_id": null,
+  "search_phrase": "china at night",
+  "hypothesis": "A fast-cut night-city travel montage with a trending sound, outside the four regular formats, tests whether travel scenery brings more reach and follows per 100 views than the emotional formats."
  }
 ]
