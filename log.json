@@ -353,16 +353,15 @@
   "status": "ready to post",
   "format": "ambient",
   "mood": "nostalgia",
-  "theme": "Nostalgia: a young woman slowly spinning on an old playground merry-go-round in autumn backlight; the tilt-up lifts from the fallen leaves to her",
+  "theme": "Nostalgia: a family walks hand in hand over a hill into the sunset; the tilt-up lifts from golden grass to them",
   "hook": null,
-  "text": null,
-  "text_note": "The idea's line ('nobody checked the time back then.') moved to the caption: the woman fills the 9:16 frame from top to bottom, so no area keeps the text clear of her. This one counts as a no-text nostalgia edit.",
-  "caption": "Childhood nostalgia: I miss the days when nobody checked the time. What did you play until someone called you home? 🍂",
-  "duration": 8.5,
+  "text": "nobody checked the time back then.",
+  "caption": "Childhood nostalgia: I miss the evenings when the only clock was someone calling us home. Who walked you home back then? 🌅",
+  "duration": 7.0,
   "upload_file": "echoes_v012_nobody-checked-the-time.mp4",
   "pixabay_ids": [
-   236070,
-   52655
+   171879,
+   151296
   ],
   "music_seed": null,
   "voice": null,
@@ -371,7 +370,8 @@
   "assets": "Pixabay Content License (real footage)",
   "pauta_id": 58,
   "search_phrase": "childhood nostalgia",
-  "hypothesis": "A grown-up on a childhood merry-go-round plus a first-person caption ('I miss the days...', the shape of the 2026-11-24 outlier) reaches past the first test batch without on-screen text"
+  "hypothesis": "A family walking into the sunset with the line on screen, plus a first-person caption, reaches past the first test batch",
+  "revision": "2026-11-25: redone after Igor's feedback (the first cut had no text and he didn't like the merry-go-round footage)"
  },
  {
   "slug": "v013",
