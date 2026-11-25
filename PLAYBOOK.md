@@ -190,8 +190,15 @@ track with a drop near 4 s and cuts on the beat after it).
   each a scene beautiful enough to hold on its own (blue or golden hour, snow, rain, mist, lamps,
   reflections), in real time with one slow camera move per shot (a `"pan"` across the 4K frame or
   a slow push-in), 0.6–0.8 s dissolves, warm highlights over cool shadows and a soft `"glow"` on
-  the lights. People belong to the scenery, they are not the subject. v018 (Otaru and Kyoto under
-  snow) is the model; the faster multi-cut layout below is for energetic songs.
+  the lights. People belong to the scenery, they are not the subject.
+- Igor, 2026-11-25, after v018 (two shots): "Faltou imagens, precisa mostrar um ambiente nostálgico
+  e que impacte as pessoas, a última imagem até que fez sentido" (the last shot was Kyoto under
+  snow). So: 5–6 shots in 12–14 s, each a nostalgic scene that could be a memory (a wet street at
+  dusk reflecting the sky, a local train crossing a bridge, a misty alley under a street lamp, a
+  village under snow, lanterns), arranged as an arc from dusk to night or snow, with a short line
+  that hits ("parece lembrança, / mas eu nunca estive aqui."). 60 fps clips may play at half speed
+  (`"speed": 0.5`, a true slow motion); never faster than real time. v019 is the model; the
+  multi-cut layout below is for energetic songs.
 - 7–8 s, 4–6 real 4K shots, the strongest street-level shot first, cuts every 1.2–1.8 s (near-hard
   `"xfade"` 0.05 for an energetic song, 0.2–0.25 for a deep one), the city's name on screen at the
   start over a calm area (water, sky, a dark wall), and the last shot slightly longer with a slow

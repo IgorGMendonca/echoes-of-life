@@ -1,0 +1,80 @@
+{
+  "slug": "v019",
+  "format": "ambient",
+  "mood": "nostalgia",
+  "extra": true,
+  "language": "pt-BR",
+  "music_free": true,
+  "bed": "none",
+  "lines": [
+    {
+      "text": "",
+      "query": "japan street dusk",
+      "alt": "wet street reflection"
+    },
+    {
+      "text": "",
+      "query": "train bridge sea",
+      "alt": "local train evening"
+    },
+    {
+      "text": "",
+      "query": "misty alley night",
+      "alt": "street lamp fog"
+    },
+    {
+      "text": "",
+      "query": "shirakawa-go snow",
+      "alt": "snow village japan"
+    },
+    {
+      "text": "",
+      "query": "train snow",
+      "alt": "local railway winter"
+    },
+    {
+      "text": "",
+      "query": "kyoto snow night",
+      "alt": "japan snow street"
+    }
+  ],
+  "ai_label": false,
+  "theme": "Japão nostálgico, do entardecer à neve: uma rua molhada refletindo o céu, um trem cruzando a ponte sobre o mar, um beco com poste e névoa, Shirakawa-go nevando, um trem passando na neve e a rua do pagode Yasaka em Kyoto sob a neve (Igor, 2026-11-25: 'faltou imagens, precisa mostrar um ambiente nostálgico e que impacte as pessoas, a última imagem até que fez sentido')",
+  "text": {
+    "line": "parece lembrança,\nmas eu nunca estive aqui.",
+    "from": 0.4,
+    "to": 4.4,
+    "y": 0.25
+  },
+  "xfade": 0.45,
+  "grade": "eq=contrast=1.0:saturation=1.03,curves=all='0/0.035 0.5/0.5 1/0.97',colorbalance=bs=0.02:bm=0.01:rh=0.04:gh=0.015:bh=-0.02",
+  "glow": {
+    "sigma": 18,
+    "opacity": 0.2,
+    "threshold": 0.72
+  },
+  "sharpen": 0.25,
+  "crf": 12,
+  "preset": "slow",
+  "hooks_considered": [
+    "parece lembrança, mas eu nunca estive aqui.",
+    "saudade de um lugar onde eu nunca estive.",
+    "tem lugar que a gente nunca foi e mesmo assim dá saudade."
+  ],
+  "post": {
+    "search_phrase": "japão nostálgico",
+    "keywords": [
+      "japão aesthetic",
+      "japão no inverno"
+    ],
+    "caption": "Japão nostálgico: parece lembrança, mas eu nunca estive aqui. Você também sente saudade de um lugar onde nunca foi? 🌙",
+    "hashtags": [
+      "#japao",
+      "#nostalgia",
+      "#saudade",
+      "#viagem",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Qual dessas cenas parece lembrança pra você? 👇"
+  }
+}

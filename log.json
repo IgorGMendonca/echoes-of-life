@@ -556,7 +556,7 @@
   "slug": "v018",
   "post_date": "2026-11-25",
   "slot": "extra",
-  "status": "ready to post",
+  "status": "superseded",
   "format": "ambient",
   "mood": "city",
   "language": "pt-BR",
@@ -579,6 +579,40 @@
   "pauta_id": null,
   "search_phrase": "japão no inverno",
   "quality": "two long real-time 4K shots: Otaru (30 fps) with a slow pan, Kyoto (23.976 fps, frames blended to 30) with a slow push-in; warm/cool grade, RGB glow on the lamps, CRF 12 master",
-  "hypothesis": "Two long, beautiful real-time shots with a deep song (the cinematic-video-direction layout) hold viewers to the end more often than the multi-cut city edits."
+  "hypothesis": "Two long, beautiful real-time shots with a deep song (the cinematic-video-direction layout) hold viewers to the end more often than the multi-cut city edits.",
+  "note": "Igor: too few images; wanted a nostalgic, striking setting (the Kyoto shot worked); replaced by v019"
+ },
+ {
+  "slug": "v019",
+  "post_date": "2026-11-25",
+  "slot": "extra",
+  "status": "ready to post",
+  "format": "ambient",
+  "mood": "nostalgia",
+  "language": "pt-BR",
+  "requested_by": "Igor, 2026-11-25: more images, a nostalgic setting that moves people (the Kyoto shot worked)",
+  "theme": "Japão nostálgico, do entardecer à neve: uma rua molhada refletindo o céu, um trem cruzando a ponte sobre o mar, um beco com poste e névoa, Shirakawa-go nevando, um trem passando na neve e a rua do pagode Yasaka em Kyoto sob a neve (Igor, 2026-11-25: 'faltou imagens, precisa mostrar um ambiente nostálgico e que impacte as pessoas, a última imagem até que fez sentido')",
+  "hook": null,
+  "text": "parece lembrança, mas eu nunca estive aqui.",
+  "caption": "Japão nostálgico: parece lembrança, mas eu nunca estive aqui. Você também sente saudade de um lugar onde nunca foi? 🌙",
+  "duration": 13.8,
+  "upload_file": "echoes_v019_japao-nostalgico.mp4",
+  "pixabay_ids": [
+   341312,
+   177314,
+   352852,
+   266006,
+   252866,
+   153086
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; picks: One Summer's Day (Joe Hisaishi), Snowfall (Oneheart & Reidenshi), Mayonaka no Door / Stay With Me (Miki Matsubara)",
+  "assets": "Pixabay Content License (real footage)",
+  "pauta_id": null,
+  "search_phrase": "japão nostálgico",
+  "quality": "six real 4K shots, two 60 fps trains and the snowfall in true half-speed slow motion, the rest real time; matte warm grade with RGB glow; CRF 12 master",
+  "hypothesis": "A nostalgic scenery montage with an anemoia line ('parece lembrança, mas eu nunca estive aqui') earns more likes and shares per 100 views than the plain city edits."
  }
 ]
