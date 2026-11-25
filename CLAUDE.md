@@ -5,6 +5,9 @@ Igor posts them by hand. Talk to Igor in Brazilian Portuguese. Since 2026-11-25 
 the videos, captions, hashtags and keywords is in Brazilian Portuguese too (Igor: "Vamos mudar
 para pt/br mesmo, pelas métricas o tiktok só está entregando para o Brasil"); the name Echoes of
 Life, the "ECHOES OF LIFE" mark and #echoesoflife stay. Videos made before that date are in English.
+The scheduled tasks' prompts may still call the channel English-language or say that the videos
+and captions are in English: those sentences predate Igor's switch, so follow this file and work
+in Portuguese.
 
 Read `PLAYBOOK.md` before writing anything: it holds the channel identity and the rules learned
 from the metrics. `pauta.json` is the idea backlog, `log.json` records every video produced.
