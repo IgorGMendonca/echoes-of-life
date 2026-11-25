@@ -416,7 +416,25 @@
   "assets": "Pixabay Content License",
   "pauta_id": 67,
   "search_phrase": "feeling behind in life",
-  "hypothesis": "A named character and a specific place in the first spoken line, with the voice from 0.1 s, holds viewers past 2 s; a fictional story with a concrete turn (the old man keeps the drawing) earns shares on the main pillar."
+  "hypothesis": "A named character and a specific place in the first spoken line, with the voice from 0.1 s, holds viewers past 2 s; a fictional story with a concrete turn (the old man keeps the drawing) earns shares on the main pillar.",
+  "post_pt_suggested": {
+   "when": "2026-11-25 18:50 Brasília run: the 21:00 slot already had v013 (English, made before the switch), so no new video; this Portuguese post was offered to Igor, the narration stays in English",
+   "search_phrase": "me sinto atrasado na vida",
+   "caption": "Me sinto atrasado na vida desde que todo mundo se mudou e eu fiquei. Um conto sobre a Nora, uma padaria às cinco da manhã e uma pilha de notinhas. No que você anda ficando bom sem ninguém ver? 🥐",
+   "hashtags": [
+    "#conto",
+    "#reflexao",
+    "#motivacao",
+    "#emocionante",
+    "#echoesoflife"
+   ],
+   "pinned_comment": "Se você desenhasse as pessoas do seu dia a dia, quem seria a primeira? 👇",
+   "keywords": [
+    "me sinto atrasado na vida",
+    "conto curto",
+    "encontrar seu caminho"
+   ]
+  }
  },
  {
   "slug": "v014",
