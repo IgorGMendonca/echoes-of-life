@@ -648,5 +648,22 @@
   },
   "quality": "one real 4K tripod shot (3840 px, ~43 Mbps, 25 fps blended to 30 fps); CRF 12 slow master",
   "hypothesis": "First pt-BR one-shot in the @tonito.rt / v007 style: compare with v007 (English) and the pt-BR scenery edits on watch share, replays and saves per 100 views"
+ },
+ {
+  "slug": "v021",
+  "post_date": null,
+  "slot": "extra",
+  "status": "preview without voice, awaiting Igor's approval",
+  "format": "long",
+  "kind": "reflection",
+  "language": "pt-BR",
+  "requested_by": "Igor, 2026-11-25 17:46: 'Gere o vídeo longo, algo sentimental, como no primeiro longo que fizemos. Em português para testarmos'; 17:52: 'Sem narração primeiro'",
+  "theme": "Amor de família dito em forma de cuidado ('já comeu?', 'leva um casaco', 'avisa quando chegar'); a ficha cai quando você mora longe e ninguém pergunta; no fim você responde 'Cheguei. Também te amo.'",
+  "hook": "Amor de família, às vezes, se diz “já comeu?”",
+  "caption": "Amor de família: em muita casa, “eu te amo” vem disfarçado de “já comeu?”. Qual frase da sua família era um “eu te amo”? 🤍",
+  "search_phrase": "amor de família",
+  "voice": "Brian / eleven_multilingual_v2 (after approval)",
+  "credits": 0,
+  "hypothesis": "A sentimental second-person reflection in pt-BR like v002, with the search phrase in the first spoken line, a callback ending and a share end card, earns more shares per 100 views than the essays and stories."
  }
 ]

@@ -99,9 +99,18 @@ def split_balanced(ws):
     import itertools
     for cut in itertools.combinations(range(1, len(ws)), n - 1):
         parts = [ws[a:b] for a, b in zip((0,) + cut, cut + (len(ws),))]
-        weak = {"a", "an", "the", "your", "to", "of", "my", "and", "is", "this", "you'd"}
+        # a piece should not end on a little word, in English or in Portuguese (scripts are in
+        # Portuguese since 2026-11-25), nor in the middle of a quoted phrase ("eu te / amo")
+        weak = {"a", "an", "the", "your", "to", "of", "my", "and", "is", "this", "you'd",
+                "o", "os", "as", "um", "uma", "de", "do", "da", "dos", "das", "no", "na", "nos", "nas",
+                "em", "e", "que", "pra", "pro", "para", "se", "te", "me", "seu", "sua", "meu", "minha",
+                "com", "por", "pelo", "pela", "ao", "à", "eu", "não", "mas", "ou", "quando", "onde"}
+        open_q, inside = 0, 0
+        for part in parts[:-1]:
+            open_q += sum(x["w"].count("\u201c") - x["w"].count("\u201d") for x in part)
+            inside += open_q > 0
         cost = max(clen(p) for p in parts) + (100 if any(len(p) == 1 and clen(p) < 8 for p in parts) else 0) \
-            + 6 * sum(p[-1]["w"].lower().strip(",.") in weak for p in parts[:-1])
+            + 6 * sum(p[-1]["w"].lower().strip(",.\u201d") in weak for p in parts[:-1]) + 30 * inside
         if best_cost is None or cost < best_cost:
             best, best_cost = parts, cost
     return best

@@ -1,0 +1,133 @@
+{
+  "slug": "v021",
+  "format": "long",
+  "kind": "reflection",
+  "extra": true,
+  "language": "pt-BR",
+  "like": "v002",
+  "requested_by": "Igor, 2026-11-25 17:46: 'Gere o vídeo longo, algo sentimental, como no primeiro longo que fizemos. Em português para testarmos'; 17:52: 'Sem narração primeiro'",
+  "theme": "Amor de família dito em forma de cuidado ('já comeu?', 'leva um casaco', 'avisa quando chegar'); a ficha cai quando você mora longe e ninguém pergunta; no fim você responde 'Cheguei. Também te amo.'",
+  "structure": "ABT in the second person, like v002: recognition (the phrases and small acts), the but (you roll your eyes, then live away and nobody asks), the therefore (you do the same, and answer them)",
+  "hook": "Amor de família, às vezes, se diz “já comeu?”",
+  "hooks_considered": [
+    "Amor de família, às vezes, se diz “já comeu?”",
+    "Sua mãe pergunta se você já comeu. De novo.",
+    "Por que ninguém na sua casa diz “eu te amo”?"
+  ],
+  "callbacks": "'já comeu?' (line 0) returns in lines 8 and 11; 'a luz da sala fica acesa' (5) returns as 'numa sala escura' (7); 'avisa quando chegar' (2) is answered by 'Cheguei.' (15)",
+  "hypothesis": "A sentimental second-person reflection in pt-BR like v002, with the search phrase in the first spoken line, a callback ending and a share end card, earns more shares per 100 views than the essays and stories.",
+  "voice": {
+    "voice_id": "nPczCjzI2devNBz1zQrb",
+    "name": "Brian",
+    "model_id": "eleven_multilingual_v2"
+  },
+  "lines": [
+    {
+      "text": "Amor de família, às vezes, se diz “já comeu?”",
+      "query": "mother cooking kitchen",
+      "alt": "hands serving food"
+    },
+    {
+      "text": "Ou “leva um casaco”, mesmo num dia de calor.",
+      "query": "putting on jacket",
+      "alt": "coat door sunny"
+    },
+    {
+      "text": "Ou “avisa quando chegar”, toda vez que você sai.",
+      "query": "leaving house door",
+      "alt": "young man leaving home"
+    },
+    {
+      "text": "Tem casa onde ninguém fala “eu te amo” em voz alta.",
+      "query": "family dinner table",
+      "alt": "family eating together"
+    },
+    {
+      "text": "Mas sempre tem um prato guardado no micro-ondas pra você.",
+      "query": "microwave oven",
+      "alt": "plate food kitchen"
+    },
+    {
+      "text": "E a luz da sala fica acesa,",
+      "query": "living room lamp night",
+      "alt": "house window light night"
+    },
+    {
+      "text": "com alguém fingindo que tá vendo televisão, só esperando a sua chave na porta.",
+      "query": "woman watching tv night",
+      "alt": "man sofa tv night"
+    },
+    {
+      "text": "Quando a gente é mais novo, revira os olhos e jura que já sabe se cuidar.",
+      "query": "teenager headphones bedroom",
+      "alt": "teen girl phone bed"
+    },
+    {
+      "text": "Aí um dia você mora longe e chega tarde numa sala escura.",
+      "query": "man entering apartment night",
+      "alt": "opening door dark"
+    },
+    {
+      "text": "Ninguém pergunta se você já comeu.",
+      "query": "eating alone night",
+      "alt": "man kitchen night"
+    },
+    {
+      "text": "É aí que a ficha cai.",
+      "query": "woman window city night",
+      "alt": "man window night"
+    },
+    {
+      "text": "E, sem perceber, você começa a fazer igual.",
+      "query": "young woman cooking",
+      "alt": "man cooking morning"
+    },
+    {
+      "text": "Pergunta se a pessoa já comeu. Pede pra ela avisar quando chegar.",
+      "query": "friends hug goodbye",
+      "alt": "woman texting phone"
+    },
+    {
+      "text": "Do jeitinho que aprendeu em casa.",
+      "query": "grandmother cooking granddaughter",
+      "alt": "family cooking together"
+    },
+    {
+      "text": "Então, da próxima vez que te pedirem pra avisar quando chegar, avisa.",
+      "query": "walking home sunset",
+      "alt": "woman walking street sunset"
+    },
+    {
+      "text": "E aproveita pra responder, com todas as letras, o que eles dizem há anos.",
+      "query": "mother daughter hug",
+      "alt": "family hug sunset"
+    },
+    {
+      "text": "Cheguei. Também te amo.",
+      "query": "family walking sunset",
+      "alt": "golden hour family"
+    }
+  ],
+  "post": {
+    "search_phrase": "amor de família",
+    "keywords": [
+      "reflexão sobre família",
+      "saudade de casa"
+    ],
+    "caption": "Amor de família: em muita casa, “eu te amo” vem disfarçado de “já comeu?”. Qual frase da sua família era um “eu te amo”? 🤍",
+    "hashtags": [
+      "#reflexao",
+      "#familia",
+      "#amordefamilia",
+      "#saudade",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "E qual dessas frases você já se pegou repetindo? 👇",
+    "ai_label": true
+  },
+  "endcard": "manda pra quem sempre pergunta se você já comeu",
+  "ai_label": true,
+  "grain": 0,
+  "bed": "none",
+  "lead": 0.1
+}
