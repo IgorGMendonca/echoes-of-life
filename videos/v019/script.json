@@ -40,12 +40,6 @@
   ],
   "ai_label": false,
   "theme": "Japão nostálgico, do entardecer à neve: uma rua molhada refletindo o céu, um trem cruzando a ponte sobre o mar, um beco com poste e névoa, Shirakawa-go nevando, um trem passando na neve e a rua do pagode Yasaka em Kyoto sob a neve (Igor, 2026-11-25: 'faltou imagens, precisa mostrar um ambiente nostálgico e que impacte as pessoas, a última imagem até que fez sentido')",
-  "text": {
-    "line": "parece lembrança,\nmas eu nunca estive aqui.",
-    "from": 0.4,
-    "to": 4.4,
-    "y": 0.25
-  },
   "xfade": 0.45,
   "grade": "eq=contrast=1.0:saturation=1.03,curves=all='0/0.035 0.5/0.5 1/0.97',colorbalance=bs=0.02:bm=0.01:rh=0.04:gh=0.015:bh=-0.02",
   "glow": {
@@ -57,9 +51,9 @@
   "crf": 12,
   "preset": "slow",
   "hooks_considered": [
-    "parece lembrança, mas eu nunca estive aqui.",
-    "saudade de um lugar onde eu nunca estive.",
-    "tem lugar que a gente nunca foi e mesmo assim dá saudade."
+    "a gente nunca sabe qual noite comum vai virar saudade.",
+    "nada disso fica pra sempre. então repara.",
+    "o tempo não espera ninguém. mas hoje, aqui, ele é seu."
   ],
   "post": {
     "search_phrase": "japão nostálgico",
@@ -67,7 +61,7 @@
       "japão aesthetic",
       "japão no inverno"
     ],
-    "caption": "Japão nostálgico: parece lembrança, mas eu nunca estive aqui. Você também sente saudade de um lugar onde nunca foi? 🌙",
+    "caption": "Japão nostálgico: a gente nunca sabe qual noite comum vai virar saudade. Qual noite sua virou lembrança? 🌙",
     "hashtags": [
       "#japao",
       "#nostalgia",
@@ -75,6 +69,22 @@
       "#viagem",
       "#echoesoflife"
     ],
-    "pinned_comment": "Qual dessas cenas parece lembrança pra você? 👇"
-  }
+    "pinned_comment": "Conta aqui uma noite comum que virou saudade 👇"
+  },
+  "texts": [
+    {
+      "line": "a gente nunca sabe\nqual noite comum",
+      "from": 0.4,
+      "to": 4.3,
+      "y": 0.25
+    },
+    {
+      "line": "vai virar\nsaudade.",
+      "from": 11.2,
+      "to": 13.7,
+      "y": 0.25,
+      "x": 0.27
+    }
+  ],
+  "line_revision": "2026-11-25: Igor found 'parece lembrança, mas eu nunca estive aqui.' weak and asked for something more sentimental or Stoic"
 }

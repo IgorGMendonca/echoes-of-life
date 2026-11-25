@@ -593,8 +593,8 @@
   "requested_by": "Igor, 2026-11-25: more images, a nostalgic setting that moves people (the Kyoto shot worked)",
   "theme": "Japão nostálgico, do entardecer à neve: uma rua molhada refletindo o céu, um trem cruzando a ponte sobre o mar, um beco com poste e névoa, Shirakawa-go nevando, um trem passando na neve e a rua do pagode Yasaka em Kyoto sob a neve (Igor, 2026-11-25: 'faltou imagens, precisa mostrar um ambiente nostálgico e que impacte as pessoas, a última imagem até que fez sentido')",
   "hook": null,
-  "text": "parece lembrança, mas eu nunca estive aqui.",
-  "caption": "Japão nostálgico: parece lembrança, mas eu nunca estive aqui. Você também sente saudade de um lugar onde nunca foi? 🌙",
+  "text": "a gente nunca sabe qual noite comum vai virar saudade.",
+  "caption": "Japão nostálgico: a gente nunca sabe qual noite comum vai virar saudade. Qual noite sua virou lembrança? 🌙",
   "duration": 13.8,
   "upload_file": "echoes_v019_japao-nostalgico.mp4",
   "pixabay_ids": [
@@ -613,6 +613,7 @@
   "pauta_id": null,
   "search_phrase": "japão nostálgico",
   "quality": "six real 4K shots, two 60 fps trains and the snowfall in true half-speed slow motion, the rest real time; matte warm grade with RGB glow; CRF 12 master",
-  "hypothesis": "A nostalgic scenery montage with an anemoia line ('parece lembrança, mas eu nunca estive aqui') earns more likes and shares per 100 views than the plain city edits."
+  "hypothesis": "A nostalgic scenery montage whose line opens a loop at the start ('a gente nunca sabe qual noite comum') and closes it on the last shot ('vai virar saudade.') keeps viewers to the end and earns more likes and shares per 100 views than the plain city edits.",
+  "line_revision": "2026-11-25: Igor found 'parece lembrança, mas eu nunca estive aqui.' weak and asked for something more sentimental or Stoic"
  }
 ]

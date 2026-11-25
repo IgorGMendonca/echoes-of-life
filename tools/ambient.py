@@ -35,11 +35,16 @@ ass = [
     "Style: Brand,Inter Medium,30,&H99FFFFFF,&H99FFFFFF,&H00000000,&H00000000,0,0,0,0,100,100,9,0,1,0,0,8,0,0,250,1",
     "", "[Events]", "Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text",
 ]
-text = script.get("text")
-if text and text.get("line"):
+# one line ("text") or several in sequence ("texts", e.g. a setup early and its payoff on the last
+# shot); each may set "x" (0-1, centre of the line) to sit beside the subject instead of over it
+texts = script.get("texts") or ([script["text"]] if script.get("text") else [])
+for text in texts:
+    if not text.get("line"):
+        continue
     a = text.get("from", 0.5)
     b = text.get("to", total - 0.3)
-    ass.append(f"Dialogue: 2,{ts(a)},{ts(b)},Line,,0,0,0,,{{\\pos({W//2},{int(H*text.get('y', 0.34))})\\fad(500,400)\\blur9}}"
+    x = int(W * text.get("x", 0.5))
+    ass.append(f"Dialogue: 2,{ts(a)},{ts(b)},Line,,0,0,0,,{{\\pos({x},{int(H*text.get('y', 0.34))})\\fad(500,400)\\blur9}}"
                + text["line"].replace("\n", "\\N"))
 ass.append(f"Dialogue: 0,{ts(0.2)},{ts(total)},Brand,,0,0,0,,{{\\fad(400,300)}}ECHOES OF LIFE")
 open(os.path.join(proj, "captions.ass"), "w").write("\n".join(ass) + "\n")
