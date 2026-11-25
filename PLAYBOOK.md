@@ -192,6 +192,15 @@ formats from 2026-11-25. Nothing here is a learned rule from metrics yet.
 
 ## Learned (updated weekly, newest first)
 
+- 2026-11-25 18:44 UTC (tentative; 13 posts, 2.9–29 h old): v011, the second essay, reached 448
+  views in 5.6 h (79/h) and brought 35 follows, 7.8 per 100 views, the best follow rate so far
+  (the two breakouts: 0.4–0.5 per 100), though viewers still left after 1.9 s of 77 s. The v008
+  repost stopped (+9 views in 5 h, 2,912) and "I miss the days…" slowed to about 210/h (9,636).
+  v012, the 18:00 nostalgia edit posted at 09:17 Brasília, had 1 view after 6.5 h, the only
+  regular post that never got the first test batch of about 100 views; an unlogged Shibuya clip
+  sat at 1 view after 3.2 h too. Hint (one post): the essay format earns follows even without
+  watch time; check that a post is public and eligible for For You when it stays near zero.
+
 - 2026-11-25 (tentative; 9 posts, one per format, 5–21 h old, 68–4,256 views each): only two
   posts got past TikTok's first test batch of about 70–150 views, the v008 essay repost (1,737
   views in 5.3 h) and an ambient clip captioned "I miss the days when life felt slower…" (4,256
