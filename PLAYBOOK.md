@@ -224,9 +224,9 @@ formats from 2026-11-25. Nothing here is a learned rule from metrics yet.
 
 ## Learned (updated weekly, newest first)
 
-- 2026-11-25 (evening): Igor switched the channel to Brazilian Portuguese because TikTok was delivering it
-  almost only in Brazil (his reading of the app's analytics; the connector still returns no
-  countries). Everything made from then on is in Portuguese; the English posts stay up.
+- 2026-11-25 (evening): Igor switched the channel to Brazilian Portuguese because TikTok was
+  delivering it almost only in Brazil (his reading of the app's analytics; the connector still
+  returns no countries). Everything made from then on is in Portuguese; the English posts stay up.
 
 - 2026-11-25 18:44 UTC (tentative; 13 posts, 2.9–29 h old): v011, the second essay, reached 448
   views in 5.6 h (79/h) and brought 35 follows, 7.8 per 100 views, the best follow rate so far

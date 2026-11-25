@@ -453,5 +453,37 @@
   "search_phrase": "china at night",
   "hypothesis": "A fast-cut night-city travel montage with a trending sound, outside the four regular formats, tests whether travel scenery brings more reach and follows per 100 views than the emotional formats.",
   "tiktok_id": "7712136745550318869"
+ },
+ {
+  "slug": "v015",
+  "post_date": "2026-11-25",
+  "slot": "extra",
+  "status": "ready to post",
+  "format": "ambient",
+  "mood": "city",
+  "language": "pt-BR",
+  "requested_by": "Igor, 2026-11-25: another city video, 7-8 s, impactful, high quality, music contrasting with the city as in his Tokyo example",
+  "theme": "Veneza: aerial over St Mark's basin, Rialto Bridge, a gondola under a small bridge, gondolas facing San Giorgio Maggiore, the Grand Canal at golden hour",
+  "hook": null,
+  "text": "veneza",
+  "caption": "Veneza: canais no lugar de ruas, gôndolas no lugar de carros. Você iria? 🇮🇹",
+  "duration": 7.4,
+  "upload_file": "echoes_v015_veneza.mp4",
+  "pixabay_ids": [
+   263281,
+   86739,
+   252638,
+   86636,
+   68342
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; picks for contrast: Grand Theft Auto: San Andreas (Official Theme Song) by Michael Hunter, or G.T.A. - Grand Trance Audio (San AndDreams) by Tahara",
+  "assets": "Pixabay Content License (real footage)",
+  "pauta_id": null,
+  "search_phrase": "veneza",
+  "quality": "4K sources only (four at 30/29.97 fps, the 23.976 fps Grand Canal played at 1.2513x), vivid grade, CRF 12 master",
+  "hypothesis": "A 7-8 s city montage whose music contrasts with the place (romantic Venice under the trending GTA San Andreas theme), cut on a steady pulse from 4K sources, earns more views per hour and shares than v014's 13.7 s night montage."
  }
 ]
