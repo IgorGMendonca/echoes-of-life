@@ -54,6 +54,17 @@ Four videos a day. Since 2026-11-25 the lineup follows the pilots Igor approved 
 The two short formats differ on purpose (the brief asks for more than one visual model, and the
 weekly analysis compares them). Ideas with `"status": "parked"` are never picked.
 
+0. **Metrics first.** Before producing, read how the posted videos are doing: Windsor.ai
+   connector `tiktok_organic`, `get_data` with the fields listed at the top of
+   `tools/early_read.py` and `date_preset` "last_7dT". Save the result as it came to
+   `metrics/raw_<UTC date and time>Z.json` and run `python3 tools/early_read.py <that file>`: it
+   matches the videos to `log.json` (writing `tiktok_id`), appends a dated snapshot to
+   `metrics.json` (so every video gets readings at about 1, 3 and 7 days) and prints a table of
+   hours since posting, views per hour, average watch as a share of the length, full-watch rate,
+   and likes, comments, shares, saves and follows per 100 views. Give Igor one line from it in the
+   delivery message. Early numbers on a new account are hints, not rules: they may steer the
+   choice among the next ideas and hooks, never the lineup; the weekly analysis decides that. If
+   the connector fails, say so in one line and go on with production.
 1. **Pick the date.** Get the current date and time in America/Sao_Paulo. Candidates, in order:
    today (only if it is before 09:00, so the 11:00 slot is still reachable), tomorrow, the day
    after. Take the first candidate that has no video in `log.json`. If all are covered, send Igor
@@ -188,9 +199,9 @@ weekly analysis compares them). Ideas with `"status": "parked"` are never picked
    answer comments. Keep it short.
 9. **Record.** Set the four ideas in `pauta.json` to `"status": "done", "slug": "<slug>"`, append
    all four to `log.json` (same fields as v006, v007 and v008, with `kind` or `mood`, and the
-   `philosophy` and `sources` entries for the essay), commit only scripts, scenes and the json
-   files (media is git-ignored) with a message like `Add v009–v012 for 2026-11-25`, and push to
-   `main`.
+   `philosophy` and `sources` entries for the essay), commit only scripts, scenes, the json files
+   and `metrics/` (media is git-ignored) with a message like `Add v009–v012 for 2026-11-25`, and
+   push to `main`.
 
 ## Other tools
 
@@ -211,9 +222,11 @@ weekly analysis compares them). Ideas with `"status": "parked"` are never picked
    `get_fields` before `get_data` and use only field names it returns. Read the last 7 and the
    last 30 days: per video views, reach, average watch time, full-watch rate, likes, comments,
    shares, new followers if available, traffic sources and audience countries.
-2. Match TikTok videos to `log.json` by caption text. Compare short vs long, themes, hook styles
-   and posting slots on completion rate, average watch time as a share of duration, views, and
-   follows and shares per 1,000 views.
+2. Match TikTok videos to `log.json` (`tools/early_read.py` does it by `tiktok_id`, caption, then
+   duration) and use the dated snapshots in `metrics.json` to compare videos at the same age
+   (about 1, 3 and 7 days). Compare the four kinds, themes, hook styles and posting slots on
+   completion rate, average watch time as a share of duration, views, and follows and shares per
+   1,000 views; use medians, not the best video.
 3. Add 3–6 dated bullets to "Learned" in PLAYBOOK.md, each with its sample size. Draw a
    conclusion only from 3+ videos per group, and mark it tentative until there are two weeks of
    data. Change a starting rule only when two weeks of data contradict it.

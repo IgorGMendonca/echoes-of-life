@@ -21,7 +21,8 @@
   ],
   "music_seed": 7,
   "voice": "Brian / eleven_multilingual_v2 / speed 0.9",
-  "credits": 469
+  "credits": 469,
+  "tiktok_id": "7711729316219964692"
  },
  {
   "slug": "v002",
@@ -70,7 +71,8 @@
   ],
   "music_seed": 39,
   "voice": null,
-  "credits": 0
+  "credits": 0,
+  "tiktok_id": "7711793294870580501"
  },
  {
   "slug": "v004",
@@ -128,13 +130,14 @@
   "music_seed": null,
   "voice": null,
   "credits": 0,
-  "music": "music-free; TikTok sound added by Igor (picks: Fade Into You, Stolen From Each Other, My Moon My Man)"
+  "music": "music-free; TikTok sound added by Igor (picks: Fade Into You, Stolen From Each Other, My Moon My Man)",
+  "tiktok_id": "7711859921746218292"
  },
  {
   "slug": "v007",
-  "post_date": null,
-  "slot": "pilot",
-  "status": "ready to post",
+  "post_date": "2026-11-24",
+  "slot": "extra (posted on delivery)",
+  "status": "posted",
   "format": "oneshot",
   "mood": "behind",
   "theme": "Cinematic One Shot: a man walks out of the morning mist toward the low sun; a Stoic line (dichotomy of control) on screen from frame one",
@@ -151,13 +154,14 @@
   "credits": 0,
   "music": "music-free; Igor adds a song on TikTok",
   "assets": "Pixabay Content License (real footage)",
-  "hypothesis": "Full text from the first frame over one quiet real shot (reference: @tonito.rt, 2026-11-24) earns more replays and shares than the tilt-up reveal"
+  "hypothesis": "Full text from the first frame over one quiet real shot (reference: @tonito.rt, 2026-11-24) earns more replays and shares than the tilt-up reveal",
+  "tiktok_id": "7711908191566662933"
  },
  {
   "slug": "v008",
   "post_date": "2026-11-24",
   "slot": "extra (posted on delivery)",
-  "status": "ready to post",
+  "status": "posted",
   "format": "long",
   "kind": "philosophy",
   "theme": "Philosophical Visual Essay: feeling behind, through Seneca's On the Shortness of Life (verified Basore quote, 1.3)",
@@ -196,6 +200,7 @@
   ],
   "hypothesis": "A real, verified Stoic text gives the long format depth; visual arc from 2 a.m. blue to sunrise warmth follows the argument",
   "credits_note": "979 per-line take + 83 redo of line 10 + 995 one-take version",
-  "music": "none in the file; Igor adds a TikTok instrumental (picks: Idea 22, snowfall, Cornfield Chase) at 15-20%"
+  "music": "none in the file; Igor adds a TikTok instrumental (picks: Idea 22, snowfall, Cornfield Chase) at 15-20%",
+  "tiktok_id": "7711925379031682325"
  }
 ]
