@@ -651,9 +651,9 @@
  },
  {
   "slug": "v021",
-  "post_date": null,
+  "post_date": "2026-11-25",
   "slot": "extra",
-  "status": "preview without voice sent to Igor, awaiting approval",
+  "status": "ready to post",
   "format": "long",
   "kind": "reflection",
   "language": "pt-BR",
@@ -662,8 +662,8 @@
   "hook": "Amor de família, às vezes, se diz “já comeu?”",
   "caption": "Amor de família: em muita casa, “eu te amo” vem disfarçado de “já comeu?”. Qual frase da sua família era um “eu te amo”? 🤍",
   "search_phrase": "amor de família",
-  "voice": "Brian / eleven_multilingual_v2 (after approval)",
-  "credits": 0,
+  "voice": "Brian / eleven_multilingual_v2 / speed 0.9, one take in Portuguese",
+  "credits": 857,
   "hypothesis": "A sentimental second-person reflection in pt-BR like v002, with the search phrase in the first spoken line, a callback ending and a share end card, earns more shares per 100 views than the essays and stories.",
   "pixabay_ids": [
    226638,
@@ -684,8 +684,28 @@
    133333,
    61704
   ],
-  "preview_file": "echoes_v021_amor-de-familia_PREVIEW-no-voice.mp4",
   "assets": "Pixabay Content License (real footage)",
-  "quality": "17 real 4K shots (25/24 fps ones played at 1.2/1.25/1.2513 so every source frame lands on one output frame; the 60 fps stir and 50 fps fridge in true slow motion); bright food and fridge shots darkened for caption contrast"
+  "quality": "17 real 4K shots (25/24 fps ones played at 1.2/1.25/1.2513 so every source frame lands on one output frame; the 60 fps stir and 50 fps fridge in true slow motion); bright food and fridge shots darkened for caption contrast",
+  "duration": 73.5,
+  "upload_file": "echoes_v021_amor-de-familia.mp4",
+  "music_seed": null,
+  "music": "music-free; picks: Idea 10 (Gibran Alcocer), Comptine d'un autre été: L'après-midi (Yann Tiersen), Experience (Ludovico Einaudi), at 15-20% under the voice",
+  "voice_check": "noise floor -74.6 dB, -23.7 LUFS at source, 69.4 s of speech; a local Whisper transcript matched every line except 'chega tarde', heard as 'chega à tarde' in 2 of 2 runs (captions show the right words)",
+  "post": {
+   "pinned_comment": "E qual dessas frases você já se pegou repetindo? 👇",
+   "keywords": [
+    "amor de família",
+    "reflexão sobre família",
+    "saudade de casa"
+   ],
+   "hashtags": [
+    "#reflexao",
+    "#familia",
+    "#amordefamilia",
+    "#saudade",
+    "#echoesoflife"
+   ],
+   "ai_label": true
+  }
  }
 ]
