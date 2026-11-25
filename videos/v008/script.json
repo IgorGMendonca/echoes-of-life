@@ -91,7 +91,7 @@
       "alt": "clock night"
     },
     {
-      "text": "His advice was to guard your hours the way you'd guard anything else that's yours.",
+      "text": "His advice was to guard your hours, the way you'd guard anything else that's yours.",
       "query": "blue hour city",
       "alt": "dawn window"
     },
@@ -135,5 +135,6 @@
   },
   "endcard": "save this for the night you need it",
   "ai_label": true,
-  "grain": 0
+  "grain": 0,
+  "bed": "none"
 }

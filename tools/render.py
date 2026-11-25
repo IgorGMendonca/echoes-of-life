@@ -3,9 +3,10 @@
 Usage:
   python3 render.py <project_dir> frames 1.5 6 21 ...   # full-size stills at those times, for review
   python3 render.py <project_dir> full                  # the final mp4
-Reads script.json, timeline.json, footage/scenes.json, captions.ass, audio/voice.wav, audio/music.wav
+Reads script.json, timeline.json, footage/scenes.json, captions.ass, audio/voice.wav and, unless
+script.json has "bed": "none" (voice only), audio/music.wav
 """
-import json, os, subprocess, sys
+import json, os, re, subprocess, sys
 
 proj = sys.argv[1]
 mode = sys.argv[2]
@@ -23,8 +24,9 @@ ass = os.path.abspath(os.path.join(proj, "captions.ass"))
 
 GRADE = ("eq=contrast=1.06:saturation=0.82:brightness=-0.035:gamma=0.97,"
          "colorbalance=rs=0.04:bs=-0.04:rm=0.02:bm=-0.02,vignette=angle=PI/4.6")
-# film grain looks nice locally but TikTok's re-encode turns it into mush: keep it light, none for ambient
-GRAIN_AMOUNT = tl.get("grain", 3)
+# film grain looks nice locally but TikTok's re-encode turns it into mush: none by default since
+# 2026-11-24 (a script can still ask for it with "grain")
+GRAIN_AMOUNT = tl.get("grain", 0)
 GRAIN = f"noise=alls={GRAIN_AMOUNT}:allf=t" if GRAIN_AMOUNT else "null"
 SHARPEN = "unsharp=5:5:0.45:5:5:0"
 
@@ -145,13 +147,38 @@ for k in range(1, n):
 # grade the film part only: the end card stays clean black
 parts.append(f"[{prev}]{GRADE},{GRAIN},{subs()},trim=duration={total},format=yuv420p[vout]")
 
+# audio is mixed first, then brought to -14 LUFS with one fixed gain and a limiter. A one-pass
+# loudnorm rides the gain up in every pause, so the music surged between sentences (v008).
+# The bed is compressed so the closing swell stays under the voice, and the slow release keeps it
+# down through the short pauses between lines.
+# "bed": "none" in script.json: voice only (Igor adds a song from the TikTok library, 2026-11-24)
+def premix():
+    raw = os.path.join(proj, "audio", "mix_raw.wav")
+    final = os.path.join(proj, "audio", "mix.wav")
+    script = json.load(open(os.path.join(proj, "script.json")))
+    if script.get("bed") == "none" or not os.path.exists(os.path.join(proj, "audio", "music.wav")):
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", os.path.join(proj, "audio", "voice.wav"),
+                        "-af", f"aresample=48000,atrim=0:{total}", "-c:a", "pcm_s16le", raw], check=True)
+    else:
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", os.path.join(proj, "audio", "voice.wav"),
+                        "-i", os.path.join(proj, "audio", "music.wav"), "-filter_complex",
+                        "[0:a]asplit=2[voice][key];[1:a]volume=0.34,acompressor=threshold=0.04:ratio=5:attack=30:release=500:makeup=1[mus];"
+                        "[mus][key]sidechaincompress=threshold=0.025:ratio=3:attack=80:release=1100:makeup=1[duck];"
+                        f"[voice][duck]amix=inputs=2:normalize=0,aresample=48000,atrim=0:{total}[a]",
+                        "-map", "[a]", "-c:a", "pcm_s16le", raw], check=True)
+    meas = subprocess.run(["ffmpeg", "-v", "info", "-i", raw, "-af", "ebur128=peak=true", "-f", "null", "-"],
+                          capture_output=True, text=True).stderr
+    integrated = float(re.findall(r"I:\s+(-?[\d.]+) LUFS", meas)[-1])
+    gain = -14.0 - integrated
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", raw, "-af",
+                    f"volume={gain:.2f}dB,alimiter=limit=0.79:attack=3:release=60:level=false",
+                    "-c:a", "pcm_s16le", "-ar", "48000", final], check=True)
+    return final
+
+
 vi = n
-inputs += ["-i", os.path.join(proj, "audio", "voice.wav"), "-i", os.path.join(proj, "audio", "music.wav")]
-parts.append(f"[{vi}:a]asplit=2[voice][key]")
-parts.append(f"[{vi+1}:a]volume=0.45[mus]")
-parts.append("[mus][key]sidechaincompress=threshold=0.025:ratio=4:attack=60:release=700:makeup=1[duck]")
-parts.append(f"[voice][duck]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=9,"
-             f"aresample=48000,atrim=0:{total}[aout]")
+inputs += ["-i", premix()]
+parts.append(f"[{vi}:a]atrim=0:{total}[aout]")
 
 out = os.path.join(proj, "render", f"{os.path.basename(os.path.abspath(proj))}.mp4")
 os.makedirs(os.path.dirname(out), exist_ok=True)

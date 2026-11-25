@@ -7,8 +7,11 @@ metrics; the "Starting rules" stay until the numbers say otherwise.
 
 - Name: Echoes of Life. Tagline: "Stories that make you feel. Thoughts that stay with you."
 - Language: English. Audience: international, the US first; many viewers are teenagers and young adults.
+- Positioning (Igor's brief, 2026-11-24): "modern philosophy for a generation that feels lost":
+  emotional storytelling, human psychology and modern Stoicism, filmed cinematically. Stoicism is a
+  layer of depth under the feelings, never a lecture.
 - Two pillars:
-  1. **Time & potential (main, the larger share: the 11:00 edit, the psychology video and half the stories):** for young people who feel late or behind.
+  1. **Time & potential (main, the larger share: the 11:00 one-shot, the philosophy essay and half the stories):** for young people who feel late or behind.
      The message is "you are not late, and you can do more than you think: start small, today".
      Empowering and concrete, never shaming, never hustle-toxic (sleep, rest and bad days are allowed),
      no comparisons with real named people, no invented statistics or "he was 22 when..." stories.
@@ -16,50 +19,70 @@ metrics; the "Starting rules" stay until the numbers say otherwise.
      Hashtags draw from #motivation #selfimprovement #growthmindset #studymotivation #discipline.
   2. **Bittersweet reflections:** nostalgia, family, love, loneliness, small moral questions.
 - Tone: calm, warm, never preachy, never morbid. Every video ends on something the viewer can do or feel today.
-- Look: cinematic stock footage, warm desaturated grade, grain, slow push-ins, serif hook title, word-timed captions, echo-rings end card.
+- Look: real cinematic footage, warm desaturated grade, no grain, slow push-ins, serif hook title on the first frame, word-timed captions, echo-rings end card.
 
-## Daily lineup (from 2026-11-25, Igor's decision)
+## Daily lineup (from 2026-11-25, Igor's decision after the v007 and v008 pilots)
 
 Four videos a day, posted in Brasília time (New York is 2 hours behind until March):
 
 | Slot | Video | Why |
 |---|---|---|
-| 11:00 (09:00 NY) | Short edit, feeling behind, 7–15 s | Reach; a calm "you're on your way" before the school or work day |
-| 14:00 (12:00 NY) | Long, human psychology, 65–90 s | Social comparison or time anxiety, sourced or openly reflective |
-| 18:00 (16:00 NY) | Short edit, nostalgia, 7–15 s | Reach and replays after school |
-| 21:00 (19:00 NY) | Long, story, 65–90 s | Fiction with a character, an emotional shift and a hopeful ending |
+| 11:00 (09:00 NY) | One-shot edit, feeling behind, 6–8 s (like v007) | Reach and replays; a principle to keep before the school or work day |
+| 14:00 (12:00 NY) | Long, philosophical essay, 70–85 s (like v008) | A feeling seen through a Stoic text, quote verified |
+| 18:00 (16:00 NY) | Nostalgia edit, tilt-up reveal, 7–10 s (like v006) | Reach and replays after school |
+| 21:00 (19:00 NY) | Long, story, 70–85 s | Fiction with a character, an emotional shift and a hopeful ending |
 
-Long videos stay over 1 minute so they can count for Creator Rewards later. The old 35–45 s
-narrated format is retired; its ideas are parked in `pauta.json`.
+Long videos stay over 1 minute so they can count for Creator Rewards later. The two short formats
+are different on purpose: the brief asks for more than one visual model, and the weekly analysis
+compares them. The old 35–45 s narrated format is retired; its ideas are parked in `pauta.json`.
 
 ## Starting rules (hypotheses, not yet proven)
 
 - Hook in the first 2 seconds, 9 words or fewer, shown as the title. It is a statement or a question that hits a universal memory.
-- Long videos: 72–86 s, 165–195 words, 14–19 lines (v002: 159 words ran 71.6 s with the end card).
+- Long videos: 70–85 s, 165–195 words, 14–19 lines, read in one take (v008: 181 words ran 77.7 s).
 - One scene per line; a cut every 3–6 s.
 - Specific images beat abstractions ("the porch light", "your mom's voice at dinner") .
 - End with a gentle call to act ("call them today") or a question for the comments.
 - Caption: one sentence that adds to the video, plus a question; 4–5 hashtags, always #echoesoflife.
 - Posting: see "Daily lineup" above.
 
-## Long videos: psychology and story
+## Long videos: philosophy essay and story
 
-- **Psychology (14:00):** social comparison or time anxiety, explained the way a kind older friend
-  would. Every factual claim has a credible source found that day (peer-reviewed paper,
-  university, APA or a national health service), recorded in `script.json`; say it carefully
-  ("psychologists call this…"), name an idea rather than quote a number, and never diagnose or
-  advise treatment. Without a solid source, the piece becomes openly reflective. Structure: the
-  feeling, why the mind does it, a kinder way to see it, one small thing to do tonight.
+- **Philosophy essay (14:00):** a feeling our audience knows (feeling behind, comparison, time
+  anxiety, rest guilt) seen through one Stoic text, the way a kind older friend would explain it.
+  Order, as in v008: the hook, a modern scene, what the philosopher said, what it means and what it
+  does not mean, one small thing to do tonight, a closing line. At most one short quote, word for
+  word from a public-domain translation and checked online that day, said with its author and
+  work; everything else is our paraphrase or interpretation, recorded as such in `script.json`.
+  Stoicism here is perspective and calm: never bottled-up feelings, coldness, isolation, hustle
+  or toughness. Psychology joins only with a credible source, said carefully.
 - **Story (21:00):** fiction and said to be ("This is a story about…"): one named character, one
   specific moment, an emotional shift, a satisfying and hopeful ending. Half the stories serve the
   main pillar (feeling behind, starting late), half nostalgia. No real people, no tragedies.
+- **Look:** one real shot per line, light that moves from night blue (the heavy part) to warm
+  daylight (the turn); the hook title on screen from the first frame; no film grain.
+- **Voice (Igor, 2026-11-24):** the narration is read in one take, so the pauses are the voice's
+  own. Separate takes joined by silence sounded like the audio stalling after every sentence.
+- **Music (Igor, 2026-11-24):** none in the file. Igor adds a calm instrumental from the TikTok
+  library and sets it to about 15–20% under the voice; each delivery names 2–3 picks.
 
-## Short edits (ambient; reach and followers)
+## One-shot edits (11:00)
 
-Two a day, made to be watched to the end and replayed: **feeling behind** at 11:00 (people on
-their way: commuters at sunrise, trains, roads, a city waking up, someone walking alone at blue
-hour) and **nostalgia** at 18:00 (childhood, family, seasons, small towns, kids playing, warm
-windows at dusk; v006 is the model). `pauta.json` marks each idea with its `mood`.
+Modelled on the reference Igor sent (@tonito.rt, see "Pilots" below) and on v007.
+- One real shot, 6–8 s, no cuts: a person still or walking slowly while the world moves (trains,
+  crowds, traffic, waves, mist), or a quiet human scene. No faces to camera.
+- The whole line is on screen from the first frame to the last: 6–12 words, one per line, each
+  with a period, lowercase, small warm-cream sans-serif, on a calm dark area of the frame (a soft
+  shade when needed). Readable in one breath, so the loop does the rest.
+- The line is ours: a principle worth keeping, usually a Stoic idea in plain modern words
+  (dichotomy of control, the present moment, patience, judgments). Never a quote, never attributed.
+- Caption: the idea behind the line plus a question. Pinned comment: a second, lighter question.
+- Music-free export; 2–3 song picks per delivery.
+
+## Nostalgia edits (18:00, tilt-up reveal)
+
+One a day, made to be watched to the end and replayed: childhood, family, seasons, small towns,
+kids playing, warm windows at dusk; v006 is the model.
 
 - 7–10 s, no narration, modelled on Igor's reference video (2026-11-24): the phone starts
   pointed at the ground (asphalt, wet pavement with reflections, leaves) for about half a
@@ -106,12 +129,12 @@ Rotate the kind across the week and let the metrics decide which works.
 - Keep the mood mostly hopeful: a channel of only sad videos risks being shown less, and the
   endings should leave people lighter than they arrived.
 
-## Pilots in validation (2026-11-24)
+## Pilots (2026-11-24, approved)
 
 Igor's brief of 2026-11-24 (`docs/brief-2026-11-24-stoic-direction.md`) points the channel toward
-"modern philosophy for a generation that feels lost": emotional storytelling, human psychology and
-modern Stoicism, with more than one visual format. Two pilots test it before anything changes in
-the daily routine. Nothing here is a learned rule yet.
+"modern philosophy for a generation that feels lost". Two pilots tested it; Igor approved both the
+same night ("Ficou muito bom, vamos seguir esse padrão") and they became the 11:00 and 14:00
+formats from 2026-11-25. Nothing here is a learned rule from metrics yet.
 
 **Reference sent by Igor: @tonito.rt, video 7581604527090961687**
 - Observed in the file he uploaded: 5.2 s, one static shot of a young man standing still on a metro
@@ -134,8 +157,9 @@ the daily routine. Nothing here is a learned rule yet.
   into the sun), 6.5 s, "do. your. part. today. the. timeline. was. never. yours." (our own line on
   Epictetus' dichotomy of control, Enchiridion 1), music-free. Ready to post.
 - v008, Philosophical Visual Essay: Seneca, On the Shortness of Life, with the Basore translation
-  quote checked; visual arc from 2 a.m. blue to sunrise warmth. Delivered as a draft without voice
-  (`tools/draft_voice.py`) so Igor approves the images before credits are spent.
+  quote checked; visual arc from 2 a.m. blue to sunrise warmth. First a draft without voice
+  (`tools/draft_voice.py`); after Igor's approval, narrated in one take and exported voice-only
+  (he flagged the stalls between separately generated sentences and asked for TikTok music).
 - Long videos are rendered without film grain from now on (`"grain": 0` in script.json): the
   same TikTok re-encode problem we saw on the ambient videos.
 

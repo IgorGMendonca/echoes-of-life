@@ -27,102 +27,331 @@
   "slug": "v006"
  },
  {
+  "id": 70,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "Commuters hurrying along a train platform, one person standing still",
+  "line": [
+   "everyone.",
+   "is.",
+   "rushing.",
+   "somewhere.",
+   "you're.",
+   "allowed.",
+   "to.",
+   "stand.",
+   "still.",
+   "and.",
+   "choose."
+  ],
+  "philosophy": {
+   "idea": "Seneca, On the Shortness of Life: busyness steals the time we think we lack",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
+  "id": 71,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "Rain on a city street at night, someone waiting to cross under an umbrella",
+  "line": [
+   "the.",
+   "rain.",
+   "isn't.",
+   "yours.",
+   "to.",
+   "stop.",
+   "the.",
+   "walk.",
+   "home.",
+   "is."
+  ],
+  "philosophy": {
+   "idea": "Epictetus, Enchiridion 1: what is up to us and what is not",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
+  "id": 72,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "A student at a desk by a window at night, desk lamp on",
+  "line": [
+   "you.",
+   "are.",
+   "not.",
+   "late.",
+   "you.",
+   "are.",
+   "in.",
+   "the.",
+   "middle.",
+   "of.",
+   "it."
+  ],
+  "philosophy": {
+   "idea": "Seneca, Letters 1: claim the time you have",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
+  "id": 73,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "A person sitting on a bench by the sea, waves rolling in",
+  "line": [
+   "the.",
+   "sea.",
+   "never.",
+   "hurries.",
+   "and.",
+   "still.",
+   "reaches.",
+   "every.",
+   "shore."
+  ],
+  "philosophy": {
+   "idea": "Epictetus, Discourses 1.15: nothing great comes into being all at once",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
+  "id": 74,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "A busy street at night, one person sitting on the steps watching it pass",
+  "line": [
+   "their.",
+   "pace.",
+   "was.",
+   "never.",
+   "your.",
+   "instructions."
+  ],
+  "philosophy": {
+   "idea": "Epictetus, Enchiridion 1: other people's lives are not up to us",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
+  "id": 75,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "Someone walking up a mountain trail at dawn",
+  "line": [
+   "big.",
+   "things.",
+   "grow.",
+   "slowly.",
+   "so.",
+   "do.",
+   "you."
+  ],
+  "philosophy": {
+   "idea": "Epictetus, Discourses 1.15: the fig must blossom, bear fruit and ripen",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
+  "id": 76,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "A train passing a quiet country station, someone waiting on the bench",
+  "line": [
+   "missing.",
+   "one.",
+   "train.",
+   "is.",
+   "not.",
+   "missing.",
+   "your.",
+   "life."
+  ],
+  "philosophy": {
+   "idea": "Epictetus, Enchiridion 5: it is our judgment about things that disturbs us",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
+  "id": 77,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "Morning light through a kitchen window, someone making tea",
+  "line": [
+   "today.",
+   "is.",
+   "the.",
+   "only.",
+   "part.",
+   "you.",
+   "actually.",
+   "hold."
+  ],
+  "philosophy": {
+   "idea": "Marcus Aurelius, Meditations 2.14: the present is all anyone has",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
+  "id": 78,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "Leaves falling in a park, a person walking slowly through them",
+  "line": [
+   "everything.",
+   "changes.",
+   "so.",
+   "today.",
+   "matters.",
+   "more.",
+   "than.",
+   "you.",
+   "think."
+  ],
+  "philosophy": {
+   "idea": "Marcus Aurelius, Meditations 4.43: time is a river of passing events",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
+  "id": 79,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "Someone resting on a park bench in late afternoon light, people walking past",
+  "line": [
+   "rest.",
+   "is.",
+   "not.",
+   "falling.",
+   "behind.",
+   "it's.",
+   "how.",
+   "you.",
+   "keep.",
+   "going."
+  ],
+  "philosophy": {
+   "idea": "Seneca, On Tranquility of Mind 17: the mind must be given rest",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "todo"
+ },
+ {
   "id": 34,
   "format": "long",
   "theme": "Social comparison",
   "hook": "Everyone online looks ahead of you.",
-  "angle": "You compare your unedited days with other people's best moments. Explain why the mind keeps score this way, then hand the viewer one way to step out of it tonight: mute, close, do one small thing that is yours.",
+  "angle": "Everyone online looks ahead of you. Their results are not up to you; your next small step is. End with one thing tonight that is yours.",
   "status": "todo",
-  "kind": "psychology",
-  "research": "Social comparison theory (Festinger, 1954); studies on upward comparison on social media. Verify before citing."
- },
- {
-  "id": 31,
-  "format": "long",
-  "theme": "Time anxiety",
-  "hook": "You're 17 and you think you're already late.",
-  "angle": "Where 'late' comes from: comparing your chapter one with someone else's chapter five, and deadlines nobody actually set. Ends with one small thing to start this week. No invented examples of famous late starters.",
-  "status": "todo",
-  "kind": "psychology",
-  "research": "Emerging adulthood (Arnett, 2000): the late teens to late twenties as a long, exploratory stage. Verify before citing."
- },
- {
-  "id": 21,
-  "format": "long",
-  "theme": "Self-consciousness",
-  "hook": "Why we remember embarrassing moments forever.",
-  "angle": "You replay the moment; almost everyone else forgot it long ago. Explain the gap kindly and end with being gentle with your younger self.",
-  "status": "todo",
-  "kind": "psychology",
-  "research": "Spotlight effect (Gilovich, Medvec & Savitsky, 2000). Verify before citing."
+  "kind": "philosophy",
+  "research": "Social comparison theory (Festinger, 1954); studies on upward comparison on social media. Verify before citing.",
+  "stoic": "Epictetus, Enchiridion 1: some things are up to us, others are not (other people's results are not; your effort is)."
  },
  {
   "id": 36,
   "format": "long",
   "theme": "Time anxiety",
   "hook": "Nobody has it figured out at 18.",
-  "angle": "The adults around you are still improvising too. You have more time than the panic says; use it on purpose, one small step at a time.",
+  "angle": "The adults around you are still figuring it out too. Things that matter ripen slowly; use the time on purpose, one small step at a time.",
   "status": "todo",
-  "kind": "psychology",
-  "research": "Emerging adulthood (Arnett). Verify before citing."
+  "kind": "philosophy",
+  "research": "Emerging adulthood (Arnett). Verify before citing.",
+  "stoic": "Epictetus, Discourses 1.15: nothing great comes into being all at once, like a bunch of grapes or a fig that must blossom, bear fruit and ripen."
  },
  {
   "id": 64,
   "format": "long",
-  "kind": "psychology",
+  "kind": "philosophy",
   "theme": "Social comparison",
   "hook": "Why a friend's good news can sting.",
-  "angle": "Feeling a pang when a friend wins is common and human; it says something about what you want, not about who you are. Turn: their win is not your loss; congratulate them, then take one step toward your own thing.",
+  "angle": "A pang when a friend wins is human. Epictetus: they paid a price you spent elsewhere. Congratulate them, then pay your own price in small steps.",
   "status": "todo",
-  "research": "Research on upward social comparison and benign envy. Verify before citing."
- },
- {
-  "id": 38,
-  "format": "long",
-  "theme": "Time anxiety",
-  "hook": "You have more time than you think, and less than you'd like.",
-  "angle": "Both are true. Not a reason to panic, a reason to choose. Small, steady, today. Reflective; keep any numbers rough and clearly framed.",
-  "status": "todo",
-  "kind": "psychology"
- },
- {
-  "id": 14,
-  "format": "long",
-  "theme": "Memory",
-  "hook": "Why the past always looks better than it was.",
-  "angle": "Memory keeps the warm parts and quietly lets the rest fade. Maybe today will look golden too, someday, so notice it now.",
-  "status": "todo",
-  "kind": "psychology",
-  "research": "Rosy retrospection (Mitchell et al., 1997); fading affect bias. Verify before citing."
- },
- {
-  "id": 65,
-  "format": "long",
-  "kind": "psychology",
-  "theme": "Time anxiety",
-  "hook": "The 'everyone my age' voice in your head.",
-  "angle": "That voice keeps a timetable for school, love, money and moving out. Where the timetable comes from, why it isn't a law, and how to answer it.",
-  "status": "todo",
-  "research": "Neugarten's 'social clock'. Verify before citing."
+  "research": "Research on upward social comparison and benign envy. Verify before citing.",
+  "stoic": "Epictetus, Enchiridion 25: someone was preferred over you at a feast or in a greeting; they paid a price you did not pay."
  },
  {
   "id": 42,
   "format": "long",
   "theme": "Fresh starts",
   "hook": "The day you decide is the day it starts.",
-  "angle": "Not New Year's, not Monday, not after the exams. Why new beginnings feel easier on special dates, and why any ordinary day can be one.",
+  "angle": "Not New Year's, not Monday, not after the exams. Waiting for the right day spends today. Any ordinary day can be the first one.",
   "status": "todo",
-  "kind": "psychology",
-  "research": "The fresh start effect (Dai, Milkman & Riis, 2014). Verify before citing."
+  "kind": "philosophy",
+  "research": "The fresh start effect (Dai, Milkman & Riis, 2014). Verify before citing.",
+  "stoic": "Seneca, On the Shortness of Life 9: expectancy, which depends on tomorrow, loses today (Basore)."
  },
  {
-  "id": 40,
+  "id": 65,
+  "format": "long",
+  "kind": "philosophy",
+  "theme": "Time anxiety",
+  "hook": "The 'everyone my age' voice in your head.",
+  "angle": "That voice keeps a timetable for school, love, money and moving out. The timetable is a judgment, not a law: question it and answer it kindly.",
+  "status": "todo",
+  "research": "Neugarten's 'social clock'. Verify before citing.",
+  "stoic": "Epictetus, Enchiridion 5: people are disturbed not by things but by the views they take of them."
+ },
+ {
+  "id": 21,
+  "format": "long",
+  "theme": "Self-consciousness",
+  "hook": "Why we remember embarrassing moments forever.",
+  "angle": "You replay the moment; almost everyone else forgot it. Marcus noticed the same strange habit. End with being gentle with your younger self.",
+  "status": "todo",
+  "kind": "philosophy",
+  "research": "Spotlight effect (Gilovich, Medvec & Savitsky, 2000). Verify before citing.",
+  "stoic": "Marcus Aurelius, Meditations 12.4: we love ourselves more than others, yet care more about their opinion of us than our own."
+ },
+ {
+  "id": 66,
+  "format": "long",
+  "kind": "philosophy",
+  "theme": "Rest",
+  "hook": "Why resting can feel like falling behind.",
+  "angle": "The guilt of a slow day when everyone online seems busy. Seneca: rest is part of the work. No health claims.",
+  "status": "todo",
+  "stoic": "Seneca, On Tranquility of Mind 17: the mind must be given rest; it rises better and keener after resting (Basore)."
+ },
+ {
+  "id": 31,
   "format": "long",
   "theme": "Time anxiety",
-  "hook": "A letter to the version of you that feels behind.",
-  "angle": "Reflective, spoken as a kind letter: I know you think you wasted time. You didn't; you were learning what matters. Here is what to do with tomorrow.",
+  "hook": "You're 17 and you think you're already late.",
+  "angle": "'Late' compared to whom? Comparing your chapter one with someone's chapter five. Start with today's task, however small.",
   "status": "todo",
-  "kind": "psychology"
+  "kind": "philosophy",
+  "research": "Emerging adulthood (Arnett, 2000): the late teens to late twenties as a long, exploratory stage. Verify before citing.",
+  "stoic": "Seneca, Letters 1 (Gummere): hold every hour in your grasp; lay hold of today's task."
+ },
+ {
+  "id": 14,
+  "format": "long",
+  "theme": "Memory",
+  "hook": "Why the past always looks better than it was.",
+  "angle": "Memory keeps the warm parts and lets the rest fade. The only time you can live is this one, so notice it now.",
+  "status": "todo",
+  "kind": "philosophy",
+  "research": "Rosy retrospection (Mitchell et al., 1997); fading affect bias. Verify before citing.",
+  "stoic": "Marcus Aurelius, Meditations 2.14: the present moment is all anyone has, and all anyone loses."
+ },
+ {
+  "id": 38,
+  "format": "long",
+  "theme": "Time anxiety",
+  "hook": "You have more time than you think, and less than you'd like.",
+  "angle": "Both are true: more time than the panic says, less than you'd like. Not a reason to panic, a reason to choose. Gentle, never morbid.",
+  "status": "todo",
+  "kind": "philosophy",
+  "stoic": "Marcus Aurelius, Meditations 4.17: do not act as if you had ten thousand years to live (paraphrase if the translation is archaic)."
  },
  {
   "id": 32,
@@ -131,16 +360,94 @@
   "hook": "What one hour a day becomes in a year.",
   "angle": "Reflective: 365 hours of quiet, boring progress. Only simple arithmetic, no claims about how long a skill takes. Ends: pick your hour.",
   "status": "todo",
-  "kind": "psychology"
+  "kind": "philosophy",
+  "stoic": "Seneca, Letters 1 (Gummere): nothing is ours except time."
  },
  {
-  "id": 66,
+  "id": 40,
   "format": "long",
-  "kind": "psychology",
-  "theme": "Rest",
-  "hook": "Why resting can feel like falling behind.",
-  "angle": "Reflective: the guilt of a slow day when everyone online seems busy. Rest is part of the work, not a break from your life. No health claims.",
-  "status": "todo"
+  "theme": "Time anxiety",
+  "hook": "A letter to the version of you that feels behind.",
+  "angle": "Reflective, written as a kind letter, the way Seneca wrote to Lucilius: I know you think you wasted time. You were learning what matters.",
+  "status": "todo",
+  "kind": "philosophy",
+  "stoic": "Seneca, Letters (the letter form only; no quote needed)."
+ },
+ {
+  "id": 58,
+  "format": "ambient",
+  "mood": "nostalgia",
+  "status": "todo",
+  "setting": "Kids running across a park at golden hour",
+  "text": "nobody checked the time\nback then."
+ },
+ {
+  "id": 51,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Rooftop view over city lights at night",
+  "text": "one day this will be\na memory you smile at",
+  "status": "todo",
+  "mood": "nostalgia"
+ },
+ {
+  "id": 60,
+  "format": "ambient",
+  "mood": "nostalgia",
+  "status": "todo",
+  "setting": "Fairground carousel lights at dusk, families around",
+  "text": null
+ },
+ {
+  "id": 47,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Snowy street with warm lights",
+  "text": "slow down.\nthis is the part you'll miss",
+  "status": "todo",
+  "mood": "nostalgia"
+ },
+ {
+  "id": 63,
+  "format": "ambient",
+  "mood": "nostalgia",
+  "status": "todo",
+  "setting": "Children flying a kite on a hill",
+  "text": "you didn't know\nit was the good part."
+ },
+ {
+  "id": 56,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Small town street at dusk, lights turning on",
+  "text": null,
+  "status": "todo",
+  "mood": "nostalgia"
+ },
+ {
+  "id": 50,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Cherry blossoms falling in a park",
+  "text": null,
+  "status": "todo",
+  "mood": "nostalgia"
+ },
+ {
+  "id": 59,
+  "format": "ambient",
+  "mood": "nostalgia",
+  "status": "todo",
+  "setting": "Friends walking home along a suburban street at sunset",
+  "text": "we thought we'd always\nwalk home together."
+ },
+ {
+  "id": 61,
+  "format": "ambient",
+  "mood": "nostalgia",
+  "status": "todo",
+  "setting": "Grandparent and child walking hand in hand in a park",
+  "text": null
  },
  {
   "id": 67,
@@ -231,163 +538,6 @@
   "angle": "Fiction, told by the dog: the walks, the waiting by the door, why the grey muzzle doesn't matter, thank you for coming home every day. Gentle, no death.",
   "status": "todo",
   "kind": "story"
- },
- {
-  "id": 43,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "City at blue hour, river and lights",
-  "text": "the city never sleeps,\nbut you're allowed to",
-  "status": "todo",
-  "mood": "behind"
- },
- {
-  "id": 45,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Train window, fields at sunset",
-  "text": "you're not late.\nyou're on your way",
-  "status": "todo",
-  "mood": "behind"
- },
- {
-  "id": 54,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Neon street in the rain",
-  "text": null,
-  "status": "todo",
-  "mood": "behind"
- },
- {
-  "id": 55,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Sunset clouds from a plane window",
-  "text": "the view gets better\nthe higher you go",
-  "status": "todo",
-  "mood": "behind"
- },
- {
-  "id": 44,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Rain on a window at night, warm lamp inside",
-  "text": "rest is not\nfalling behind",
-  "status": "todo",
-  "mood": "behind"
- },
- {
-  "id": 48,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Night highway with light trails",
-  "text": null,
-  "status": "todo",
-  "mood": "behind"
- },
- {
-  "id": 49,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Mountain lake with morning fog",
-  "text": "quiet mornings\nbuild loud futures",
-  "status": "todo",
-  "mood": "behind"
- },
- {
-  "id": 46,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Ocean waves at golden hour",
-  "text": "some days are just\nfor breathing",
-  "status": "todo",
-  "mood": "behind"
- },
- {
-  "id": 53,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Autumn leaves on a park path",
-  "text": "everything changes.\nso can you",
-  "status": "todo",
-  "mood": "behind"
- },
- {
-  "id": 58,
-  "format": "ambient",
-  "mood": "nostalgia",
-  "status": "todo",
-  "setting": "Kids running across a park at golden hour",
-  "text": "nobody checked the time\nback then."
- },
- {
-  "id": 51,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Rooftop view over city lights at night",
-  "text": "one day this will be\na memory you smile at",
-  "status": "todo",
-  "mood": "nostalgia"
- },
- {
-  "id": 60,
-  "format": "ambient",
-  "mood": "nostalgia",
-  "status": "todo",
-  "setting": "Fairground carousel lights at dusk, families around",
-  "text": null
- },
- {
-  "id": 47,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Snowy street with warm lights",
-  "text": "slow down.\nthis is the part you'll miss",
-  "status": "todo",
-  "mood": "nostalgia"
- },
- {
-  "id": 63,
-  "format": "ambient",
-  "mood": "nostalgia",
-  "status": "todo",
-  "setting": "Children flying a kite on a hill",
-  "text": "you didn't know\nit was the good part."
- },
- {
-  "id": 56,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Small town street at dusk, lights turning on",
-  "text": null,
-  "status": "todo",
-  "mood": "nostalgia"
- },
- {
-  "id": 50,
-  "format": "ambient",
-  "theme": "Ambient",
-  "setting": "Cherry blossoms falling in a park",
-  "text": null,
-  "status": "todo",
-  "mood": "nostalgia"
- },
- {
-  "id": 59,
-  "format": "ambient",
-  "mood": "nostalgia",
-  "status": "todo",
-  "setting": "Friends walking home along a suburban street at sunset",
-  "text": "we thought we'd always\nwalk home together."
- },
- {
-  "id": 61,
-  "format": "ambient",
-  "mood": "nostalgia",
-  "status": "todo",
-  "setting": "Grandparent and child walking hand in hand in a park",
-  "text": null
  },
  {
   "id": 3,
@@ -613,5 +763,129 @@
   "angle": "Shrink the step until it's almost silly: one push-up, one sentence, one minute. Momentum does the rest. No clinical claims.",
   "status": "parked",
   "note": "Not in the four-video lineup (old 30–50 s narrated format or off the brief); the weekly analysis may rewrite it as a story or psychology idea."
+ },
+ {
+  "id": 43,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "City at blue hour, river and lights",
+  "text": "the city never sleeps,\nbut you're allowed to",
+  "status": "parked",
+  "mood": "behind",
+  "note": "The 11:00 slot became the one-shot edit on 2026-11-25; the setting and line can be reused there."
+ },
+ {
+  "id": 44,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Rain on a window at night, warm lamp inside",
+  "text": "rest is not\nfalling behind",
+  "status": "parked",
+  "mood": "behind",
+  "note": "The 11:00 slot became the one-shot edit on 2026-11-25; the setting and line can be reused there."
+ },
+ {
+  "id": 45,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Train window, fields at sunset",
+  "text": "you're not late.\nyou're on your way",
+  "status": "parked",
+  "mood": "behind",
+  "note": "The 11:00 slot became the one-shot edit on 2026-11-25; the setting and line can be reused there."
+ },
+ {
+  "id": 46,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Ocean waves at golden hour",
+  "text": "some days are just\nfor breathing",
+  "status": "parked",
+  "mood": "behind",
+  "note": "The 11:00 slot became the one-shot edit on 2026-11-25; the setting and line can be reused there."
+ },
+ {
+  "id": 48,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Night highway with light trails",
+  "text": null,
+  "status": "parked",
+  "mood": "behind",
+  "note": "The 11:00 slot became the one-shot edit on 2026-11-25; the setting and line can be reused there."
+ },
+ {
+  "id": 49,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Mountain lake with morning fog",
+  "text": "quiet mornings\nbuild loud futures",
+  "status": "parked",
+  "mood": "behind",
+  "note": "The 11:00 slot became the one-shot edit on 2026-11-25; the setting and line can be reused there."
+ },
+ {
+  "id": 53,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Autumn leaves on a park path",
+  "text": "everything changes.\nso can you",
+  "status": "parked",
+  "mood": "behind",
+  "note": "The 11:00 slot became the one-shot edit on 2026-11-25; the setting and line can be reused there."
+ },
+ {
+  "id": 54,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Neon street in the rain",
+  "text": null,
+  "status": "parked",
+  "mood": "behind",
+  "note": "The 11:00 slot became the one-shot edit on 2026-11-25; the setting and line can be reused there."
+ },
+ {
+  "id": 55,
+  "format": "ambient",
+  "theme": "Ambient",
+  "setting": "Sunset clouds from a plane window",
+  "text": "the view gets better\nthe higher you go",
+  "status": "parked",
+  "mood": "behind",
+  "note": "The 11:00 slot became the one-shot edit on 2026-11-25; the setting and line can be reused there."
+ },
+ {
+  "id": 80,
+  "format": "oneshot",
+  "mood": "behind",
+  "setting": "A man walking out of morning mist toward the low sun",
+  "line": [
+   "do.",
+   "your.",
+   "part.",
+   "today.",
+   "the.",
+   "timeline.",
+   "was.",
+   "never.",
+   "yours."
+  ],
+  "philosophy": {
+   "idea": "Epictetus, Enchiridion 1: what is up to us and what is not",
+   "use": "interpretation in our own words, not a quote"
+  },
+  "status": "done",
+  "slug": "v007"
+ },
+ {
+  "id": 81,
+  "format": "long",
+  "kind": "philosophy",
+  "theme": "Feeling behind",
+  "hook": "Feeling behind is two thousand years old.",
+  "stoic": "Seneca, On the Shortness of Life 1.3 (Basore)",
+  "angle": "Seneca's answer to people who say life is too short; one hour tonight that you choose.",
+  "status": "done",
+  "slug": "v008"
  }
 ]

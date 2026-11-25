@@ -35,7 +35,13 @@ t = LEAD
 lines = []
 for a in al:
     a["file"] = os.path.join(proj, "audio", os.path.basename(a["file"]))
+# one take (tts.py default): lines sit where the voice said them, with its own natural pauses
+TAKE = bool(al and al[0].get("take"))
 for i, a in enumerate(al):
+    if TAKE:
+        lines.append({"index": i, "text": a["text"], "file": a["file"], "start": round(LEAD + a["offset"], 3),
+                      "dur": round(a["alignment"]["character_end_times_seconds"][-1], 3)})
+        continue
     d = dur(a["file"])
     lines.append({"index": i, "text": a["text"], "file": a["file"], "start": round(t, 3), "dur": round(d, 3)})
     t += d + gap_after(a["text"], i, len(al))
@@ -165,7 +171,12 @@ ass.append(f"Dialogue: 3,{ts(ec + 0.35)},{ts(total)},End,,0,0,0,,{{\\pos({W//2},
 ass.append(f"Dialogue: 3,{ts(ec + 0.9)},{ts(total)},EndSub,,0,0,0,,{{\\pos({W//2},{int(H*0.63)})\\fad(600,0)}}{script.get('endcard', 'follow for more')}")
 open(os.path.join(proj, "captions.ass"), "w").write("\n".join(ass) + "\n")
 
-# 6. voice track: place each line at its start
+# 6. voice track: the take as it was read, or each separate clip placed at its start
+if TAKE:
+    ms = int(round(LEAD * 1000))
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", lines[0]["file"], "-filter_complex",
+                    f"[0:a]aresample=48000,adelay={ms}|{ms},apad,atrim=0:{total}[v]", "-map", "[v]",
+                    "-ac", "2", "-ar", "48000", os.path.join(proj, "audio", "voice.wav")], check=True)
 inputs, filt = [], []
 for k, l in enumerate(lines):
     inputs += ["-i", l["file"]]
@@ -173,8 +184,9 @@ for k, l in enumerate(lines):
     filt.append(f"[{k}:a]aresample=48000,adelay={ms}|{ms}[a{k}]")
 mix = "".join(f"[a{k}]" for k in range(len(lines)))
 filt.append(f"{mix}amix=inputs={len(lines)}:normalize=0,apad,atrim=0:{total}[v]")
-subprocess.run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join(filt), "-map", "[v]",
-                "-ac", "2", "-ar", "48000", os.path.join(proj, "audio", "voice.wav")], check=True)
+if not TAKE:
+    subprocess.run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join(filt), "-map", "[v]",
+                    "-ac", "2", "-ar", "48000", os.path.join(proj, "audio", "voice.wav")], check=True)
 
 # "grain" in script.json (0 = none) carries through to render.py; without it render.py uses its default
 json.dump({"lines": lines, "cuts": cuts, "total": total, "speech_end": speech_end, "words": words,
