@@ -653,7 +653,7 @@
   "slug": "v021",
   "post_date": null,
   "slot": "extra",
-  "status": "preview without voice, awaiting Igor's approval",
+  "status": "preview without voice sent to Igor, awaiting approval",
   "format": "long",
   "kind": "reflection",
   "language": "pt-BR",
@@ -664,6 +664,28 @@
   "search_phrase": "amor de família",
   "voice": "Brian / eleven_multilingual_v2 (after approval)",
   "credits": 0,
-  "hypothesis": "A sentimental second-person reflection in pt-BR like v002, with the search phrase in the first spoken line, a callback ending and a share end card, earns more shares per 100 views than the essays and stories."
+  "hypothesis": "A sentimental second-person reflection in pt-BR like v002, with the search phrase in the first spoken line, a callback ending and a share end card, earns more shares per 100 views than the essays and stories.",
+  "pixabay_ids": [
+   226638,
+   114840,
+   99388,
+   236700,
+   250276,
+   154140,
+   61699,
+   85812,
+   140594,
+   199841,
+   189290,
+   250274,
+   183448,
+   236700,
+   237248,
+   133333,
+   61704
+  ],
+  "preview_file": "echoes_v021_amor-de-familia_PREVIEW-no-voice.mp4",
+  "assets": "Pixabay Content License (real footage)",
+  "quality": "17 real 4K shots (25/24 fps ones played at 1.2/1.25/1.2513 so every source frame lands on one output frame; the 60 fps stir and 50 fps fridge in true slow motion); bright food and fridge shots darkened for caption contrast"
  }
 ]
