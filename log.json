@@ -485,5 +485,37 @@
   "search_phrase": "veneza",
   "quality": "4K sources only (four at 30/29.97 fps, the 23.976 fps Grand Canal played at 1.2513x), vivid grade, CRF 12 master",
   "hypothesis": "A 7-8 s city montage whose music contrasts with the place (romantic Venice under the trending GTA San Andreas theme), cut on a steady pulse from 4K sources, earns more views per hour and shares than v014's 13.7 s night montage."
+ },
+ {
+  "slug": "v016",
+  "post_date": "2026-11-25",
+  "slot": "extra",
+  "status": "ready to post",
+  "format": "ambient",
+  "mood": "city",
+  "language": "pt-BR",
+  "requested_by": "Igor, 2026-11-25: another one, more nocturnal, with a deep song",
+  "theme": "Seul à noite: Yeouido do alto, cerejeiras iluminadas num lago, o rio Han com rastros de luz e a Lotte World Tower; música profunda escolhida no app (pedido do Igor, 2026-11-25)",
+  "hook": null,
+  "text": "seul à noite",
+  "caption": "Seul à noite: cerejeiras iluminadas, o rio Han e a cidade inteira acesa. Que música você ouviria aqui? 🌙",
+  "duration": 8.2,
+  "upload_file": "echoes_v016_seul-a-noite.mp4",
+  "pixabay_ids": [
+   337459,
+   163123,
+   344205,
+   216699,
+   344181
+  ],
+  "music_seed": null,
+  "voice": null,
+  "credits": 0,
+  "music": "music-free; deep picks: Snowfall (Oneheart & Reidenshi), Time Back (Sinny & 7vvch), Drag Path (Twenty One Pilots)",
+  "assets": "Pixabay Content License (real footage)",
+  "pauta_id": null,
+  "search_phrase": "seul à noite",
+  "quality": "4K sources only (24/25 fps clips played at 1.25x/1.2x), mild temporal denoise for night noise, vivid grade, CRF 12 master, 0.22 s dissolves",
+  "hypothesis": "A night city edit with a deep, slow song and softer dissolves holds viewers longer (watch share, replays) than the fast-cut day edit v015, at the cost of fewer shares."
  }
 ]

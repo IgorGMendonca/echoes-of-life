@@ -1,0 +1,70 @@
+{
+  "slug": "v016",
+  "format": "ambient",
+  "mood": "city",
+  "extra": true,
+  "language": "pt-BR",
+  "music_free": true,
+  "bed": "none",
+  "lines": [
+    {
+      "text": "",
+      "query": "seoul night",
+      "alt": "seoul city lights"
+    },
+    {
+      "text": "",
+      "query": "seoul night",
+      "alt": "seoul city lights"
+    },
+    {
+      "text": "",
+      "query": "seoul night",
+      "alt": "seoul city lights"
+    },
+    {
+      "text": "",
+      "query": "seoul night",
+      "alt": "seoul city lights"
+    },
+    {
+      "text": "",
+      "query": "seoul night",
+      "alt": "seoul city lights"
+    }
+  ],
+  "ai_label": false,
+  "theme": "Seul à noite: Yeouido do alto, cerejeiras iluminadas num lago, o rio Han com rastros de luz e a Lotte World Tower; música profunda escolhida no app (pedido do Igor, 2026-11-25)",
+  "text": {
+    "line": "seul à noite",
+    "from": 0.15,
+    "to": 1.5,
+    "y": 0.63
+  },
+  "xfade": 0.22,
+  "grade": "eq=contrast=1.06:saturation=1.1:gamma=0.98,colorbalance=bs=0.02:bm=0.01",
+  "sharpen": 0.25,
+  "crf": 12,
+  "preset": "slow",
+  "hooks_considered": [
+    "seul à noite",
+    "uma cidade que não apaga",
+    "quando a cidade dorme acordada"
+  ],
+  "post": {
+    "search_phrase": "seul à noite",
+    "keywords": [
+      "seul coreia do sul",
+      "cidade à noite"
+    ],
+    "caption": "Seul à noite: cerejeiras iluminadas, o rio Han e a cidade inteira acesa. Que música você ouviria aqui? 🌙",
+    "hashtags": [
+      "#seul",
+      "#coreiadosul",
+      "#viagem",
+      "#asia",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Marca quem você levaria pra ver Seul à noite 👇"
+  }
+}
