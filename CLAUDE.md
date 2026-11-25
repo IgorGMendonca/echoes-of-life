@@ -41,8 +41,11 @@ the review. Read a skill's SKILL.md when its step comes up:
 
 ## Daily production
 
-Four videos a day. Since 2026-11-25 the lineup follows the pilots Igor approved on 2026-11-24
-(v007 and v008: "vamos seguir esse padrão"):
+Four videos a day, **made one at a time**: each run produces only the video of the next slot,
+after validating what is working (Igor, 2026-11-25: "é melhor ir gerando apenas os daquele
+horário, pois a cada geração é importante fazer uma validação do que está dando certo"). The
+scheduled task fires about two hours before each slot. Since 2026-11-25 the lineup follows the
+pilots Igor approved on 2026-11-24 (v007 and v008: "vamos seguir esse padrão"):
 
 | Slot (Brasília) | Video | Idea from `pauta.json` (next `todo`, list order) |
 |---|---|---|
@@ -61,24 +64,30 @@ section's sets, never #fyp, #foryou or #viral.
 
 0. **Metrics first.** Before producing, read how the posted videos are doing: Windsor.ai
    connector `tiktok_organic`, `get_data` with the fields listed at the top of
-   `tools/early_read.py` and `date_preset` "last_7dT". Save the result as it came to
-   `metrics/raw_<UTC date and time>Z.json` and run `python3 tools/early_read.py <that file>`: it
-   matches the videos to `log.json` (writing `tiktok_id`), appends a dated snapshot to
-   `metrics.json` (so every video gets readings at about 1, 3 and 7 days) and prints a table of
-   hours since posting, views per hour, average watch as a share of the length, full-watch rate,
-   and likes, comments, shares, saves and follows per 100 views. Give Igor one line from it in the
-   delivery message. Early numbers on a new account are hints, not rules: they may steer the
-   choice among the next ideas and hooks, never the lineup; the weekly analysis decides that. If
-   the connector fails, say so in one line and go on with production.
-1. **Pick the date.** Get the current date and time in America/Sao_Paulo. Candidates, in order:
-   today (only if it is before 09:00, so the 11:00 slot is still reachable), tomorrow, the day
-   after. Take the first candidate that has no video in `log.json` in one of the four regular slots
-   (videos whose `slot` starts with "extra" do not count: Igor sometimes asks for one more). If all
-   are covered, send Igor one short line and stop.
-2. **Number them.** Slugs continue from the highest in `log.json`, in slot order (11:00, 14:00,
-   18:00, 21:00). Upload name: `echoes_<slug>_<3-5 word kebab of the line, hook or scene>`.
-3. **Order of work.** Make the two short videos first (they need no voice credits), then the
-   philosophy essay, then the story.
+   `tools/early_read.py` and `date_preset` "last_7dT" (no `force_refresh`: the trial plan refuses
+   it). Save the result as it came to `metrics/raw_<UTC date and time>Z.json` and run
+   `python3 tools/early_read.py <that file>`: it matches the videos to `log.json` (writing
+   `tiktok_id`), appends a dated snapshot to `metrics.json` (so every video gets readings at about
+   1, 3 and 7 days) and prints a table of hours since posting, views per hour, average watch as a
+   share of the length, full-watch rate, and likes, comments, shares, saves and follows per 100
+   views. If the connector fails, say so in one line and go on with production.
+1. **Validate.** From that table, before writing anything: compare the posts at equal footing
+   (views per hour, watch share, full-watch rate, likes, saves and follows per 100 views, with the
+   hours each has had), first the posts since the last run, then the same format as the slot you
+   are about to make. Note in 2–3 lines what is working and what is not, and decide what this
+   video applies from it (the choice among the next ideas, the hook or first line, the caption's
+   opening sentence, the first frame, the line length; never the lineup, which the weekly
+   analysis decides). Early numbers on a new account are hints, not rules: say how many posts and
+   hours each hint rests on. Write the note to `"validation"` in the new script.json.
+2. **Pick the slot.** Get the current date and time in America/Sao_Paulo. The slot is the next
+   regular slot today (11:00, 14:00, 18:00, 21:00) that is at least 75 minutes away; after the
+   21:00 cutoff, tomorrow's 11:00. Videos whose `slot` starts with "extra" do not count. If that
+   slot already has a video in `log.json` (Igor sometimes asks for several at once), do not make
+   another: send Igor the validation only if it suggests changing that video's caption, first
+   line or post, and otherwise stop without a message.
+3. **Number it.** The slug continues from the highest in `log.json`. Upload name:
+   `echoes_<slug>_<3-5 word kebab of the line, hook or scene>`. Then make the slot's video with
+   the step below that matches it.
 4. **One-shot edit (11:00)**, no narration:
    1. Write `videos/<slug>/script.json` in the shape of `videos/v007/script.json`:
       `"format": "oneshot"`, `"mood": "behind"`, the idea's `setting` as `theme`, and `"stack"` with
@@ -127,8 +136,7 @@ section's sets, never #fyp, #foryou or #viral.
       `"fx_to"` only for a slow follow) and add `"reveal": {"at": 0.55, "dur": 0.7}` and
       `"music_free": true` to script.json. Then `python3 tools/fetch_clips.py videos/<slug>` and
       `python3 tools/ambient.py videos/<slug>`.
-   4. Sound: search the web once per run for this week's trending TikTok sounds (several chart
-      sources) and pick 2–3 soft, sung songs that fit; for each give title, artist and where to
+   4. Sound: search the web for this week's trending TikTok sounds (several chart sources) and pick 2–3 soft, sung songs that fit; for each give title, artist and where to
       start it (the first sung line or a beat on the camera lift, about 0.6–1.2 s).
    5. `python3 tools/reveal.py videos/<slug>` renders it. Pull frames every 0.1 s over the first
       2 s and one at the end, and Read them: the ground, a blurred lift, the subject well framed,
@@ -195,23 +203,24 @@ section's sets, never #fyp, #foryou or #viral.
    8. `python3 tools/render.py videos/<slug> full` (one full render per video).
    9. `python3 tools/finish.py videos/<slug> <upload name>` must exit 0; it makes the upload
       copy and `post.txt` and checks size, fps, −14 LUFS, true peak and duration.
-7. **Quality gate.** Run the `video-quality-review` rubric on each finished file (frames at start,
+7. **Quality gate.** Run the `video-quality-review` rubric on the finished file (frames at start,
    middle, end and every cut) and fix anything under 7 before delivering.
-8. **Deliver.** Send the four upload files with SendUserFile (status `proactive`), then one
-   SendUserMessage in Portuguese with, for each video in slot order: the date and time to post,
-   the caption and hashtags in a code block ready to paste, the pinned comment in its own code
-   block (post it as the first comment and pin it), the reminder to turn on "Conteúdo gerado por
-   IA" when `ai_label` is true, and the 2–3 sound picks for every video with their start point
-   (he adds the song in the app; under the long videos he sets the added sound to about 15–20% and
-   the original sound to 100%), and the three keywords to suggest under "Manage keywords" once
-   the video is up (the search phrase and the two related ones). For the philosophy essay add
-   one line naming the text, section and translation (and any psychology source), so Igor can
-   answer comments. Keep it short.
-9. **Record.** Set the four ideas in `pauta.json` to `"status": "done", "slug": "<slug>"`, append
-   all four to `log.json` (same fields as v006, v007 and v008, with `kind` or `mood`, and the
-   `philosophy` and `sources` entries for the essay), commit only scripts, scenes, the json files
-   and `metrics/` (media is git-ignored) with a message like `Add v009–v012 for 2026-11-25`, and
-   push to `main`.
+8. **Deliver.** Send the upload file with SendUserFile (status `proactive`), then one
+   SendUserMessage in Portuguese with: the validation in 2–3 lines (what is working, how many
+   posts and hours it rests on, what this video applies), the date and time to post, the caption
+   and hashtags in a code block ready to paste, the pinned comment in its own code block (post it
+   as the first comment and pin it), the reminder to turn on "Conteúdo gerado por IA" when
+   `ai_label` is true, the 2–3 sound picks with their start point (he adds the song in the app;
+   under the long videos he sets the added sound to about 15–20% and the original sound to 100%),
+   and the three keywords to suggest under "Manage keywords" once the video is up (the search
+   phrase and the two related ones). For the philosophy essay add one line naming the text,
+   section and translation (and any psychology source), so Igor can answer comments. Keep it
+   short.
+9. **Record.** Set the idea in `pauta.json` to `"status": "done", "slug": "<slug>"`, append the
+   video to `log.json` (same fields as v006, v007 and v008, with `kind` or `mood`, the
+   `validation` note, and the `philosophy` and `sources` entries for an essay), commit only
+   scripts, scenes, the json files and `metrics/` (media is git-ignored) with a message like
+   `Add v014 for 2026-11-26 11:00`, and push to `main`.
 
 ## Other tools
 
@@ -266,11 +275,11 @@ section's sets, never #fyp, #foryou or #viral.
 
 ## Errors
 
-- Retry a failing step once. If it fails again, finish the other video if you can, deliver it,
-  and tell Igor in Portuguese what failed and what he can do.
+- Retry a failing step once. If it fails again, deliver nothing that failed the checks and tell
+  Igor in Portuguese what failed, what he can do, and whether the slot will stay empty.
 - ElevenLabs `quota_exceeded`, `payment_required` or similar: tell Igor the voice credits ran
   out (a long video uses about 1,000 credits, so the lineup needs about 2,000 a day) and do not
-  deliver narrated videos without narration. Still make and deliver the two short edits, which
-  need no credits.
+  deliver a narrated video without narration. The two short slots need no credits and go on as
+  usual.
 - Never weaken the checks in `tools/finish.py` to make a video pass.
 - Commit messages end with `Co-Authored-By: Claude <noreply@anthropic.com>`.

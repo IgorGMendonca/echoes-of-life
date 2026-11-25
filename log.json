@@ -280,7 +280,7 @@
   "slug": "v011",
   "post_date": "2026-11-25",
   "slot": "14:00",
-  "status": "ready to post",
+  "status": "posted",
   "format": "long",
   "kind": "philosophy",
   "theme": "Social comparison, through Epictetus' Enchiridion 1 (what is within our power and what is not)",
@@ -344,13 +344,15 @@
   ],
   "pauta_id": 34,
   "search_phrase": "comparing yourself to others",
-  "hypothesis": "A short spoken question hook that starts at once (voice from 0.1 s, a person with a phone in the first shot) keeps more viewers past 2 s than v008's statement hook after 0.5 s of silence."
+  "hypothesis": "A short spoken question hook that starts at once (voice from 0.1 s, a person with a phone in the first shot) keeps more viewers past 2 s than v008's statement hook after 0.5 s of silence.",
+  "tiktok_id": "7712094645550910721",
+  "posted_brasilia": "2026-11-25 10:06"
  },
  {
   "slug": "v012",
   "post_date": "2026-11-25",
   "slot": "18:00",
-  "status": "ready to post",
+  "status": "posted",
   "format": "ambient",
   "mood": "nostalgia",
   "theme": "Nostalgia: a family walks hand in hand over a hill into the sunset; the tilt-up lifts from golden grass to them",
@@ -371,7 +373,9 @@
   "pauta_id": 58,
   "search_phrase": "childhood nostalgia",
   "hypothesis": "A family walking into the sunset with the line on screen, plus a first-person caption, reaches past the first test batch",
-  "revision": "2026-11-25: redone after Igor's feedback (the first cut had no text and he didn't like the merry-go-round footage)"
+  "revision": "2026-11-25: redone after Igor's feedback (the first cut had no text and he didn't like the merry-go-round footage)",
+  "tiktok_id": "7712082114866334997",
+  "posted_brasilia": "2026-11-25 09:17"
  },
  {
   "slug": "v013",

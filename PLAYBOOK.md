@@ -202,4 +202,14 @@ formats from 2026-11-25. Nothing here is a learned rule from metrics yet.
   length watched, 4.9% to the end). Hints only: a first-person, relatable caption line, and a
   long video whose voice and moving image start at once. Audience countries not yet delivered.
 
+- 2026-11-25 13:46 UTC (tentative; 11 posts, 0.7–24 h old): the two breakouts kept growing
+  ("I miss the days…" 8,579 views, 545/h over 15.7 h; the v008 repost 2,903, 350/h over 8.3 h)
+  and both still have the highest like rates (16.3 and 18.4 per 100 views); every other post sits
+  at 76–154 views with 1–11 likes per 100. Both winners open the caption with a sentence people
+  agree with on sight (a first-person feeling; a verified quote), and neither is carried by
+  watch time (1.7–2.3 s on average). The two one-shots (v007, v009) stalled at 76–79 views.
+  v011, with the voice from 0.16 s and a question hook, averaged 3.1 s after 0.7 h (v008: 1.7 s),
+  75 views only. Hint to test: open every caption with one quotable sentence before the question.
+  Audience countries still come back empty from the connector.
+
 _First full analysis: Monday 2026-11-30._
