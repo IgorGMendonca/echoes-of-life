@@ -100,9 +100,11 @@ kids playing, warm windows at dusk; v006 is the model.
 - Avoid shots dominated by billboards or brand logos (e.g. busy crossings full of ads).
 - Image quality matters (Igor, 2026-11-24): 4K sources only, no film grain (TikTok's re-encode
   turns it into blur), light sharpening and a high-bitrate upload copy. The tools do this by default.
-- About half carry one short lowercase line in Playfair italic (10 words or fewer, shown after
+- Every one carries one short lowercase line in Playfair italic (10 words or fewer, shown after
   the lift) that fits the mood ("rest is not falling behind", "someone rode next to you until you
-  didn't need them to."); the other half have no text. The analysis compares them.
+  didn't need them to."). Igor, 2026-11-25, after a no-text cut of v012: always the line on
+  screen; pick a view with a calm area (sky, dark wall, water) that keeps it clear of the
+  subject, and if the subject fills the frame, change the footage rather than drop the line.
 - Sound: the export is music-free (silent track). Igor adds a soft, sung, currently trending song
   from the TikTok library in the app; each delivery names 2–3 picks with a start point that puts a
   sung line or a beat on the camera lift.

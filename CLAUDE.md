@@ -108,8 +108,9 @@ section's sets, never #fyp, #foryou or #viral.
       TikTok library. Never put them in the file.
 5. **Nostalgia edit (18:00)**, no narration:
    1. Write `videos/<slug>/script.json` in the shape of `videos/v006/script.json`: the idea's
-      `setting` becomes `theme`; its `text` (if any) becomes `"text": {"line", "from", "to", "y"}`
-      (at most one short lowercase line, shown after the lift); one entry in `lines` per shot
+      `setting` becomes `theme`; its `text` becomes `"text": {"line", "from", "to", "y"}` (one
+      short lowercase line, shown after the lift; every nostalgia edit has one since Igor's
+      decision of 2026-11-25, so write one in the same spirit when the idea has none); one entry in `lines` per shot
       with an empty `text` and a footage `query`/`alt`; `"mood"` from the idea; three honest
       ideas for the line or caption in `"hooks_considered"`; the post fields as in PLAYBOOK.md
       "Nostalgia edits" (`ai_label` only if the footage looks AI-made).
@@ -117,8 +118,10 @@ section's sets, never #fyp, #foryou or #viral.
       view and one for the ground ("asphalt road", "wet street reflections", "leaves on road").
       Pick ONE beautiful 4K view with real, natural motion and life in it that fits the mood
       and one ground clip whose light suits the view. Nothing used in the last 20 videos, no
-      billboards, logos or people facing the camera. Pull a frame at two times from the view to
-      rule out timelapses.
+      billboards, logos or people facing the camera. The view needs a calm area (sky, a dark
+      wall, water) where the line stays clear of the subject in the 9:16 crop; if the subject
+      fills the frame, choose other footage, never drop the line. Pull a frame at two times from
+      the view to rule out timelapses.
    3. Write `footage/scenes.json` in the shape of `videos/v006/footage/scenes.json` (a `"ground"`
       entry and a `"view"` entry with `"fx"` framing the subject, `"dur"` 7–10 s, `"shake"` about 8;
       `"fx_to"` only for a slow follow) and add `"reveal": {"at": 0.55, "dur": 0.7}` and
@@ -129,7 +132,7 @@ section's sets, never #fyp, #foryou or #viral.
       start it (the first sung line or a beat on the camera lift, about 0.6–1.2 s).
    5. `python3 tools/reveal.py videos/<slug>` renders it. Pull frames every 0.1 s over the first
       2 s and one at the end, and Read them: the ground, a blurred lift, the subject well framed,
-      text (if any) clear of the subject and readable. Adjust `fx`, `eq`, text `y`/`from` or the
+      the text clear of the subject and readable. Adjust `fx`, `eq`, text `y`/`from` or the
       reveal timing and render again; then `finish.py videos/<slug> <upload name>` (must exit 0).
 6. **Long videos** (philosophy and story), for each:
    1. Write `videos/<slug>/script.json` in the shape of `videos/v008/script.json`, with
@@ -240,7 +243,7 @@ section's sets, never #fyp, #foryou or #viral.
 4. Reorder the `todo` ideas in `pauta.json` toward what works and add new original ideas so at
    least 7 `todo` ideas remain of each of the four kinds (one-shot, nostalgia edit, long
    philosophy, long story). Compare the four kinds with each other, the one-shot against the
-   tilt-up reveal, nostalgia edits with and without the text line and by setting, and philosophy
+   tilt-up reveal, nostalgia edits by setting and by kind of line, and philosophy
    against stories.
 5. If more than half the views come from Brazil, say so: the channel is aimed at the US.
 6. Commit and push, then send Igor a short Portuguese summary: the key numbers, what worked,
