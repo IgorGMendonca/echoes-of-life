@@ -3,7 +3,8 @@ the first frame, one word per line, so the viewer reads it in one breath and the
 
 Usage: python3 oneshot.py videos/<slug>
 Reads footage/scenes.json with one entry:
-  {"pixabay_id", "file", "src_start", "dur", "fx", optional "fx_to" (slow follow), "eq", "shake" (0 = tripod)}
+  {"pixabay_id", "file", "src_start", "dur", "fx", optional "fx_to" (slow follow), "eq", "shake" (0 = tripod),
+   "speed" (1.2 for 25 fps, 1.2513 for 23.976 fps; "dur" stays the output length)}
 and script.json:
   "stack": {"words": ["do.", "your.", ...], "x": 0.5, "y": 0.62, "size": 58, "color": "F2E7C4",
             "align": "left"|"center", "from": 0.0}
@@ -87,7 +88,11 @@ if sh:
             f"x='{(CW-W)//2}+{sx}':y='{(CH-H)//2}+{sy}'")
 else:
     hold = f"scale={W}:{H}:flags=lanczos"
-base = (f"[0:v]trim=duration={T},setpts=PTS-STARTPTS,{'framerate=fps=' if sc.get('blend_fps') else 'fps='}{FPS},"
+# "speed" (as in render.py): 1.2 for a 25 fps clip, 1.2513 for 23.976 fps, so every source frame
+# lands on exactly one 30 fps output frame instead of a repeated one (judder on motion)
+sp = sc.get("speed", 1.0)
+base = (f"[0:v]trim=duration={round(T * sp, 3)},setpts=(PTS-STARTPTS)/{sp},"
+        f"{'framerate=fps=' if sc.get('blend_fps') else 'fps='}{FPS},"
         f"crop=w=trunc(ih*9/16/2)*2:h=ih:x={cx}:y=0,{hold},setsar=1{eq},{SHARPEN},{GRADE}")
 subs = f"subtitles=filename='{ass_path}':fontsdir='{FONTS}',format=yuv420p[vout]"
 fc = ";".join([
@@ -98,7 +103,7 @@ out = os.path.join(proj, "render", f"{os.path.basename(os.path.abspath(proj))}.m
 os.makedirs(os.path.dirname(out), exist_ok=True)
 tmp = out.replace(".mp4", ".part.mp4")
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-nostats",
-                "-ss", str(sc["src_start"]), "-t", str(T + 0.3), "-i", sc["file"],
+                "-ss", str(sc["src_start"]), "-t", str(T * sp + 0.3), "-i", sc["file"],
                 *(["-loop", "1", "-t", str(T + 0.3), "-i", shade_png] if shade_png else []),
                 "-filter_complex", fc, "-map", "[vout]", "-map", "[aout]", "-r", str(FPS),
                 "-c:v", "libx264", "-preset", script.get("preset", "medium"), "-crf", str(script.get("crf", 16)), "-pix_fmt", "yuv420p", "-profile:v", "high",

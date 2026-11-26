@@ -1,0 +1,71 @@
+{
+  "slug": "v022",
+  "format": "oneshot",
+  "mood": "behind",
+  "language": "pt-BR",
+  "pauta_id": 72,
+  "theme": "A student at a desk by a window at night, desk lamp on (shot as: a hand writing with a dip pen at a dark desk, an inkwell and a blurred clock behind; the line sits on the dark inkwell from the first frame)",
+  "lines": [
+    {
+      "text": "",
+      "query": "hand writing notebook night",
+      "alt": "writing journal lamp"
+    }
+  ],
+  "stack": {
+    "words": [
+      "você.",
+      "não.",
+      "está.",
+      "atrasado.",
+      "começa.",
+      "por.",
+      "essa.",
+      "hora."
+    ],
+    "x": 0.08,
+    "y": 0.3,
+    "size": 54,
+    "color": "F2E7C4",
+    "align": "left",
+    "from": 0.0
+  },
+  "music_free": true,
+  "grade": "eq=contrast=1.12:saturation=1.04:gamma=0.97,colorbalance=rs=0.05:rm=0.04:bs=-0.04:bm=-0.03,vignette=angle=PI/4.6",
+  "sharpen": 0.3,
+  "crf": 12,
+  "preset": "slow",
+  "format_name": "Cinematic One Shot",
+  "philosophy": {
+    "idea": "Claim the hour you have: lay hold of today's task instead of waiting on tomorrow",
+    "source": "Seneca, Moral Letters to Lucilius, Letter 1 'On Saving Time' (Gummere: 'Lay hold of today's task, and you will not need to depend so much upon tomorrow's. While we are postponing, life speeds by.'), checked 2026-11-26 at standardebooks.org (Gummere translation)",
+    "checked": [
+      "https://standardebooks.org/ebooks/seneca/moral-letters-to-lucilius/richard-m-gummere/text/letter-1"
+    ],
+    "use": "interpretation in our own words, not a quote"
+  },
+  "hooks_considered": [
+    "você. não. está. atrasado. começa. por. essa. hora.",
+    "ninguém. está. atrasado. pra. própria. vida.",
+    "a. hora. que. você. tem. na. mão. ainda. é. sua."
+  ],
+  "validation": "Early read 2026-11-26 11:44 UTC, 18 posts 14-46 h old: nothing left the first test batch overnight; the 5 pt-BR posts (14-17 h) sit at 72-147 views. One-shots (v007, v009, v020; 15-35 h): 99-138 views, 2.6-2.9 s watched (27-44%), 2.2-5.1 likes per 100, no saves or follows; v020, the pt-BR one, has the best like rate and the only comment. The two breakouts (v008 repost, 'I miss the days...'; 30-38 h) opened the caption with a sentence people agree with on sight. Applied here (hints, 3 one-shots and 2 breakouts): idea 72 over 71 because it says the channel's core feeling directly, with 'atrasado' on screen; a caption that opens with the search phrase as a first-person feeling; an 8-word line that reads inside the ~2.7 s viewers stay; a hand already moving in the first frame.",
+  "hypothesis": "A one-shot whose line answers the feeling itself ('você não está atrasado') and whose caption opens with it in the first person earns more likes and saves per 100 views than v020 (likes 5.1/100, no saves).",
+  "post": {
+    "search_phrase": "me sinto atrasado na vida",
+    "keywords": [
+      "sêneca sobre o tempo",
+      "frases estoicas"
+    ],
+    "caption": "Me sinto atrasado na vida, como se todo mundo já estivesse lá na frente. Na primeira carta a Lucílio, Sêneca pede pra segurar a tarefa de hoje, porque enquanto a gente adia, a vida passa. O que cabe na sua próxima hora? ⏳",
+    "hashtags": [
+      "#estoicismo",
+      "#reflexao",
+      "#motivacao",
+      "#desenvolvimentopessoal",
+      "#echoesoflife"
+    ],
+    "pinned_comment": "Completa a frase: hoje eu começo por… 👇"
+  },
+  "ai_label": false
+}
